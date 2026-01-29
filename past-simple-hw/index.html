@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Past Simple Homework</title>
+  <style>
+    :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+    body { margin: 0; background: #0b1220; color: #e9eefc; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 24px; }
+    .card { background: #121b2f; border: 1px solid #223055; border-radius: 14px; padding: 16px; margin: 12px 0; }
+    h1 { margin: 0 0 6px; font-size: 26px; }
+    .sub { opacity: .9; margin: 0 0 10px; }
+    .meta { opacity: .7; font-size: 14px; margin-top: 6px; }
+    label { display: block; margin-bottom: 8px; }
+    input[type="text"]{
+      width: 100%; padding: 10px 12px; border-radius: 10px;
+      border: 1px solid #2a3b66; background: #0c1427; color: #e9eefc;
+      outline: none;
+    }
+    .opts { display: grid; gap: 8px; }
+    .opt {
+      display: flex; gap: 10px; align-items: flex-start;
+      border: 1px solid #2a3b66; border-radius: 10px; padding: 10px 12px; background: #0c1427;
+      cursor: pointer;
+    }
+    .opt input { margin-top: 3px; }
+    .btnbar { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+    button {
+      padding: 10px 14px; border-radius: 10px; border: 1px solid #2a3b66;
+      background: #1a2b55; color: #e9eefc; cursor: pointer;
+    }
+    button:hover { filter: brightness(1.08); }
+    .result { margin-top: 10px; padding: 10px 12px; border-radius: 10px; border: 1px dashed #2a3b66; }
+    .ok { border-color: #2e8b57; background: rgba(46,139,87,.12); }
+    .bad { border-color: #c94b4b; background: rgba(201,75,75,.12); }
+    .explain { margin-top: 8px; opacity: .95; line-height: 1.35; }
+    .score { font-size: 18px; font-weight: 600; }
+    .small { opacity: .8; font-size: 14px; }
+    .footer { opacity: .75; font-size: 13px; margin-top: 18px; }
+    code { background: rgba(255,255,255,.08); padding: 2px 6px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1 id="title">Homework</h1>
+      <p class="sub" id="subtitle"></p>
+      <div class="meta" id="meta"></div>
+
+      <div class="btnbar">
+        <button id="checkBtn">Перевірити</button>
+        <button id="resetBtn" title="Очистити відповіді">Скинути</button>
+        <button id="copyBtn" title="Скопіювати результат">Скопіювати результат</button>
+      </div>
+
+      <div class="result" id="overall" style="display:none;"></div>
+      <div class="footer">
+        Порада: відповідай уважно 😄 Past Simple любить слова типу <code>yesterday</code>, <code>last</code>, <code>ago</code>.
+      </div>
+    </div>
+
+    <div id="tasks"></div>
+  </div>
+
+  <script src="tasks.js"></script>
+  <script>
+    // ---- Helpers ----
+    const $ = (sel) => document.querySelector(sel);
+
+    function normalizeAnswer(s, mode) {
+      if (typeof s !== "string") return "";
+      let out = s.trim();
+      // базова нормалізація
+      out = out.replace(/\s+/g, " ");
+      if (mode === "lower") out = out.toLowerCase();
+      if (mode === "space") out = out.replace(/\s+/g, " ").trim();
+      if (mode === "lower+space") out = out.toLowerCase().replace(/\s+/g, " ").trim();
+      return out;
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;");
+    }
+
+    function pickFeedback(task, userRaw) {
+      const user = normalizeAnswer(userRaw, "lower+space");
+      const fb = task.feedback || {};
+      if (fb[user]) return fb[user];
+      // інколи учні вводять зайві крапки/коми
+      const cleaned = user.replace(/[.?!,;:]+$/g, "");
+      if (fb[cleaned]) return fb[cleaned];
+      if (fb["*"]) return fb["*"];
+      return "Неправильно. Перевір правило Past Simple і спробуй ще раз.";
+    }
+
+    function isAccepted(task, userRaw) {
+      const normMode = task.normalize ? (task.normalize === "space" ? "lower+space" : "lower+space") : "lower+space";
+      const user = normalizeAnswer(userRaw, normMode);
+
+      if (task.type === "fill") {
+        const accept = (task.accept || []).map(a => normalizeAnswer(a, normMode));
+        return accept.includes(user);
+      }
+      if (task.type === "mcq") {
+        return Number(userRaw) === task.correctIndex;
+      }
+      return false;
+    }
+
+    // ---- Render ----
+    function render() {
+      $("#title").textContent = window.HW?.title || "Homework";
+      $("#subtitle").textContent = window.HW?.subtitle || "";
+      $("#meta").textContent = window.HW?.version ? `Версія: ${window.HW.version}` : "";
+
+      const container = $("#tasks");
+      container.innerHTML = "";
+
+      (window.HW?.tasks || []).forEach((task, idx) => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.dataset.taskId = task.id;
+
+        const prompt = document.createElement("div");
+        prompt.innerHTML = `<div style="font-weight:600; margin-bottom:8px;">${escapeHtml(task.prompt)}</div>`;
+        card.appendChild(prompt);
+
+        if (task.type === "fill") {
+          const label = document.createElement("label");
+          label.innerHTML = `Відповідь:`;
+          const input = document.createElement("input");
+          input.type = "text";
+          input.placeholder = "Напиши відповідь тут...";
+          input.autocomplete = "off";
+          input.dataset.kind = "answer";
+          input.dataset.taskId = task.id;
+          label.appendChild(input);
+          card.appendChild(label);
+
+        } else if (task.type === "mcq") {
+          const opts = document.createElement("div");
+          opts.className = "opts";
+
+          task.options.forEach((opt, i) => {
+            const row = document.createElement("label");
+            row.className = "opt";
+            row.innerHTML = `
+              <input type="radio" name="${task.id}" value="${i}" />
+              <div>${escapeHtml(opt)}</div>
+            `;
+            opts.appendChild(row);
+          });
+
+          card.appendChild(opts);
+        }
+
+        const result = document.createElement("div");
+        result.className = "result";
+        result.style.display = "none";
+        result.dataset.kind = "result";
+        card.appendChild(result);
+
+        container.appendChild(card);
+      });
+    }
+
+    function getUserAnswer(task) {
+      if (task.type === "fill") {
+        const input = document.querySelector(`input[data-kind="answer"][data-task-id="${task.id}"]`);
+        return input ? input.value : "";
+      }
+      if (task.type === "mcq") {
+        const checked = document.querySelector(`input[type="radio"][name="${task.id}"]:checked`);
+        return checked ? Number(checked.value) : null;
+      }
+      return "";
+    }
+
+    // ---- Check ----
+    function checkAll() {
+      const tasks = window.HW?.tasks || [];
+      let correct = 0;
+
+      tasks.forEach(task => {
+        const ans = getUserAnswer(task);
+        const ok = isAccepted(task, ans);
+
+        const card = document.querySelector(`.card[data-task-id="${task.id}"]`);
+        const box = card.querySelector(`div[data-kind="result"]`);
+
+        box.style.display = "block";
+        box.classList.remove("ok", "bad");
+
+        if (ok) {
+          correct++;
+          box.classList.add("ok");
+          box.innerHTML = `✅ Правильно!`;
+        } else {
+          box.classList.add("bad");
+
+          let explain = "";
+          if (task.type === "fill") {
+            explain = pickFeedback(task, ans);
+          } else if (task.type === "mcq") {
+            if (ans === null) {
+              explain = "Ти нічого не обрав(ла). Обери варіант і перевір ще раз.";
+            } else {
+              explain = (task.explanations && task.explanations[ans]) ||
+                        "Неправильно. Подумай про правило Past Simple.";
+            }
+          }
+
+          box.innerHTML = `❌ Неправильно.<div class="explain">${explain}</div>`;
+        }
+      });
+
+      const overall = $("#overall");
+      overall.style.display = "block";
+      overall.className = "result " + (correct === tasks.length ? "ok" : "bad");
+      overall.innerHTML = `
+        <div class="score">Результат: ${correct} / ${tasks.length}</div>
+        <div class="small">Порада: якщо бачиш <b>did/didn't</b> — дієслово завжди в <b>V1</b> (без -ed).</div>
+      `;
+    }
+
+    // ---- Reset ----
+    function resetAll() {
+      document.querySelectorAll(`input[type="text"][data-kind="answer"]`).forEach(i => i.value = "");
+      document.querySelectorAll(`input[type="radio"]`).forEach(r => r.checked = false);
+      document.querySelectorAll(`div[data-kind="result"]`).forEach(b => { b.style.display = "none"; b.classList.remove("ok","bad"); b.innerHTML = ""; });
+      $("#overall").style.display = "none";
+      $("#overall").innerHTML = "";
+    }
+
+    // ---- Copy results (for students to send teacher) ----
+    async function copyResults() {
+      const tasks = window.HW?.tasks || [];
+      const lines = [];
+      lines.push(`${window.HW?.title || "Homework"} | version ${window.HW?.version || ""}`);
+      tasks.forEach(t => {
+        const ans = getUserAnswer(t);
+        let a = ans;
+        if (t.type === "mcq") {
+          a = (ans === null) ? "(no answer)" : `${ans}: ${t.options[ans]}`;
+        }
+        lines.push(`${t.id} — ${t.prompt} => ${a}`);
+      });
+      const text = lines.join("\n");
+      try {
+        await navigator.clipboard.writeText(text);
+        alert("Скопійовано! Тепер можна вставити в чат/пошту вчителю 🙂");
+      } catch {
+        alert("Не вдалось скопіювати автоматично. Спробуй вручну (браузер може блокувати).");
+      }
+    }
+
+    // ---- Init ----
+    render();
+    $("#checkBtn").addEventListener("click", checkAll);
+    $("#resetBtn").addEventListener("click", resetAll);
+    $("#copyBtn").addEventListener("click", copyResults);
+  </script>
+</body>
+</html>

@@ -142,7 +142,7 @@
     }
 
     // ---- Render ----
-    function render() {
+    function renderMeta() {
       $("#title").textContent = window.HW?.title || "Homework";
       $("#subtitle").textContent = window.HW?.subtitle || "";
       $("#meta").textContent = window.HW?.version ? `Версія: ${window.HW.version}` : "";
@@ -153,11 +153,14 @@
           "Порада: звертай увагу на часові маркери в реченні та форму дієслова."
         );
       }
+    }
 
+    function renderTasks(tasks) {
+      renderMeta();
       const container = $("#tasks");
       container.innerHTML = "";
 
-      (window.HW?.tasks || []).forEach((task, idx) => {
+      tasks.forEach((task, idx) => {
         const card = document.createElement("div");
         card.className = "card";
         card.dataset.taskId = task.id;
@@ -203,6 +206,14 @@
 
         container.appendChild(card);
       });
+    }
+
+    function getActiveTasks() {
+      const activeButton = document.querySelector(
+        `#tasksPanel [data-tense].active, #tasksPanel [data-tense][aria-pressed="true"], #tasksPanel [data-tense][aria-selected="true"]`
+      );
+      const tense = activeButton?.dataset?.tense || window.HW?.tense;
+      return window.HW?.taskSets?.[tense] || [];
     }
 
     function getUserAnswer(task) {
@@ -266,9 +277,21 @@
 
     // ---- Reset ----
     function resetAll() {
-      document.querySelectorAll(`input[type="text"][data-kind="answer"]`).forEach(i => i.value = "");
-      document.querySelectorAll(`input[type="radio"]`).forEach(r => r.checked = false);
-      document.querySelectorAll(`div[data-kind="result"]`).forEach(b => { b.style.display = "none"; b.classList.remove("ok","bad"); b.innerHTML = ""; });
+      const tasks = getActiveTasks();
+      tasks.forEach(task => {
+        if (task.type === "fill") {
+          const input = document.querySelector(`input[data-kind="answer"][data-task-id="${task.id}"]`);
+          if (input) input.value = "";
+        } else if (task.type === "mcq") {
+          document.querySelectorAll(`input[type="radio"][name="${task.id}"]`).forEach(r => r.checked = false);
+        }
+        const box = document.querySelector(`.card[data-task-id="${task.id}"] div[data-kind="result"]`);
+        if (box) {
+          box.style.display = "none";
+          box.classList.remove("ok", "bad");
+          box.innerHTML = "";
+        }
+      });
       $("#overall").style.display = "none";
       $("#overall").innerHTML = "";
     }
@@ -348,7 +371,7 @@
       openPanel(panelId);
     }
 
-    render();
+    renderMeta();
     $("#checkBtn").addEventListener("click", checkAll);
     $("#resetBtn").addEventListener("click", resetAll);
     $("#copyBtn").addEventListener("click", copyResults);
@@ -375,6 +398,13 @@
       if (!menu.contains(event.target) && event.target !== menuBtn) {
         closeMenu();
       }
+    });
+
+    document.querySelectorAll(`#tasksPanel [data-tense]`).forEach(btn => {
+      btn.addEventListener("click", () => {
+        window.HW.tense = btn.dataset.tense;
+        renderTasks(getActiveTasks());
+      });
     });
   </script>
 </body>

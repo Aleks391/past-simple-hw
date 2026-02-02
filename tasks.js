@@ -1101,10 +1101,3 @@ window.HW = {
     ]
   }
 };
-
-// Backward-compatible flat task list for existing UI.
-window.HW.tasks = [
-  ...window.HW.taskSets.present,
-  ...window.HW.taskSets.past,
-  ...window.HW.taskSets.future
-];

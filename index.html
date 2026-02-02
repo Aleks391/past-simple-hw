@@ -7,6 +7,30 @@
   <style>
     :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; }
     body { margin: 0; background: #0b1220; color: #e9eefc; }
+    .topbar {
+      position: sticky; top: 0; z-index: 10; background: #0b1220;
+      border-bottom: 1px solid #223055;
+    }
+    .topbar-inner {
+      max-width: 900px; margin: 0 auto; padding: 12px 24px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .menu-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 12px; border-radius: 10px; border: 1px solid #2a3b66;
+      background: #1a2b55; color: #e9eefc; cursor: pointer;
+    }
+    .menu {
+      position: absolute; right: 24px; top: 56px; min-width: 200px;
+      background: #121b2f; border: 1px solid #223055; border-radius: 12px;
+      padding: 6px; display: none; box-shadow: 0 12px 24px rgba(0,0,0,.25);
+    }
+    .menu.open { display: block; }
+    .menu button {
+      width: 100%; text-align: left; background: transparent; border: none;
+      padding: 10px 12px; border-radius: 8px; color: #e9eefc; cursor: pointer;
+    }
+    .menu button:hover { background: rgba(255,255,255,.08); }
     .wrap { max-width: 900px; margin: 0 auto; padding: 24px; }
     .card { background: #121b2f; border: 1px solid #223055; border-radius: 14px; padding: 16px; margin: 12px 0; }
     h1 { margin: 0 0 6px; font-size: 26px; }
@@ -195,7 +219,7 @@
 
     // ---- Check ----
     function checkAll() {
-      const tasks = window.HW?.tasks || [];
+      const tasks = getActiveTasks();
       let correct = 0;
 
       tasks.forEach(task => {
@@ -251,7 +275,7 @@
 
     // ---- Copy results (for students to send teacher) ----
     async function copyResults() {
-      const tasks = window.HW?.tasks || [];
+      const tasks = getActiveTasks();
       const lines = [];
       lines.push(`${window.HW?.title || "Homework"} | version ${window.HW?.version || ""}`);
       tasks.forEach(t => {
@@ -272,10 +296,86 @@
     }
 
     // ---- Init ----
+    const sections = {
+      home: $("#homeSection"),
+      theory: $("#theorySection"),
+      tasks: $("#tasksSection")
+    };
+    const menuBtn = $("#menuBtn");
+    const menu = $("#menu");
+    const collapseToggles = document.querySelectorAll(".collapse-toggle");
+
+    function setSection(name) {
+      Object.entries(sections).forEach(([key, el]) => {
+        el.classList.toggle("active", key === name);
+      });
+      if (name === "theory") {
+        openPanel("theoryPanel");
+      } else if (name === "tasks") {
+        openPanel("tasksPanel");
+      }
+    }
+
+    function closeMenu() {
+      menu.classList.remove("open");
+      menuBtn.setAttribute("aria-expanded", "false");
+    }
+
+    function toggleMenu() {
+      const willOpen = !menu.classList.contains("open");
+      menu.classList.toggle("open", willOpen);
+      menuBtn.setAttribute("aria-expanded", String(willOpen));
+    }
+
+    function openPanel(panelId) {
+      document.querySelectorAll(".collapse-content").forEach(panel => {
+        const isTarget = panel.id === panelId;
+        panel.classList.toggle("open", isTarget);
+        const toggle = document.querySelector(`.collapse-toggle[data-collapse="${panel.id}"]`);
+        if (toggle) toggle.setAttribute("aria-expanded", String(isTarget));
+      });
+    }
+
+    function togglePanel(panelId) {
+      const panel = document.getElementById(panelId);
+      const isOpen = panel.classList.contains("open");
+      if (isOpen) {
+        panel.classList.remove("open");
+        const toggle = document.querySelector(`.collapse-toggle[data-collapse="${panel.id}"]`);
+        if (toggle) toggle.setAttribute("aria-expanded", "false");
+        return;
+      }
+      openPanel(panelId);
+    }
+
     render();
     $("#checkBtn").addEventListener("click", checkAll);
     $("#resetBtn").addEventListener("click", resetAll);
     $("#copyBtn").addEventListener("click", copyResults);
+
+    menuBtn.addEventListener("click", (event) => {
+      event.stopPropagation();
+      toggleMenu();
+    });
+
+    menu.querySelectorAll("button[data-section]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        setSection(btn.dataset.section);
+        closeMenu();
+      });
+    });
+
+    collapseToggles.forEach(toggle => {
+      toggle.addEventListener("click", () => {
+        togglePanel(toggle.dataset.collapse);
+      });
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!menu.contains(event.target) && event.target !== menuBtn) {
+        closeMenu();
+      }
+    });
   </script>
 </body>
 </html>

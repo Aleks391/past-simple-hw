@@ -13,17 +13,15 @@
     }
     .topbar-inner {
       max-width: 900px; margin: 0 auto; padding: 12px 24px;
-      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      display: flex; align-items: center; justify-content: space-between;
     }
-    .brand { font-weight: 600; }
-    .menu-wrap { position: relative; }
     .menu-btn {
       display: inline-flex; align-items: center; gap: 8px;
       padding: 8px 12px; border-radius: 10px; border: 1px solid #2a3b66;
       background: #1a2b55; color: #e9eefc; cursor: pointer;
     }
     .menu {
-      position: absolute; right: 0; top: calc(100% + 8px); min-width: 200px;
+      position: absolute; right: 24px; top: 56px; min-width: 200px;
       background: #121b2f; border: 1px solid #223055; border-radius: 12px;
       padding: 6px; display: none; box-shadow: 0 12px 24px rgba(0,0,0,.25);
     }
@@ -34,30 +32,7 @@
     }
     .menu button:hover { background: rgba(255,255,255,.08); }
     .wrap { max-width: 900px; margin: 0 auto; padding: 24px; }
-    .section { display: none; }
-    .section.active { display: block; }
     .card { background: #121b2f; border: 1px solid #223055; border-radius: 14px; padding: 16px; margin: 12px 0; }
-    .panel {
-      display: none; border: 1px solid #223055; border-radius: 16px; padding: 16px;
-      background: #0f182b;
-    }
-    .panel.open { display: block; }
-    .panel-header {
-      display: flex; align-items: center; justify-content: space-between; gap: 12px;
-      margin-bottom: 12px;
-    }
-    .panel-header h2 { margin: 0; font-size: 22px; }
-    .panel-close {
-      border-radius: 10px; border: 1px solid #2a3b66; background: #1a2b55; color: #e9eefc;
-      padding: 6px 10px; cursor: pointer;
-    }
-    .welcome-card { text-align: center; font-size: 20px; font-weight: 600; }
-    .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 10px; }
-    .tab-btn {
-      padding: 8px 12px; border-radius: 10px; border: 1px solid #2a3b66;
-      background: #141f3f; color: #e9eefc; cursor: pointer;
-    }
-    .tab-btn.active { background: #233a6c; border-color: #3a538d; }
     h1 { margin: 0 0 6px; font-size: 26px; }
     .sub { opacity: .9; margin: 0 0 10px; }
     .meta { opacity: .7; font-size: 14px; margin-top: 6px; }
@@ -87,88 +62,33 @@
     .score { font-size: 18px; font-weight: 600; }
     .small { opacity: .8; font-size: 14px; }
     .footer { opacity: .75; font-size: 13px; margin-top: 18px; }
-    .theory-block h3 { margin: 0 0 8px; }
-    .theory-block ul { margin: 8px 0 0; padding-left: 18px; }
     code { background: rgba(255,255,255,.08); padding: 2px 6px; border-radius: 6px; }
   </style>
 </head>
 <body>
-  <div class="topbar">
-    <div class="topbar-inner">
-      <div class="brand">English Tenses</div>
-      <div class="menu-wrap">
-        <button class="menu-btn" id="menuBtn" aria-haspopup="true" aria-expanded="false">☰ Меню</button>
-        <div class="menu" id="menu" role="menu">
-          <button type="button" data-section="home">Головна</button>
-          <button type="button" data-section="theory">Теорія</button>
-          <button type="button" data-section="tasks">Завдання</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="wrap">
-    <section class="section active" id="homeSection">
-      <div class="card welcome-card">Привіт це мій сайт для учнів 👋</div>
-    </section>
+    <div class="card">
+      <h1 id="title">Homework</h1>
+      <p class="sub" id="subtitle"></p>
+      <div class="meta" id="meta"></div>
 
-    <section class="section" id="theorySection">
-      <div class="panel open" id="theoryPanel">
-        <div class="panel-header">
-          <h2>Теорія</h2>
-          <button class="panel-close" type="button" data-close="theoryPanel">Закрити</button>
-        </div>
-        <div id="theoryContent"></div>
+      <div class="btnbar">
+        <button id="checkBtn">Перевірити</button>
+        <button id="resetBtn" title="Очистити відповіді">Скинути</button>
+        <button id="copyBtn" title="Скопіювати результат">Скопіювати результат</button>
       </div>
-    </section>
 
-    <section class="section" id="tasksSection">
-      <div class="panel" id="tasksPanel">
-        <div class="panel-header">
-          <h2>Завдання</h2>
-          <button class="panel-close" type="button" data-close="tasksPanel">Закрити</button>
-        </div>
-        <div class="tabs" role="tablist">
-          <button class="tab-btn" type="button" data-taskset="present">Present Simple</button>
-          <button class="tab-btn" type="button" data-taskset="past">Past Simple</button>
-          <button class="tab-btn" type="button" data-taskset="future">Future Simple</button>
-        </div>
-        <div class="card">
-          <h1 id="title">Homework</h1>
-          <p class="sub" id="subtitle"></p>
-          <div class="meta" id="meta"></div>
+      <div class="result" id="overall" style="display:none;"></div>
+      <div class="footer" id="footerHint"></div>
+    </div>
 
-          <div class="btnbar">
-            <button id="checkBtn">Перевірити</button>
-            <button id="resetBtn" title="Очистити відповіді">Скинути</button>
-            <button id="copyBtn" title="Скопіювати результат">Скопіювати результат</button>
-          </div>
-
-          <div class="result" id="overall" style="display:none;"></div>
-          <div class="footer" id="footerHint"></div>
-        </div>
-
-        <div id="tasks"></div>
-      </div>
-    </section>
+    <div id="tasks"></div>
   </div>
 
   <script src="tasks.js"></script>
   <script>
     // ---- Helpers ----
     const $ = (sel) => document.querySelector(sel);
-
-    const sectionEls = {
-      home: $("#homeSection"),
-      theory: $("#theorySection"),
-      tasks: $("#tasksSection")
-    };
-    const menuBtn = $("#menuBtn");
-    const menu = $("#menu");
-    const theoryPanel = $("#theoryPanel");
-    const tasksPanel = $("#tasksPanel");
-    const tabButtons = Array.from(document.querySelectorAll(".tab-btn"));
-    let activeTaskSet = "present";
 
     function normalizeAnswer(s, mode) {
       if (typeof s !== "string") return "";
@@ -190,7 +110,7 @@
 
     function getTheoryValue(key, fallback) {
       const theory = window.HW?.theory || {};
-      const tense = activeTaskSet;
+      const tense = window.HW?.tense;
       if (tense && theory[tense] && theory[tense][key]) return theory[tense][key];
       if (theory[key]) return theory[key];
       return fallback;
@@ -221,7 +141,8 @@
       return false;
     }
 
-    function renderHeader() {
+    // ---- Render ----
+    function renderMeta() {
       $("#title").textContent = window.HW?.title || "Homework";
       $("#subtitle").textContent = window.HW?.subtitle || "";
       $("#meta").textContent = window.HW?.version ? `Версія: ${window.HW.version}` : "";
@@ -234,12 +155,12 @@
       }
     }
 
-    function renderTasks() {
+    function renderTasks(tasks) {
+      renderMeta();
       const container = $("#tasks");
       container.innerHTML = "";
-      const tasks = getActiveTasks();
 
-      tasks.forEach((task) => {
+      tasks.forEach((task, idx) => {
         const card = document.createElement("div");
         card.className = "card";
         card.dataset.taskId = task.id;
@@ -287,48 +208,12 @@
       });
     }
 
-    function renderTheory() {
-      const container = $("#theoryContent");
-      container.innerHTML = "";
-      const theory = window.HW?.theory || {};
-      const order = [
-        { key: "present", label: "Present Simple" },
-        { key: "past", label: "Past Simple" },
-        { key: "future", label: "Future Simple" }
-      ];
-
-      order.forEach(({ key, label }) => {
-        const data = theory[key];
-        if (!data) return;
-        const block = document.createElement("div");
-        block.className = "card theory-block";
-
-        const title = document.createElement("h3");
-        title.textContent = data.title || label;
-        block.appendChild(title);
-
-        if (Array.isArray(data.rules)) {
-          const list = document.createElement("ul");
-          data.rules.forEach(rule => {
-            const li = document.createElement("li");
-            li.textContent = rule;
-            list.appendChild(li);
-          });
-          block.appendChild(list);
-        }
-
-        if (Array.isArray(data.examples)) {
-          const exampleList = document.createElement("ul");
-          data.examples.forEach(example => {
-            const li = document.createElement("li");
-            li.textContent = `${example.en} — ${example.uk}`;
-            exampleList.appendChild(li);
-          });
-          block.appendChild(exampleList);
-        }
-
-        container.appendChild(block);
-      });
+    function getActiveTasks() {
+      const activeButton = document.querySelector(
+        `#tasksPanel [data-tense].active, #tasksPanel [data-tense][aria-pressed="true"], #tasksPanel [data-tense][aria-selected="true"]`
+      );
+      const tense = activeButton?.dataset?.tense || window.HW?.tense;
+      return window.HW?.taskSets?.[tense] || [];
     }
 
     function getUserAnswer(task) {
@@ -343,14 +228,9 @@
       return "";
     }
 
-    function getActiveTasks() {
-      return window.HW?.taskSets?.[activeTaskSet] || [];
-    }
-
     // ---- Check ----
     function checkAll() {
       const tasks = getActiveTasks();
-      if (!tasks.length) return;
       let correct = 0;
 
       tasks.forEach(task => {
@@ -397,9 +277,21 @@
 
     // ---- Reset ----
     function resetAll() {
-      document.querySelectorAll(`input[type="text"][data-kind="answer"]`).forEach(i => i.value = "");
-      document.querySelectorAll(`input[type="radio"]`).forEach(r => r.checked = false);
-      document.querySelectorAll(`div[data-kind="result"]`).forEach(b => { b.style.display = "none"; b.classList.remove("ok","bad"); b.innerHTML = ""; });
+      const tasks = getActiveTasks();
+      tasks.forEach(task => {
+        if (task.type === "fill") {
+          const input = document.querySelector(`input[data-kind="answer"][data-task-id="${task.id}"]`);
+          if (input) input.value = "";
+        } else if (task.type === "mcq") {
+          document.querySelectorAll(`input[type="radio"][name="${task.id}"]`).forEach(r => r.checked = false);
+        }
+        const box = document.querySelector(`.card[data-task-id="${task.id}"] div[data-kind="result"]`);
+        if (box) {
+          box.style.display = "none";
+          box.classList.remove("ok", "bad");
+          box.innerHTML = "";
+        }
+      });
       $("#overall").style.display = "none";
       $("#overall").innerHTML = "";
     }
@@ -426,7 +318,27 @@
       }
     }
 
-    // ---- UI ----
+    // ---- Init ----
+    const sections = {
+      home: $("#homeSection"),
+      theory: $("#theorySection"),
+      tasks: $("#tasksSection")
+    };
+    const menuBtn = $("#menuBtn");
+    const menu = $("#menu");
+    const collapseToggles = document.querySelectorAll(".collapse-toggle");
+
+    function setSection(name) {
+      Object.entries(sections).forEach(([key, el]) => {
+        el.classList.toggle("active", key === name);
+      });
+      if (name === "theory") {
+        openPanel("theoryPanel");
+      } else if (name === "tasks") {
+        openPanel("tasksPanel");
+      }
+    }
+
     function closeMenu() {
       menu.classList.remove("open");
       menuBtn.setAttribute("aria-expanded", "false");
@@ -438,40 +350,28 @@
       menuBtn.setAttribute("aria-expanded", String(willOpen));
     }
 
-    function setSection(name) {
-      Object.entries(sectionEls).forEach(([key, el]) => {
-        el.classList.toggle("active", key === name);
+    function openPanel(panelId) {
+      document.querySelectorAll(".collapse-content").forEach(panel => {
+        const isTarget = panel.id === panelId;
+        panel.classList.toggle("open", isTarget);
+        const toggle = document.querySelector(`.collapse-toggle[data-collapse="${panel.id}"]`);
+        if (toggle) toggle.setAttribute("aria-expanded", String(isTarget));
       });
-      if (name === "theory") {
-        openPanel(theoryPanel);
+    }
+
+    function togglePanel(panelId) {
+      const panel = document.getElementById(panelId);
+      const isOpen = panel.classList.contains("open");
+      if (isOpen) {
+        panel.classList.remove("open");
+        const toggle = document.querySelector(`.collapse-toggle[data-collapse="${panel.id}"]`);
+        if (toggle) toggle.setAttribute("aria-expanded", "false");
+        return;
       }
-      if (name === "tasks") {
-        openPanel(tasksPanel);
-      }
+      openPanel(panelId);
     }
 
-    function openPanel(panel) {
-      panel.classList.add("open");
-    }
-
-    function closePanel(panel) {
-      panel.classList.remove("open");
-    }
-
-    function setActiveTaskSet(nextSet) {
-      activeTaskSet = nextSet;
-      tabButtons.forEach(btn => {
-        btn.classList.toggle("active", btn.dataset.taskset === activeTaskSet);
-      });
-      renderHeader();
-      renderTasks();
-      resetAll();
-    }
-
-    renderHeader();
-    renderTheory();
-    setActiveTaskSet(activeTaskSet);
-
+    renderMeta();
     $("#checkBtn").addEventListener("click", checkAll);
     $("#resetBtn").addEventListener("click", resetAll);
     $("#copyBtn").addEventListener("click", copyResults);
@@ -488,18 +388,9 @@
       });
     });
 
-    tabButtons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        setActiveTaskSet(btn.dataset.taskset);
-      });
-    });
-
-    document.querySelectorAll("[data-close]").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const panel = document.getElementById(btn.dataset.close);
-        if (panel) {
-          closePanel(panel);
-        }
+    collapseToggles.forEach(toggle => {
+      toggle.addEventListener("click", () => {
+        togglePanel(toggle.dataset.collapse);
       });
     });
 
@@ -507,6 +398,13 @@
       if (!menu.contains(event.target) && event.target !== menuBtn) {
         closeMenu();
       }
+    });
+
+    document.querySelectorAll(`#tasksPanel [data-tense]`).forEach(btn => {
+      btn.addEventListener("click", () => {
+        window.HW.tense = btn.dataset.tense;
+        renderTasks(getActiveTasks());
+      });
     });
   </script>
 </body>

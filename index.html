@@ -55,9 +55,7 @@
       </div>
 
       <div class="result" id="overall" style="display:none;"></div>
-      <div class="footer">
-        Порада: відповідай уважно 😄 Past Simple любить слова типу <code>yesterday</code>, <code>last</code>, <code>ago</code>.
-      </div>
+      <div class="footer" id="footerHint"></div>
     </div>
 
     <div id="tasks"></div>
@@ -86,6 +84,14 @@
         .replaceAll(">", "&gt;");
     }
 
+    function getTheoryValue(key, fallback) {
+      const theory = window.HW?.theory || {};
+      const tense = window.HW?.tense;
+      if (tense && theory[tense] && theory[tense][key]) return theory[tense][key];
+      if (theory[key]) return theory[key];
+      return fallback;
+    }
+
     function pickFeedback(task, userRaw) {
       const user = normalizeAnswer(userRaw, "lower+space");
       const fb = task.feedback || {};
@@ -94,7 +100,7 @@
       const cleaned = user.replace(/[.?!,;:]+$/g, "");
       if (fb[cleaned]) return fb[cleaned];
       if (fb["*"]) return fb["*"];
-      return "Неправильно. Перевір правило Past Simple і спробуй ще раз.";
+      return getTheoryValue("wrongAnswer", "Неправильно. Перевір правило й спробуй ще раз.");
     }
 
     function isAccepted(task, userRaw) {
@@ -116,6 +122,13 @@
       $("#title").textContent = window.HW?.title || "Homework";
       $("#subtitle").textContent = window.HW?.subtitle || "";
       $("#meta").textContent = window.HW?.version ? `Версія: ${window.HW.version}` : "";
+      const footer = $("#footerHint");
+      if (footer) {
+        footer.innerHTML = getTheoryValue(
+          "footerHint",
+          "Порада: звертай увагу на часові маркери в реченні та форму дієслова."
+        );
+      }
 
       const container = $("#tasks");
       container.innerHTML = "";
@@ -210,7 +223,7 @@
               explain = "Ти нічого не обрав(ла). Обери варіант і перевір ще раз.";
             } else {
               explain = (task.explanations && task.explanations[ans]) ||
-                        "Неправильно. Подумай про правило Past Simple.";
+                        getTheoryValue("wrongAnswer", "Неправильно. Перевір правило й спробуй ще раз.");
             }
           }
 

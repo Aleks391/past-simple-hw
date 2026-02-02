@@ -7,6 +7,30 @@
   <style>
     :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; }
     body { margin: 0; background: #0b1220; color: #e9eefc; }
+    .topbar {
+      position: sticky; top: 0; z-index: 10; background: #0b1220;
+      border-bottom: 1px solid #223055;
+    }
+    .topbar-inner {
+      max-width: 900px; margin: 0 auto; padding: 12px 24px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .menu-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 12px; border-radius: 10px; border: 1px solid #2a3b66;
+      background: #1a2b55; color: #e9eefc; cursor: pointer;
+    }
+    .menu {
+      position: absolute; right: 24px; top: 56px; min-width: 200px;
+      background: #121b2f; border: 1px solid #223055; border-radius: 12px;
+      padding: 6px; display: none; box-shadow: 0 12px 24px rgba(0,0,0,.25);
+    }
+    .menu.open { display: block; }
+    .menu button {
+      width: 100%; text-align: left; background: transparent; border: none;
+      padding: 10px 12px; border-radius: 8px; color: #e9eefc; cursor: pointer;
+    }
+    .menu button:hover { background: rgba(255,255,255,.08); }
     .wrap { max-width: 900px; margin: 0 auto; padding: 24px; }
     .card { background: #121b2f; border: 1px solid #223055; border-radius: 14px; padding: 16px; margin: 12px 0; }
     h1 { margin: 0 0 6px; font-size: 26px; }
@@ -39,28 +63,81 @@
     .small { opacity: .8; font-size: 14px; }
     .footer { opacity: .75; font-size: 13px; margin-top: 18px; }
     code { background: rgba(255,255,255,.08); padding: 2px 6px; border-radius: 6px; }
+    .section { display: none; }
+    .section.active { display: block; }
+    .collapse-toggle {
+      width: 100%; display: flex; align-items: center; justify-content: space-between;
+      padding: 10px 12px; border-radius: 10px; border: 1px solid #2a3b66;
+      background: #0c1427; color: #e9eefc; cursor: pointer; font-weight: 600;
+    }
+    .collapse-content { display: none; margin-top: 12px; }
+    .collapse-content.open { display: block; }
+    .welcome { opacity: .92; line-height: 1.5; margin: 12px 0 0; }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <h1 id="title">Homework</h1>
-      <p class="sub" id="subtitle"></p>
-      <div class="meta" id="meta"></div>
-
-      <div class="btnbar">
-        <button id="checkBtn">Перевірити</button>
-        <button id="resetBtn" title="Очистити відповіді">Скинути</button>
-        <button id="copyBtn" title="Скопіювати результат">Скопіювати результат</button>
-      </div>
-
-      <div class="result" id="overall" style="display:none;"></div>
-      <div class="footer">
-        Порада: відповідай уважно 😄 Past Simple любить слова типу <code>yesterday</code>, <code>last</code>, <code>ago</code>.
+  <div class="topbar">
+    <div class="topbar-inner">
+      <strong>Past Simple Homework</strong>
+      <div style="position: relative;">
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-haspopup="true">☰ Меню</button>
+        <div class="menu" id="menu" role="menu">
+          <button type="button" data-section="home">Головна</button>
+          <button type="button" data-section="theory">Теорія</button>
+          <button type="button" data-section="tasks">Завдання</button>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="wrap">
+    <section class="section active" id="homeSection">
+      <div class="card">
+        <h1 id="title">Homework</h1>
+        <p class="sub" id="subtitle"></p>
+        <div class="meta" id="meta"></div>
+        <p class="welcome">
+          Ласкаво просимо! Обери розділ у меню, щоб перейти до теорії або виконати завдання.
+        </p>
+      </div>
+    </section>
 
-    <div id="tasks"></div>
+    <section class="section" id="theorySection">
+      <div class="card">
+        <button class="collapse-toggle" type="button" data-collapse="theoryPanel" aria-expanded="false">
+          Теорія Past Simple <span aria-hidden="true">▾</span>
+        </button>
+        <div class="collapse-content" id="theoryPanel">
+          <p>Past Simple використовується для дій у минулому часі: <code>yesterday</code>, <code>last</code>, <code>ago</code>.</p>
+          <ul>
+            <li>Regular verbs: додаємо <code>-ed</code> (visit → visited).</li>
+            <li>Irregular verbs: мають власну форму (go → went).</li>
+            <li>Negatives: <code>didn't + V1</code> (didn't play).</li>
+            <li>Questions: <code>Did + subject + V1?</code> (Did they watch?).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tasksSection">
+      <div class="card">
+        <button class="collapse-toggle" type="button" data-collapse="tasksPanel" aria-expanded="false">
+          Завдання <span aria-hidden="true">▾</span>
+        </button>
+        <div class="collapse-content" id="tasksPanel">
+          <div class="btnbar">
+            <button id="checkBtn">Перевірити</button>
+            <button id="resetBtn" title="Очистити відповіді">Скинути</button>
+            <button id="copyBtn" title="Скопіювати результат">Скопіювати результат</button>
+          </div>
+
+          <div class="result" id="overall" style="display:none;"></div>
+          <div class="footer">
+            Порада: відповідай уважно 😄 Past Simple любить слова типу <code>yesterday</code>, <code>last</code>, <code>ago</code>.
+          </div>
+          <div id="tasks"></div>
+        </div>
+      </div>
+    </section>
   </div>
 
   <script src="tasks.js"></script>
@@ -112,6 +189,24 @@
     }
 
     // ---- Render ----
+    function getActiveTense() {
+      if (!window.HW) return null;
+      if (window.HW.selectedTense) return window.HW.selectedTense;
+      if (window.HW.tenses) {
+        const keys = Object.keys(window.HW.tenses);
+        return keys.length ? keys[0] : null;
+      }
+      return null;
+    }
+
+    function getActiveTasks() {
+      const tenseKey = getActiveTense();
+      if (tenseKey && window.HW?.tenses?.[tenseKey]?.tasks) {
+        return window.HW.tenses[tenseKey].tasks;
+      }
+      return window.HW?.tasks || [];
+    }
+
     function render() {
       $("#title").textContent = window.HW?.title || "Homework";
       $("#subtitle").textContent = window.HW?.subtitle || "";
@@ -120,7 +215,7 @@
       const container = $("#tasks");
       container.innerHTML = "";
 
-      (window.HW?.tasks || []).forEach((task, idx) => {
+      getActiveTasks().forEach((task, idx) => {
         const card = document.createElement("div");
         card.className = "card";
         card.dataset.taskId = task.id;
@@ -182,7 +277,7 @@
 
     // ---- Check ----
     function checkAll() {
-      const tasks = window.HW?.tasks || [];
+      const tasks = getActiveTasks();
       let correct = 0;
 
       tasks.forEach(task => {
@@ -238,7 +333,7 @@
 
     // ---- Copy results (for students to send teacher) ----
     async function copyResults() {
-      const tasks = window.HW?.tasks || [];
+      const tasks = getActiveTasks();
       const lines = [];
       lines.push(`${window.HW?.title || "Homework"} | version ${window.HW?.version || ""}`);
       tasks.forEach(t => {
@@ -259,10 +354,86 @@
     }
 
     // ---- Init ----
+    const sections = {
+      home: $("#homeSection"),
+      theory: $("#theorySection"),
+      tasks: $("#tasksSection")
+    };
+    const menuBtn = $("#menuBtn");
+    const menu = $("#menu");
+    const collapseToggles = document.querySelectorAll(".collapse-toggle");
+
+    function setSection(name) {
+      Object.entries(sections).forEach(([key, el]) => {
+        el.classList.toggle("active", key === name);
+      });
+      if (name === "theory") {
+        openPanel("theoryPanel");
+      } else if (name === "tasks") {
+        openPanel("tasksPanel");
+      }
+    }
+
+    function closeMenu() {
+      menu.classList.remove("open");
+      menuBtn.setAttribute("aria-expanded", "false");
+    }
+
+    function toggleMenu() {
+      const willOpen = !menu.classList.contains("open");
+      menu.classList.toggle("open", willOpen);
+      menuBtn.setAttribute("aria-expanded", String(willOpen));
+    }
+
+    function openPanel(panelId) {
+      document.querySelectorAll(".collapse-content").forEach(panel => {
+        const isTarget = panel.id === panelId;
+        panel.classList.toggle("open", isTarget);
+        const toggle = document.querySelector(`.collapse-toggle[data-collapse="${panel.id}"]`);
+        if (toggle) toggle.setAttribute("aria-expanded", String(isTarget));
+      });
+    }
+
+    function togglePanel(panelId) {
+      const panel = document.getElementById(panelId);
+      const isOpen = panel.classList.contains("open");
+      if (isOpen) {
+        panel.classList.remove("open");
+        const toggle = document.querySelector(`.collapse-toggle[data-collapse="${panel.id}"]`);
+        if (toggle) toggle.setAttribute("aria-expanded", "false");
+        return;
+      }
+      openPanel(panelId);
+    }
+
     render();
     $("#checkBtn").addEventListener("click", checkAll);
     $("#resetBtn").addEventListener("click", resetAll);
     $("#copyBtn").addEventListener("click", copyResults);
+
+    menuBtn.addEventListener("click", (event) => {
+      event.stopPropagation();
+      toggleMenu();
+    });
+
+    menu.querySelectorAll("button[data-section]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        setSection(btn.dataset.section);
+        closeMenu();
+      });
+    });
+
+    collapseToggles.forEach(toggle => {
+      toggle.addEventListener("click", () => {
+        togglePanel(toggle.dataset.collapse);
+      });
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!menu.contains(event.target) && event.target !== menuBtn) {
+        closeMenu();
+      }
+    });
   </script>
 </body>
 </html>

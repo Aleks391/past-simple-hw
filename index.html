@@ -330,6 +330,7 @@
 
     function setSection(name) {
       Object.entries(sections).forEach(([key, el]) => {
+        if (!el) return;
         el.classList.toggle("active", key === name);
       });
       if (name === "theory") {
@@ -340,11 +341,13 @@
     }
 
     function closeMenu() {
+      if (!menu || !menuBtn) return;
       menu.classList.remove("open");
       menuBtn.setAttribute("aria-expanded", "false");
     }
 
     function toggleMenu() {
+      if (!menu || !menuBtn) return;
       const willOpen = !menu.classList.contains("open");
       menu.classList.toggle("open", willOpen);
       menuBtn.setAttribute("aria-expanded", String(willOpen));
@@ -361,6 +364,7 @@
 
     function togglePanel(panelId) {
       const panel = document.getElementById(panelId);
+      if (!panel) return;
       const isOpen = panel.classList.contains("open");
       if (isOpen) {
         panel.classList.remove("open");
@@ -376,29 +380,37 @@
     $("#resetBtn").addEventListener("click", resetAll);
     $("#copyBtn").addEventListener("click", copyResults);
 
-    menuBtn.addEventListener("click", (event) => {
-      event.stopPropagation();
-      toggleMenu();
-    });
-
-    menu.querySelectorAll("button[data-section]").forEach(btn => {
-      btn.addEventListener("click", () => {
-        setSection(btn.dataset.section);
-        closeMenu();
+    if (menuBtn) {
+      menuBtn.addEventListener("click", (event) => {
+        event.stopPropagation();
+        toggleMenu();
       });
-    });
+    }
 
-    collapseToggles.forEach(toggle => {
-      toggle.addEventListener("click", () => {
-        togglePanel(toggle.dataset.collapse);
+    if (menu) {
+      menu.querySelectorAll("button[data-section]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          setSection(btn.dataset.section);
+          closeMenu();
+        });
       });
-    });
+    }
 
-    document.addEventListener("click", (event) => {
-      if (!menu.contains(event.target) && event.target !== menuBtn) {
-        closeMenu();
-      }
-    });
+    if (collapseToggles.length) {
+      collapseToggles.forEach(toggle => {
+        toggle.addEventListener("click", () => {
+          togglePanel(toggle.dataset.collapse);
+        });
+      });
+    }
+
+    if (menu && menuBtn) {
+      document.addEventListener("click", (event) => {
+        if (!menu.contains(event.target) && event.target !== menuBtn) {
+          closeMenu();
+        }
+      });
+    }
 
     document.querySelectorAll(`#tasksPanel [data-tense]`).forEach(btn => {
       btn.addEventListener("click", () => {

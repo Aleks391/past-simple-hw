@@ -13,7 +13,7 @@
     }
     .topbar-inner {
       max-width: 900px; margin: 0 auto; padding: 12px 24px;
-      display: flex; align-items: center; justify-content: space-between;
+      display: flex; align-items: center; justify-content: space-between; position: relative;
     }
     .menu-btn {
       display: inline-flex; align-items: center; gap: 8px;
@@ -33,6 +33,13 @@
     .menu button:hover { background: rgba(255,255,255,.08); }
     .wrap { max-width: 900px; margin: 0 auto; padding: 24px; }
     .card { background: #121b2f; border: 1px solid #223055; border-radius: 14px; padding: 16px; margin: 12px 0; }
+    .section { display: none; }
+    .section.active { display: block; }
+    .panel-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .panel-header h2 { margin: 0; font-size: 20px; }
+    .collapse-content { display: none; margin-top: 12px; }
+    .collapse-content.open { display: block; }
+    .tense-tabs { display: flex; gap: 10px; flex-wrap: wrap; margin: 12px 0 4px; }
     h1 { margin: 0 0 6px; font-size: 26px; }
     .sub { opacity: .9; margin: 0 0 10px; }
     .meta { opacity: .7; font-size: 14px; margin-top: 6px; }
@@ -80,20 +87,26 @@
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <h1 id="title">Homework</h1>
-      <p class="sub" id="subtitle"></p>
-      <div class="meta" id="meta"></div>
+  <section id="homeSection" class="section active">Привіт це мій сайт для учнів 👋</section>
+  <section id="theorySection" class="section"></section>
+  <section id="tasksSection" class="section">
+    <div class="wrap">
+      <div class="card">
+        <h1 id="title">Homework</h1>
+        <p class="sub" id="subtitle"></p>
+        <div class="meta" id="meta"></div>
 
-      <div class="btnbar">
-        <button id="checkBtn">Перевірити</button>
-        <button id="resetBtn" title="Очистити відповіді">Скинути</button>
-        <button id="copyBtn" title="Скопіювати результат">Скопіювати результат</button>
+        <div class="btnbar">
+          <button id="checkBtn">Перевірити</button>
+          <button id="resetBtn" title="Очистити відповіді">Скинути</button>
+          <button id="copyBtn" title="Скопіювати результат">Скопіювати результат</button>
+        </div>
+
+        <div class="result" id="overall" style="display:none;"></div>
+        <div class="footer" id="footerHint"></div>
       </div>
 
-      <div class="result" id="overall" style="display:none;"></div>
-      <div class="footer" id="footerHint"></div>
+      <div id="tasks"></div>
     </div>
 
     <div class="card" id="theorySection">
@@ -179,6 +192,31 @@
           "Порада: звертай увагу на часові маркери в реченні та форму дієслова."
         );
       }
+    }
+
+    function renderTheory() {
+      const theoryContent = $("#theoryContent");
+      if (!theoryContent) return;
+      const theory = window.HW?.theory || {};
+      const blocks = Object.values(theory);
+      if (!blocks.length) {
+        theoryContent.innerHTML = `<p class="sub">Теорія ще додається.</p>`;
+        return;
+      }
+      theoryContent.innerHTML = blocks.map(block => {
+        const rules = (block.rules || []).map(rule => `<li>${escapeHtml(rule)}</li>`).join("");
+        const examples = (block.examples || []).map(ex => (
+          `<li><strong>${escapeHtml(ex.en)}</strong> — ${escapeHtml(ex.uk)}</li>`
+        )).join("");
+        return `
+          <div class="card">
+            <h3 style="margin-top:0;">${escapeHtml(block.title || "")}</h3>
+            <ul>${rules}</ul>
+            <div class="meta">Приклади:</div>
+            <ul>${examples}</ul>
+          </div>
+        `;
+      }).join("");
     }
 
     function renderTasks(tasks) {
@@ -488,10 +526,18 @@
 
     document.querySelectorAll(`#tasksPanel [data-tense]`).forEach(btn => {
       btn.addEventListener("click", () => {
+        document.querySelectorAll(`#tasksPanel [data-tense]`).forEach(other => {
+          other.classList.remove("active");
+          other.setAttribute("aria-pressed", "false");
+        });
+        btn.classList.add("active");
+        btn.setAttribute("aria-pressed", "true");
         window.HW.tense = btn.dataset.tense;
         renderTasks(getActiveTasks());
       });
     });
+
+    setSection("home");
   </script>
 </body>
 </html>

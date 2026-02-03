@@ -63,27 +63,43 @@
     .small { opacity: .8; font-size: 14px; }
     .footer { opacity: .75; font-size: 13px; margin-top: 18px; }
     code { background: rgba(255,255,255,.08); padding: 2px 6px; border-radius: 6px; }
+    .section { display: block; }
+    #homeSection {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+      font-size: 20px;
+    }
+    #tasksSection,
+    #theorySection {
+      display: none;
+    }
+    .section.active { display: block; }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <h1 id="title">Homework</h1>
-      <p class="sub" id="subtitle"></p>
-      <div class="meta" id="meta"></div>
+  <section id="homeSection" class="section active">Привіт це мій сайт для учнів 👋</section>
+  <section id="theorySection" class="section"></section>
+  <section id="tasksSection" class="section">
+    <div class="wrap">
+      <div class="card">
+        <h1 id="title">Homework</h1>
+        <p class="sub" id="subtitle"></p>
+        <div class="meta" id="meta"></div>
 
-      <div class="btnbar">
-        <button id="checkBtn">Перевірити</button>
-        <button id="resetBtn" title="Очистити відповіді">Скинути</button>
-        <button id="copyBtn" title="Скопіювати результат">Скопіювати результат</button>
+        <div class="btnbar">
+          <button id="checkBtn">Перевірити</button>
+          <button id="resetBtn" title="Очистити відповіді">Скинути</button>
+          <button id="copyBtn" title="Скопіювати результат">Скопіювати результат</button>
+        </div>
+
+        <div class="result" id="overall" style="display:none;"></div>
+        <div class="footer" id="footerHint"></div>
       </div>
 
-      <div class="result" id="overall" style="display:none;"></div>
-      <div class="footer" id="footerHint"></div>
+      <div id="tasks"></div>
     </div>
-
-    <div id="tasks"></div>
-  </div>
+  </section>
 
   <script src="tasks.js"></script>
   <script>
@@ -418,6 +434,8 @@
         renderTasks(getActiveTasks());
       });
     });
+
+    setSection("home");
   </script>
 </body>
 </html>

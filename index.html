@@ -236,6 +236,7 @@
     function renderTasks(tasks) {
       renderMeta();
       const container = $("#tasks");
+      if (!container) return;
       container.innerHTML = "";
 
       tasks.forEach((task, idx) => {
@@ -363,7 +364,9 @@
         const ok = isAccepted(task, ans);
 
         const card = document.querySelector(`.card[data-task-id="${task.id}"]`);
+        if (!card) return;
         const box = card.querySelector(`div[data-kind="result"]`);
+        if (!box) return;
 
         box.style.display = "block";
         box.classList.remove("ok", "bad");
@@ -392,6 +395,7 @@
       });
 
       const overall = $("#overall");
+      if (!overall) return;
       overall.style.display = "block";
       overall.className = "result " + (correct === tasks.length ? "ok" : "bad");
       overall.innerHTML = `
@@ -417,8 +421,10 @@
           box.innerHTML = "";
         }
       });
-      $("#overall").style.display = "none";
-      $("#overall").innerHTML = "";
+      const overall = $("#overall");
+      if (!overall) return;
+      overall.style.display = "none";
+      overall.innerHTML = "";
     }
 
     // ---- Copy results (for students to send teacher) ----

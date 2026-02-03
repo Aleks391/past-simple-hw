@@ -13,7 +13,7 @@
     }
     .topbar-inner {
       max-width: 900px; margin: 0 auto; padding: 12px 24px;
-      display: flex; align-items: center; justify-content: space-between;
+      display: flex; align-items: center; justify-content: space-between; position: relative;
     }
     .menu-btn {
       display: inline-flex; align-items: center; gap: 8px;
@@ -33,6 +33,13 @@
     .menu button:hover { background: rgba(255,255,255,.08); }
     .wrap { max-width: 900px; margin: 0 auto; padding: 24px; }
     .card { background: #121b2f; border: 1px solid #223055; border-radius: 14px; padding: 16px; margin: 12px 0; }
+    .section { display: none; }
+    .section.active { display: block; }
+    .panel-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .panel-header h2 { margin: 0; font-size: 20px; }
+    .collapse-content { display: none; margin-top: 12px; }
+    .collapse-content.open { display: block; }
+    .tense-tabs { display: flex; gap: 10px; flex-wrap: wrap; margin: 12px 0 4px; }
     h1 { margin: 0 0 6px; font-size: 26px; }
     .sub { opacity: .9; margin: 0 0 10px; }
     .meta { opacity: .7; font-size: 14px; margin-top: 6px; }
@@ -66,23 +73,78 @@
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <h1 id="title">Homework</h1>
-      <p class="sub" id="subtitle"></p>
-      <div class="meta" id="meta"></div>
-
-      <div class="btnbar">
-        <button id="checkBtn">Перевірити</button>
-        <button id="resetBtn" title="Очистити відповіді">Скинути</button>
-        <button id="copyBtn" title="Скопіювати результат">Скопіювати результат</button>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div>Past Simple Homework</div>
+      <button id="menuBtn" class="menu-btn" aria-expanded="false" aria-controls="menu">
+        ☰ Меню
+      </button>
+      <div id="menu" class="menu" role="menu" aria-label="Навігація">
+        <button type="button" data-section="home" role="menuitem">Головна</button>
+        <button type="button" data-section="theory" role="menuitem">Теорія</button>
+        <button type="button" data-section="tasks" role="menuitem">Завдання</button>
       </div>
-
-      <div class="result" id="overall" style="display:none;"></div>
-      <div class="footer" id="footerHint"></div>
     </div>
+  </div>
+  <div class="wrap">
+    <section id="homeSection" class="section active">
+      <div class="card">
+        <h1>Вітаю!</h1>
+        <p class="sub">Обери потрібний розділ у меню, щоб перейти до теорії або завдань.</p>
+      </div>
+    </section>
 
-    <div id="tasks"></div>
+    <section id="theorySection" class="section">
+      <div class="card">
+        <div class="panel-header">
+          <h2>Теорія</h2>
+          <button class="collapse-toggle" data-collapse="theoryPanel" aria-expanded="true">
+            Показати/сховати
+          </button>
+        </div>
+        <div id="theoryPanel" class="collapse-content open">
+          <p class="sub">
+            Тут зібрані основні правила та приклади. Перевіряй цей блок, якщо виникають труднощі.
+          </p>
+          <div id="theoryContent" class="card"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tasksSection" class="section">
+      <div class="card">
+        <div class="panel-header">
+          <h2>Завдання</h2>
+          <button class="collapse-toggle" data-collapse="tasksPanel" aria-expanded="true">
+            Показати/сховати
+          </button>
+        </div>
+        <div id="tasksPanel" class="collapse-content open">
+          <div class="card">
+            <h1 id="title">Homework</h1>
+            <p class="sub" id="subtitle"></p>
+            <div class="meta" id="meta"></div>
+
+            <div class="btnbar">
+              <button id="checkBtn">Перевірити</button>
+              <button id="resetBtn" title="Очистити відповіді">Скинути</button>
+              <button id="copyBtn" title="Скопіювати результат">Скопіювати результат</button>
+            </div>
+
+            <div class="result" id="overall" style="display:none;"></div>
+            <div class="footer" id="footerHint"></div>
+          </div>
+
+          <div class="tense-tabs">
+            <button type="button" data-tense="present">Present Simple</button>
+            <button type="button" data-tense="past" class="active">Past Simple</button>
+            <button type="button" data-tense="future">Future Simple</button>
+          </div>
+
+          <div id="tasks"></div>
+        </div>
+      </div>
+    </section>
   </div>
 
   <script src="tasks.js"></script>
@@ -153,6 +215,31 @@
           "Порада: звертай увагу на часові маркери в реченні та форму дієслова."
         );
       }
+    }
+
+    function renderTheory() {
+      const theoryContent = $("#theoryContent");
+      if (!theoryContent) return;
+      const theory = window.HW?.theory || {};
+      const blocks = Object.values(theory);
+      if (!blocks.length) {
+        theoryContent.innerHTML = `<p class="sub">Теорія ще додається.</p>`;
+        return;
+      }
+      theoryContent.innerHTML = blocks.map(block => {
+        const rules = (block.rules || []).map(rule => `<li>${escapeHtml(rule)}</li>`).join("");
+        const examples = (block.examples || []).map(ex => (
+          `<li><strong>${escapeHtml(ex.en)}</strong> — ${escapeHtml(ex.uk)}</li>`
+        )).join("");
+        return `
+          <div class="card">
+            <h3 style="margin-top:0;">${escapeHtml(block.title || "")}</h3>
+            <ul>${rules}</ul>
+            <div class="meta">Приклади:</div>
+            <ul>${examples}</ul>
+          </div>
+        `;
+      }).join("");
     }
 
     function renderTasks(tasks) {
@@ -376,6 +463,8 @@
     }
 
     renderMeta();
+    renderTheory();
+    renderTasks(getActiveTasks());
     $("#checkBtn").addEventListener("click", checkAll);
     $("#resetBtn").addEventListener("click", resetAll);
     $("#copyBtn").addEventListener("click", copyResults);
@@ -414,6 +503,12 @@
 
     document.querySelectorAll(`#tasksPanel [data-tense]`).forEach(btn => {
       btn.addEventListener("click", () => {
+        document.querySelectorAll(`#tasksPanel [data-tense]`).forEach(other => {
+          other.classList.remove("active");
+          other.setAttribute("aria-pressed", "false");
+        });
+        btn.classList.add("active");
+        btn.setAttribute("aria-pressed", "true");
         window.HW.tense = btn.dataset.tense;
         renderTasks(getActiveTasks());
       });

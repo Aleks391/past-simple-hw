@@ -63,6 +63,20 @@
     .small { opacity: .8; font-size: 14px; }
     .footer { opacity: .75; font-size: 13px; margin-top: 18px; }
     code { background: rgba(255,255,255,.08); padding: 2px 6px; border-radius: 6px; }
+    .collapse-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .collapse-content { display: none; }
+    .collapse-content.open { display: block; }
+    .theory-block { padding: 12px; border-radius: 12px; background: #0c1427; border: 1px solid #223055; }
+    .theory-block + .theory-block { margin-top: 12px; }
+    .theory-block h3 { margin: 0 0 8px; font-size: 18px; }
+    .theory-block ul { margin: 0 0 10px 18px; padding: 0; }
+    .theory-examples { display: grid; gap: 6px; font-size: 14px; opacity: 0.95; }
   </style>
 </head>
 <body>
@@ -80,6 +94,18 @@
 
       <div class="result" id="overall" style="display:none;"></div>
       <div class="footer" id="footerHint"></div>
+    </div>
+
+    <div class="card" id="theorySection">
+      <div class="collapse-header">
+        <h2 style="margin:0;">Теорія</h2>
+        <button class="collapse-toggle" data-collapse="theoryPanel" aria-expanded="true" type="button">
+          Закрити
+        </button>
+      </div>
+      <div class="collapse-content open" id="theoryPanel">
+        <div id="theoryContent"></div>
+      </div>
     </div>
 
     <div id="tasks"></div>
@@ -205,6 +231,53 @@
         card.appendChild(result);
 
         container.appendChild(card);
+      });
+    }
+
+    function renderTheory() {
+      const container = $("#theoryContent");
+      if (!container) return;
+      const theory = window.HW?.theory || {};
+      const order = ["present", "past", "future"];
+      container.innerHTML = "";
+
+      order.forEach((tense) => {
+        const data = theory[tense];
+        if (!data) return;
+
+        const block = document.createElement("div");
+        block.className = "theory-block";
+
+        const heading = document.createElement("h3");
+        heading.textContent = data.title || tense;
+        block.appendChild(heading);
+
+        if (Array.isArray(data.rules) && data.rules.length) {
+          const rules = document.createElement("ul");
+          data.rules.forEach(rule => {
+            const item = document.createElement("li");
+            item.textContent = rule;
+            rules.appendChild(item);
+          });
+          block.appendChild(rules);
+        }
+
+        if (Array.isArray(data.examples) && data.examples.length) {
+          const examples = document.createElement("div");
+          examples.className = "theory-examples";
+          data.examples.forEach(example => {
+            const line = document.createElement("div");
+            if (example?.en && example?.uk) {
+              line.textContent = `${example.en} — ${example.uk}`;
+            } else {
+              line.textContent = example?.en || example?.uk || String(example || "");
+            }
+            examples.appendChild(line);
+          });
+          block.appendChild(examples);
+        }
+
+        container.appendChild(block);
       });
     }
 
@@ -376,6 +449,7 @@
     }
 
     renderMeta();
+    renderTheory();
     $("#checkBtn").addEventListener("click", checkAll);
     $("#resetBtn").addEventListener("click", resetAll);
     $("#copyBtn").addEventListener("click", copyResults);

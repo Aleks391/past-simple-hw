@@ -62,6 +62,12 @@
       background: #1a2b55; color: #e9eefc; cursor: pointer;
     }
     button:hover { filter: brightness(1.08); }
+    .btnbar button.active,
+    .btnbar button[aria-pressed="true"] {
+      border-color: #6c8dff;
+      background: #2b46a6;
+      box-shadow: 0 0 0 1px rgba(108,141,255,.4);
+    }
     .result { margin-top: 10px; padding: 10px 12px; border-radius: 10px; border: 1px dashed #2a3b66; }
     .ok { border-color: #2e8b57; background: rgba(46,139,87,.12); }
     .bad { border-color: #c94b4b; background: rgba(201,75,75,.12); }
@@ -121,7 +127,15 @@
       </div>
     </div>
 
-    <div id="tasks"></div>
+    <section id="tasksSection" class="card">
+      <div class="sub">Choose a tense to load the tasks:</div>
+      <div class="btnbar" id="tasksPanel" role="tablist" aria-label="Choose tense">
+        <button type="button" data-tense="present" aria-pressed="false">Present Simple</button>
+        <button type="button" data-tense="past" aria-pressed="false">Past Simple</button>
+        <button type="button" data-tense="future" aria-pressed="false">Future Simple</button>
+      </div>
+      <div id="tasks"></div>
+    </section>
   </div>
 
   <script src="tasks.js"></script>

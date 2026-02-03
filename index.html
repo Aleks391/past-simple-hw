@@ -70,82 +70,43 @@
     .small { opacity: .8; font-size: 14px; }
     .footer { opacity: .75; font-size: 13px; margin-top: 18px; }
     code { background: rgba(255,255,255,.08); padding: 2px 6px; border-radius: 6px; }
+    .section { display: block; }
+    #homeSection {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+      font-size: 20px;
+    }
+    #tasksSection,
+    #theorySection {
+      display: none;
+    }
+    .section.active { display: block; }
   </style>
 </head>
 <body>
-  <div class="topbar">
-    <div class="topbar-inner">
-      <div>Past Simple Homework</div>
-      <button id="menuBtn" class="menu-btn" aria-expanded="false" aria-controls="menu">
-        ☰ Меню
-      </button>
-      <div id="menu" class="menu" role="menu" aria-label="Навігація">
-        <button type="button" data-section="home" role="menuitem">Головна</button>
-        <button type="button" data-section="theory" role="menuitem">Теорія</button>
-        <button type="button" data-section="tasks" role="menuitem">Завдання</button>
+  <section id="homeSection" class="section active">Привіт це мій сайт для учнів 👋</section>
+  <section id="theorySection" class="section"></section>
+  <section id="tasksSection" class="section">
+    <div class="wrap">
+      <div class="card">
+        <h1 id="title">Homework</h1>
+        <p class="sub" id="subtitle"></p>
+        <div class="meta" id="meta"></div>
+
+        <div class="btnbar">
+          <button id="checkBtn">Перевірити</button>
+          <button id="resetBtn" title="Очистити відповіді">Скинути</button>
+          <button id="copyBtn" title="Скопіювати результат">Скопіювати результат</button>
+        </div>
+
+        <div class="result" id="overall" style="display:none;"></div>
+        <div class="footer" id="footerHint"></div>
       </div>
+
+      <div id="tasks"></div>
     </div>
-  </div>
-  <div class="wrap">
-    <section id="homeSection" class="section active">
-      <div class="card">
-        <h1>Вітаю!</h1>
-        <p class="sub">Обери потрібний розділ у меню, щоб перейти до теорії або завдань.</p>
-      </div>
-    </section>
-
-    <section id="theorySection" class="section">
-      <div class="card">
-        <div class="panel-header">
-          <h2>Теорія</h2>
-          <button class="collapse-toggle" data-collapse="theoryPanel" aria-expanded="true">
-            Показати/сховати
-          </button>
-        </div>
-        <div id="theoryPanel" class="collapse-content open">
-          <p class="sub">
-            Тут зібрані основні правила та приклади. Перевіряй цей блок, якщо виникають труднощі.
-          </p>
-          <div id="theoryContent" class="card"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="tasksSection" class="section">
-      <div class="card">
-        <div class="panel-header">
-          <h2>Завдання</h2>
-          <button class="collapse-toggle" data-collapse="tasksPanel" aria-expanded="true">
-            Показати/сховати
-          </button>
-        </div>
-        <div id="tasksPanel" class="collapse-content open">
-          <div class="card">
-            <h1 id="title">Homework</h1>
-            <p class="sub" id="subtitle"></p>
-            <div class="meta" id="meta"></div>
-
-            <div class="btnbar">
-              <button id="checkBtn">Перевірити</button>
-              <button id="resetBtn" title="Очистити відповіді">Скинути</button>
-              <button id="copyBtn" title="Скопіювати результат">Скопіювати результат</button>
-            </div>
-
-            <div class="result" id="overall" style="display:none;"></div>
-            <div class="footer" id="footerHint"></div>
-          </div>
-
-          <div class="tense-tabs">
-            <button type="button" data-tense="present">Present Simple</button>
-            <button type="button" data-tense="past" class="active">Past Simple</button>
-            <button type="button" data-tense="future">Future Simple</button>
-          </div>
-
-          <div id="tasks"></div>
-        </div>
-      </div>
-    </section>
-  </div>
+  </section>
 
   <script src="tasks.js"></script>
   <script>
@@ -513,6 +474,8 @@
         renderTasks(getActiveTasks());
       });
     });
+
+    setSection("home");
   </script>
 </body>
 </html>

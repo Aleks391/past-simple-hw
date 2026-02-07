@@ -90,6 +90,20 @@
     .theory-block h3 { margin: 0 0 8px; font-size: 18px; }
     .theory-block ul { margin: 0 0 10px 18px; padding: 0; }
     .theory-examples { display: grid; gap: 6px; font-size: 14px; opacity: 0.95; }
+    .home-hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-hero h1 {
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 700;
+  line-height: 1.2;
+}
+    
   </style>
 </head>
 <body>
@@ -106,7 +120,9 @@
     </div>
   </div>
 </nav>
-  <section id="homeSection" class="section active">Привіт це мій сайт для учнів 👋</section>
+ <section id="homeSection" class="section active home-hero">
+  <h1>Привіт, це мій сайт для учнів 👋</h1>
+</section>
   <section id="theorySection" class="section">
   <div class="card">
     <div class="collapse-header">

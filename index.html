@@ -5,124 +5,96 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>A1–B2 English Learning Hub</title>
   <style>
-    :root { --bg:#f4f7ff; --card:#ffffffcc; --text:#0f172a; --accent:#4f7cff; --line:#d8e2ff; font-family: "SF Pro Text", system-ui, -apple-system, sans-serif; }
+    :root { --bg:#eef3ff; --card:#ffffffee; --text:#0f172a; --accent:#0b2e78; --line:#c9d7ff; font-family:"Candara Light","Candara","Segoe UI",sans-serif; }
     * { box-sizing: border-box; }
-    body { margin: 0; background: linear-gradient(180deg,#f9fbff,#eef3ff); color: var(--text); }
-    .topbar { position: sticky; top: 0; z-index: 30; backdrop-filter: blur(12px); background: #f8fbffcc; border-bottom:1px solid var(--line); }
-    .topbar-inner { max-width: 1100px; margin:0 auto; padding: 10px 16px; display:flex; align-items:center; justify-content:space-between; position:relative; }
-    .menu-btn, button, .link-btn { min-height:44px; border-radius:14px; border:1px solid var(--line); background:#fff; color:var(--text); padding:10px 14px; font-weight:600; cursor:pointer; transition:.2s transform,.2s background,.2s box-shadow; }
-    button:active,.menu-btn:active,.link-btn:active { transform: scale(.98); }
-    .menu-btn { background: var(--accent); color:#fff; border-color: transparent; }
-    .menu { position:absolute; top:58px; right:16px; width:min(280px,80vw); background:#fff; border:1px solid var(--line); border-radius:16px; padding:8px; box-shadow:0 12px 30px #0f172a22; opacity:0; pointer-events:none; transform:translateY(-6px); transition:.2s; }
+    body { margin:0; background:linear-gradient(180deg,#f8faff,#eaf0ff); color:var(--text); font-weight:600; }
+    .topbar { position:sticky; top:0; z-index:30; backdrop-filter:blur(12px); background:#f8fbffdd; border-bottom:1px solid var(--line); }
+    .topbar-inner { max-width:1100px; margin:0 auto; padding:10px 16px; display:flex; align-items:center; justify-content:space-between; position:relative; }
+    .menu-btn, button, .link-btn, .lang-choice { min-height:44px; border-radius:12px; border:1px solid var(--line); background:#fff; color:var(--text); padding:10px 14px; font-size:16px; font-weight:700; cursor:pointer; transition:all .25s ease; }
+    button:hover,.menu-btn:hover,.link-btn:hover,.lang-choice:hover { box-shadow:0 8px 20px #0f172a1a; transform:translateY(-1px); }
+    .menu-btn,.btnbar button.active,#checkBtn,#resetBtn,#copyBtn,#testBtn,.link-btn { background:var(--accent); color:#fff; border-color:transparent; }
+    .menu { position:absolute; top:58px; right:16px; width:min(290px,85vw); background:#fff; border:1px solid var(--line); border-radius:16px; padding:8px; box-shadow:0 14px 28px #0f172a22; opacity:0; pointer-events:none; transform:translateY(-8px); transition:all .25s ease; }
     .menu.open { opacity:1; pointer-events:auto; transform:translateY(0); }
     .menu button { width:100%; text-align:left; margin-bottom:6px; }
     .wrap { max-width:1100px; margin:0 auto; padding:18px 14px 30px; }
-    .section { display:none; animation: fade .25s ease; }
-    .section.active { display:block; }
-    @keyframes fade { from {opacity:0; transform:translateY(6px);} to {opacity:1; transform:translateY(0);} }
+    .section { display:none; opacity:0; transform:translateY(10px); transition:opacity .3s ease, transform .3s ease; }
+    .section.active { display:block; opacity:1; transform:translateY(0); }
     .card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:16px; margin:10px 0; box-shadow:0 10px 24px #8ba1db1a; }
     .hero { text-align:center; min-height:58vh; display:flex; flex-direction:column; justify-content:center; gap:12px; }
-    .hero h1 { font-size: clamp(28px,7vw,46px); margin:0; }
-    .btnbar { display:flex; gap:8px; flex-wrap:wrap; }
-    .btnbar button.active { background:var(--accent); color:#fff; border-color:transparent; }
+    .hero h1 { font-size:clamp(28px,7vw,46px); margin:0; }
+    .btnbar { display:flex; gap:8px; flex-wrap:wrap; margin:8px 0; }
     .grid { display:grid; gap:10px; }
     .task-card .result { display:none; margin-top:8px; padding:8px; border-radius:12px; }
     .result.ok { background:#e6f7ec; color:#0f6b35; }
     .result.bad { background:#feecec; color:#9f1d2a; }
-    input[type="text"],select { width:100%; min-height:44px; border:1px solid var(--line); border-radius:12px; padding:10px; font-size:16px; }
+    input[type="text"],select { width:100%; min-height:44px; border:1px solid var(--line); border-radius:12px; padding:10px; font-size:16px; margin:8px 0; }
     .table-wrap { overflow:auto; max-height:65vh; border-radius:12px; border:1px solid var(--line); }
     table { width:100%; border-collapse:collapse; background:#fff; }
     th,td { padding:10px; border-bottom:1px solid #edf1ff; text-align:left; white-space:nowrap; }
     .vocab-list { max-height:55vh; overflow:auto; }
     .vocab-item { padding:8px 10px; border-bottom:1px solid #eef2ff; }
-    @media (max-width: 480px) { .topbar-inner{padding:10px;} .card{padding:12px;} }
+    .modal { position:fixed; inset:0; background:#0f172a66; display:none; align-items:center; justify-content:center; z-index:60; }
+    .modal.open { display:flex; }
+    .modal-card { width:min(360px,92vw); background:#fff; border-radius:16px; padding:16px; border:1px solid var(--line); }
+    .lang-choice { width:100%; margin:6px 0; font-size:20px; }
   </style>
 </head>
 <body>
 <nav class="topbar">
   <div class="topbar-inner">
-    <strong>📘 A1–B2 English</strong>
-    <button id="menuBtn" class="menu-btn" aria-expanded="false">☰ Меню</button>
+    <strong>A1–B2 English</strong>
+    <button id="menuBtn" class="menu-btn" aria-expanded="false"></button>
     <div id="menu" class="menu">
-      <button data-go="home">🏠 Home</button>
-      <button data-go="theory">📚 Теорія</button>
-      <button data-go="tasks">✍️ Завдання</button>
-      <button data-go="test">🧪 Тест</button>
-      <button data-go="verbs">🔁 Неправильні дієслова</button>
-      <button data-go="vocab">🗂️ Vocabulary</button>
+      <button data-go="home" data-i18n="menuHome"></button>
+      <button data-go="theory" data-i18n="menuTheory"></button>
+      <button data-go="tasks" data-i18n="menuTasks"></button>
+      <button data-go="test" data-i18n="menuTest"></button>
+      <button data-go="verbs" data-i18n="menuVerbs"></button>
+      <button data-go="vocab" data-i18n="menuVocab"></button>
+      <button id="langOpenBtn" data-i18n="menuLang"></button>
     </div>
   </div>
 </nav>
-
 <div class="wrap">
-  <section id="homeSection" class="section active">
-    <div class="card hero">
-      <h1>English Learning Hub</h1>
-      <p>Practice grammar, build vocabulary, and check your progress from A1 to B2.</p>
-      <div style="display:flex;justify-content:center;">
-        <a class="link-btn" href="mailto:mailoftheshop@gmail.com?subject=A2%20English%20Feedback">Send a feedback / Надіслати відгук</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="theorySection" class="section"><div class="card"><h2>Часи і їх форми</h2><div id="theoryCatalog"></div></div></section>
-
-  <section id="tasksSection" class="section">
-    <div class="card">
-      <h2 id="taskTitle">Homework</h2>
-      <div class="btnbar" id="timeButtons"></div>
-      <div class="btnbar" id="formButtons"></div>
-      <div class="btnbar"><button id="checkBtn">Перевірити</button><button id="resetBtn">Скинути</button><button id="copyBtn">Скопіювати результат</button></div>
-      <div id="tasksList" class="grid"></div>
-      <div id="overall" class="result"></div>
-    </div>
-  </section>
-
-  <section id="testSection" class="section"><div class="card"><h2>Тест (30)</h2><div id="testList" class="grid"></div><button id="testBtn">Дивитися результат</button><div id="testResult" style="margin-top:10px;font-weight:700;"></div></div></section>
-
-  <section id="verbsSection" class="section"><div class="card"><h2>Неправильні дієслова</h2><input id="verbSearch" type="text" placeholder="Пошук..."/><div class="table-wrap"><table><thead><tr><th>Base form</th><th>Past Simple</th><th>Past Participle</th><th>Переклад</th></tr></thead><tbody id="verbsBody"></tbody></table></div></div></section>
-
-  <section id="vocabSection" class="section"><div class="card"><h2>Vocabulary</h2><div class="btnbar" id="vocabLevel"></div><select id="vocabTopic"></select><input id="vocabSearch" type="text" placeholder="Search word or translation"/><div id="vocabList" class="vocab-list"></div><div class="btnbar"><button id="prevPage">← Prev</button><button id="nextPage">Next →</button></div></div></section>
+  <section id="homeSection" class="section active"><div class="card hero"><h1 data-i18n="homeTitle"></h1><p data-i18n="homeText"></p><div style="display:flex;justify-content:center;"><a id="feedbackLink" class="link-btn" href="mailto:mailoftheshop@gmail.com?subject=Feedback%20A2%20English&body=Hello%2C%20I%20want%20to%20share%20feedback%20about%20the%20A2%20English%20page."></a></div></div></section>
+  <section id="theorySection" class="section"><div class="card"><h2 data-i18n="theoryTitle"></h2><div id="theoryCatalog"></div></div></section>
+  <section id="tasksSection" class="section"><div class="card"><h2 id="taskTitle"></h2><div class="btnbar" id="timeButtons"></div><div class="btnbar" id="formButtons"></div><div class="btnbar"><button id="checkBtn"></button><button id="resetBtn"></button><button id="copyBtn"></button></div><p data-i18n="taskHint"></p><div id="tasksList" class="grid"></div><div id="overall" class="result"></div></div></section>
+  <section id="testSection" class="section"><div class="card"><h2 id="testTitle"></h2><div id="testList" class="grid"></div><button id="testBtn"></button><div id="testResult" style="margin-top:10px;font-weight:700;"></div></div></section>
+  <section id="verbsSection" class="section"><div class="card"><h2 data-i18n="verbsTitle"></h2><input id="verbSearch" type="text"/><div class="table-wrap"><table><thead><tr><th>Base form</th><th>Past Simple</th><th>Past Participle</th><th id="translationCol"></th></tr></thead><tbody id="verbsBody"></tbody></table></div></div></section>
+  <section id="vocabSection" class="section"><div class="card"><h2 data-i18n="vocabTitle"></h2><div class="btnbar" id="vocabLevel"></div><select id="vocabTopic"></select><input id="vocabSearch" type="text"/><div id="vocabList" class="vocab-list"></div><div class="btnbar"><button id="prevPage"></button><button id="nextPage"></button></div></div></section>
 </div>
+<div id="langModal" class="modal"><div class="modal-card"><h3 data-i18n="menuLang"></h3><button class="lang-choice" data-lang="uk">Українська 🇺🇦</button><button class="lang-choice" data-lang="pl">Polski 🇵🇱</button><button id="langClose" style="width:100%;" data-i18n="close"></button></div></div>
 <script src="tasks.js"></script>
 <script>
-const $ = (s)=>document.querySelector(s);
-const $$ = (s)=>document.querySelectorAll(s);
-const sections = {home:$('#homeSection'),theory:$('#theorySection'),tasks:$('#tasksSection'),test:$('#testSection'),verbs:$('#verbsSection'),vocab:$('#vocabSection')};
-const menuBtn=$('#menuBtn'), menu=$('#menu');
-function setSection(name){Object.entries(sections).forEach(([k,el])=>el&&el.classList.toggle('active',k===name));closeMenu();window.scrollTo({top:0,behavior:'smooth'});} 
+const I18N={uk:{menu:"Меню",menuHome:"Головна",menuTheory:"Теорія",menuTasks:"Завдання",menuTest:"Тест",menuVerbs:"Неправильні дієслова",menuVocab:"Словник",menuLang:"Мова",homeTitle:"English Learning Hub",homeText:"Практикуйте граматику, словник та відстежуйте прогрес від A1 до B1.",feedback:"Надіслати відгук",theoryTitle:"Часи і їх форми",taskHeader:"Домашня робота",taskHint:"Заповніть усі відповіді, потім натисніть перевірку.",check:"Перевірити",reset:"Скинути",copy:"Скопіювати результат",typeAnswer:"Введіть відповідь",correct:"Правильно!",wrong:"Неправильно.",result:"Результат",copied:"Скопійовано.",testTitle:"Тест (30)",showResult:"Показати результат",verbsTitle:"Неправильні дієслова",search:"Пошук...",translation:"Переклад",vocabTitle:"Словник",vocabSearch:"Пошук слова або перекладу",prev:"Назад",next:"Далі",close:"Закрити",use:"Вживання",affirmative:"Ствердження",negative:"Заперечення",question:"Питання",markers:"Маркери часу",examples:"Приклади",groups:{present:"Теперішні",past:"Минулі",future:"Майбутні"}},pl:{menu:"Menu",menuHome:"Strona główna",menuTheory:"Teoria",menuTasks:"Zadania",menuTest:"Test",menuVerbs:"Czasowniki nieregularne",menuVocab:"Słownictwo",menuLang:"Język",homeTitle:"English Learning Hub",homeText:"Ćwicz gramatykę, słownictwo i sprawdzaj postępy od A1 do B1.",feedback:"Wyślij opinię",theoryTitle:"Czasy i ich formy",taskHeader:"Praca domowa",taskHint:"Uzupełnij wszystkie odpowiedzi, a potem kliknij sprawdzenie.",check:"Sprawdź",reset:"Reset",copy:"Kopiuj wynik",typeAnswer:"Wpisz odpowiedź",correct:"Poprawnie!",wrong:"Niepoprawnie.",result:"Wynik",copied:"Skopiowano.",testTitle:"Test (30)",showResult:"Pokaż wynik",verbsTitle:"Czasowniki nieregularne",search:"Szukaj...",translation:"Tłumaczenie",vocabTitle:"Słownictwo",vocabSearch:"Szukaj słowa lub tłumaczenia",prev:"Poprzednia",next:"Następna",close:"Zamknij",use:"Użycie",affirmative:"Twierdzenie",negative:"Przeczenie",question:"Pytanie",markers:"Określenia czasu",examples:"Przykłady",groups:{present:"Present",past:"Past",future:"Future"}}};
+const $=(s)=>document.querySelector(s); const $$=(s)=>document.querySelectorAll(s); const sections={home:$('#homeSection'),theory:$('#theorySection'),tasks:$('#tasksSection'),test:$('#testSection'),verbs:$('#verbsSection'),vocab:$('#vocabSection')};
+let lang=localStorage.getItem('hwLang')||'uk'; let currentTense='presentSimple'; let vocabLevel='A1',vocabTopic='',page=0; const PAGE=50; const timeGroups={present:['presentSimple','presentContinuous','presentPerfect','presentPerfectContinuous'],past:['pastSimple','pastContinuous','pastPerfect','pastPerfectContinuous'],future:['futureSimple','futureContinuous','futurePerfect','futurePerfectContinuous']};
+const menuBtn=$('#menuBtn'),menu=$('#menu');
+function t(k){return k.split('.').reduce((a,p)=>a?.[p],I18N[lang])||k;}
+function applyI18n(){document.documentElement.lang=lang; menuBtn.textContent=`☰ ${t('menu')}`; $$('[data-i18n]').forEach(el=>el.textContent=t(el.dataset.i18n)); $('#feedbackLink').textContent=t('feedback'); $('#checkBtn').textContent=t('check'); $('#resetBtn').textContent=t('reset'); $('#copyBtn').textContent=t('copy'); $('#testBtn').textContent=t('showResult'); $('#testTitle').textContent=t('testTitle'); $('#verbSearch').placeholder=t('search'); $('#translationCol').textContent=t('translation'); $('#vocabSearch').placeholder=t('vocabSearch'); $('#prevPage').textContent=`← ${t('prev')}`; $('#nextPage').textContent=`${t('next')} →`; renderTheory(); renderTaskSelectors(); renderTasks(); renderVerbs($('#verbSearch').value||''); renderVocabControls(); renderTest(); }
+function setSection(name){Object.entries(sections).forEach(([k,el])=>el.classList.toggle('active',k===name)); closeMenu(); window.scrollTo({top:0,behavior:'smooth'});} 
 function closeMenu(){menu.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}
 menuBtn.addEventListener('click',()=>{const open=!menu.classList.contains('open');menu.classList.toggle('open',open);menuBtn.setAttribute('aria-expanded',String(open));});
-menu.addEventListener('click',(e)=>{const b=e.target.closest('button[data-go]'); if(!b) return; setSection(b.dataset.go);});
-document.addEventListener('click',(e)=>{if(!menu.contains(e.target)&&!menuBtn.contains(e.target)) closeMenu();});
-
+menu.addEventListener('click',(e)=>{const b=e.target.closest('button[data-go]'); if(!b) return; setSection(b.dataset.go);}); document.addEventListener('click',(e)=>{if(!menu.contains(e.target)&&!menuBtn.contains(e.target)) closeMenu();});
+const langModal=$('#langModal'); $('#langOpenBtn').addEventListener('click',()=>{langModal.classList.add('open'); closeMenu();}); $('#langClose').addEventListener('click',()=>langModal.classList.remove('open')); langModal.addEventListener('click',(e)=>{if(e.target===langModal)langModal.classList.remove('open');}); $$('.lang-choice').forEach(b=>b.addEventListener('click',()=>{lang=b.dataset.lang; localStorage.setItem('hwLang',lang); applyI18n(); langModal.classList.remove('open');}));
 const normalize=(v)=>String(v||'').replace(/\u00A0/g,' ').replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?;:]+$/g,'').replace(/\s+/g,' ').trim().toLowerCase();
-
-const timeGroups={present:['presentSimple','presentContinuous','presentPerfect','presentPerfectContinuous'],past:['pastSimple','pastContinuous','pastPerfect','pastPerfectContinuous'],future:['futureSimple','futureContinuous','futurePerfect','futurePerfectContinuous']};
-let currentTense='presentSimple';
-function renderTheory(){const c=$('#theoryCatalog'); c.innerHTML=''; Object.values(HW.tenses).forEach(t=>{const d=document.createElement('div'); d.className='card'; d.innerHTML=`<h3>${t.label}</h3><p><b>Use:</b> ${t.signal}</p><p><b>Affirmative:</b> ${t.formula.affirmative}<br><b>Negative:</b> ${t.formula.negative}<br><b>Question:</b> ${t.formula.question}</p><p><b>Time markers:</b> ${t.markers.join(', ')}</p><p><b>Examples:</b><br>${t.examples.map(e=>`${e.en} — ${e.uk}`).join('<br>')}</p>`; c.appendChild(d);});}
-function renderTaskSelectors(){const tb=$('#timeButtons'), fb=$('#formButtons'); tb.innerHTML=''; fb.innerHTML=''; Object.keys(timeGroups).forEach(g=>{const b=document.createElement('button'); b.textContent=g; b.onclick=()=>{[...tb.children].forEach(x=>x.classList.remove('active')); b.classList.add('active'); renderForms(g);}; tb.appendChild(b);}); tb.firstChild.classList.add('active'); renderForms('present'); }
-function renderForms(group){const fb=$('#formButtons'); fb.innerHTML=''; timeGroups[group].forEach((k,i)=>{const b=document.createElement('button'); b.textContent=HW.tenses[k].label.replace(group.charAt(0).toUpperCase()+group.slice(1)+' ',''); b.onclick=()=>{[...fb.children].forEach(x=>x.classList.remove('active')); b.classList.add('active'); currentTense=k; renderTasks();}; fb.appendChild(b); if(i===0){b.classList.add('active'); currentTense=k;}}); renderTasks();}
-function isAccepted(task,ans){if(task.type==='mcq') return Number(ans)===task.correctIndex; const n=normalize(ans); return (task.accept||[]).map(normalize).includes(n);} 
-function renderTasks(){const list=$('#tasksList'); list.innerHTML=''; const tasks=HW.taskSets[currentTense]||[]; $('#taskTitle').textContent=`Homework — ${HW.tenses[currentTense].label}`; tasks.forEach(t=>{const card=document.createElement('div'); card.className='card task-card'; card.dataset.id=t.id; let html=`<div><b>${t.prompt}</b></div>`; if(t.type==='fill') html+=`<input type='text' data-answer='${t.id}' placeholder='Type answer'/>`; else html+=t.options.map((o,i)=>`<label><input type='radio' name='${t.id}' value='${i}'/> ${o}</label>`).join('<br>'); html+=`<div class='result' data-result='${t.id}'></div>`; card.innerHTML=html; list.appendChild(card);}); $('#overall').style.display='none';}
-$('#checkBtn').addEventListener('click',()=>{const tasks=HW.taskSets[currentTense]||[]; let score=0; tasks.forEach(t=>{const ans=t.type==='fill' ? $(`input[data-answer='${t.id}']`)?.value : $(`input[name='${t.id}']:checked`)?.value; const ok=isAccepted(t,ans); const r=$(`[data-result='${t.id}']`); r.style.display='block'; r.className='result '+(ok?'ok':'bad'); r.textContent=ok?'✅ Правильно!':'❌ Неправильно.'; if(ok) score++;}); const o=$('#overall'); o.style.display='block'; o.className='result '+(score===tasks.length?'ok':'bad'); o.textContent=`Результат: ${score}/${tasks.length}`;});
-$('#resetBtn').addEventListener('click',()=>renderTasks());
-$('#copyBtn').addEventListener('click',async()=>{const tasks=HW.taskSets[currentTense]||[]; const lines=[`Homework ${HW.tenses[currentTense].label}`]; tasks.forEach(t=>{const ans=t.type==='fill' ? $(`input[data-answer='${t.id}']`)?.value||'' : $(`input[name='${t.id}']:checked`)?.value??''; lines.push(`${t.id}: ${ans}`);}); await navigator.clipboard.writeText(lines.join('\n')); alert('Скопійовано.');});
-
-function renderTest(){const list=$('#testList'); list.innerHTML=''; HW.testQuestions.forEach(q=>{const c=document.createElement('div'); c.className='card'; c.dataset.id=q.id; let html=`<div><b>${q.question}</b> <small>(${q.level})</small></div>`; if(q.type==='mcq') html+=q.options.map((o,i)=>`<label><input type='radio' name='${q.id}' value='${i}'/> ${o}</label>`).join('<br>'); else html+=`<input type='text' data-test='${q.id}'/>`; c.innerHTML=html; list.appendChild(c);}); }
-$('#testBtn').addEventListener('click',()=>{let s=0; HW.testQuestions.forEach(q=>{if(q.type==='mcq'){if(Number($(`input[name='${q.id}']:checked`)?.value)===q.answer) s++;} else {if(normalize($(`input[data-test='${q.id}']`)?.value)===normalize(q.answerText)) s++;}}); $('#testResult').textContent=`Результат: ${s}/30`;});
-
-function renderVerbs(filter=''){const body=$('#verbsBody'); body.innerHTML=''; HW.irregularVerbs.filter(v=>v.join(' ').toLowerCase().includes(filter.toLowerCase())).forEach(v=>{const tr=document.createElement('tr'); tr.innerHTML=`<td>${v[0]}</td><td>${v[1]}</td><td>${v[2]}</td><td>${v[3]}</td>`; body.appendChild(tr);});}
+function renderTheory(){const c=$('#theoryCatalog'); c.innerHTML=''; Object.values(HW.tenses).forEach(ts=>{const d=document.createElement('div'); d.className='card'; d.innerHTML=`<h3>${ts.label}</h3><p><b>${t('use')}:</b> ${ts.use[lang]}</p><p><b>${t('affirmative')}:</b> ${ts.formula.affirmative}<br><b>${t('negative')}:</b> ${ts.formula.negative}<br><b>${t('question')}:</b> ${ts.formula.question}</p><p><b>${t('markers')}:</b> ${ts.markers.join(', ')}</p><p><b>${t('examples')}:</b><br>${ts.examples.map(e=>`${e.en} — ${e[lang]}`).join('<br>')}</p>`; c.appendChild(d);});}
+function renderTaskSelectors(){const tb=$('#timeButtons'), fb=$('#formButtons'); tb.innerHTML=''; fb.innerHTML=''; Object.keys(timeGroups).forEach(g=>{const b=document.createElement('button'); b.textContent=t(`groups.${g}`); b.onclick=()=>{[...tb.children].forEach(x=>x.classList.remove('active')); b.classList.add('active'); renderForms(g);}; tb.appendChild(b);}); tb.firstChild?.classList.add('active'); renderForms('present'); }
+function renderForms(group){const fb=$('#formButtons'); fb.innerHTML=''; timeGroups[group].forEach((k,i)=>{const b=document.createElement('button'); b.textContent=HW.tenses[k].label.replace(/^\w+\s/,''); b.onclick=()=>{[...fb.children].forEach(x=>x.classList.remove('active')); b.classList.add('active'); currentTense=k; renderTasks();}; fb.appendChild(b); if(i===0){b.classList.add('active'); currentTense=k;}});} 
+function isAccepted(task,ans){if(task.type==='mcq') return Number(ans)===task.correctIndex; return (task.accept||[]).map(normalize).includes(normalize(ans));}
+function renderTasks(){const list=$('#tasksList'); list.innerHTML=''; const tasks=HW.taskSets[currentTense]||[]; $('#taskTitle').textContent=`${t('taskHeader')} — ${HW.tenses[currentTense].label}`; tasks.forEach(ts=>{const card=document.createElement('div'); card.className='card task-card'; let html=`<div><b>${ts.prompt}</b></div>`; if(ts.type==='fill') html+=`<input type='text' data-answer='${ts.id}' placeholder='${t('typeAnswer')}'/>`; else html+=ts.options.map((o,i)=>`<label><input type='radio' name='${ts.id}' value='${i}'/> ${o}</label>`).join('<br>'); html+=`<div class='result' data-result='${ts.id}'></div>`; card.innerHTML=html; list.appendChild(card);}); $('#overall').style.display='none';}
+$('#checkBtn').addEventListener('click',()=>{const tasks=HW.taskSets[currentTense]||[]; let score=0; tasks.forEach(ts=>{const ans=ts.type==='fill' ? $(`input[data-answer='${ts.id}']`)?.value : $(`input[name='${ts.id}']:checked`)?.value; const ok=isAccepted(ts,ans); const r=$(`[data-result='${ts.id}']`); r.style.display='block'; r.className='result '+(ok?'ok':'bad'); r.textContent=ok?t('correct'):t('wrong'); if(ok)score++;}); const o=$('#overall'); o.style.display='block'; o.className='result '+(score===tasks.length?'ok':'bad'); o.textContent=`${t('result')}: ${score}/${tasks.length}`;});
+$('#resetBtn').addEventListener('click',renderTasks); $('#copyBtn').addEventListener('click',async()=>{const tasks=HW.taskSets[currentTense]||[]; const lines=[`${t('taskHeader')} ${HW.tenses[currentTense].label}`]; tasks.forEach(ts=>{const ans=ts.type==='fill' ? $(`input[data-answer='${ts.id}']`)?.value||'' : $(`input[name='${ts.id}']:checked`)?.value??''; lines.push(`${ts.id}: ${ans}`);}); await navigator.clipboard.writeText(lines.join('\n')); alert(t('copied'));});
+function renderTest(){const list=$('#testList'); list.innerHTML=''; HW.testQuestions.forEach(q=>{const c=document.createElement('div'); c.className='card'; let html=`<div><b>${q.question}</b> <small>(${q.level})</small></div>`; if(q.type==='mcq') html+=q.options.map((o,i)=>`<label><input type='radio' name='${q.id}' value='${i}'/> ${o}</label>`).join('<br>'); else html+=`<input type='text' data-test='${q.id}'/>`; c.innerHTML=html; list.appendChild(c);}); }
+$('#testBtn').addEventListener('click',()=>{let s=0; HW.testQuestions.forEach(q=>{if(q.type==='mcq'){if(Number($(`input[name='${q.id}']:checked`)?.value)===q.answer) s++;} else if(normalize($(`input[data-test='${q.id}']`)?.value)===normalize(q.answerText)) s++;}); $('#testResult').textContent=`${t('result')}: ${s}/30`;});
+function renderVerbs(filter=''){const body=$('#verbsBody'); body.innerHTML=''; HW.irregularVerbs.filter(v=>`${v.base} ${v.past} ${v.pp} ${v.uk} ${v.pl}`.toLowerCase().includes(filter.toLowerCase())).forEach(v=>{const tr=document.createElement('tr'); tr.innerHTML=`<td>${v.base}</td><td>${v.past}</td><td>${v.pp}</td><td>${v[lang]}</td>`; body.appendChild(tr);});}
 $('#verbSearch').addEventListener('input',e=>renderVerbs(e.target.value));
-
-let vocabLevel='A1', vocabTopic='', page=0; const PAGE=50;
 function renderVocabControls(){const box=$('#vocabLevel'); box.innerHTML=''; Object.keys(HW.vocabulary).forEach(l=>{const b=document.createElement('button'); b.textContent=l; b.onclick=()=>{vocabLevel=l; page=0; renderTopicSelect();}; if(l===vocabLevel)b.classList.add('active'); box.appendChild(b);}); renderTopicSelect();}
-function renderTopicSelect(){const sel=$('#vocabTopic'); sel.innerHTML=''; Object.keys(HW.vocabulary[vocabLevel]).forEach(t=>{const op=document.createElement('option'); op.value=t; op.textContent=t; sel.appendChild(op);}); vocabTopic=sel.value; renderVocab();}
+function renderTopicSelect(){const sel=$('#vocabTopic'); sel.innerHTML=''; Object.keys(HW.vocabulary[vocabLevel]).forEach(tp=>{const op=document.createElement('option'); op.value=tp; op.textContent=tp; sel.appendChild(op);}); vocabTopic=sel.value; renderVocab();}
 $('#vocabTopic').addEventListener('change',e=>{vocabTopic=e.target.value; page=0; renderVocab();}); $('#vocabSearch').addEventListener('input',()=>{page=0; renderVocab();});
-function renderVocab(){const q=normalize($('#vocabSearch').value); let words=HW.vocabulary[vocabLevel][vocabTopic]||[]; if(q) words=words.filter(w=>normalize(w.en).includes(q)||normalize(w.uk).includes(q)); const start=page*PAGE; const view=words.slice(start,start+PAGE); const list=$('#vocabList'); list.innerHTML=view.map(w=>`<div class='vocab-item'><b>${w.en}</b> — ${w.uk}</div>`).join(''); $('#prevPage').disabled=page===0; $('#nextPage').disabled=start+PAGE>=words.length;}
+function renderVocab(){const q=normalize($('#vocabSearch').value); let words=HW.vocabulary[vocabLevel][vocabTopic]||[]; if(q) words=words.filter(w=>normalize(w.en).includes(q)||normalize(w[lang]).includes(q)); const start=page*PAGE; const view=words.slice(start,start+PAGE); $('#vocabList').innerHTML=view.map(w=>`<div class='vocab-item'><b>${w.en}</b> — ${w[lang]}</div>`).join(''); $('#prevPage').disabled=page===0; $('#nextPage').disabled=start+PAGE>=words.length; }
 $('#prevPage').addEventListener('click',()=>{if(page>0){page--; renderVocab();}}); $('#nextPage').addEventListener('click',()=>{page++; renderVocab();});
-
-renderTheory(); renderTaskSelectors(); renderTest(); renderVerbs(); renderVocabControls();
+applyI18n(); setSection('home');
 </script>
 </body>
 </html>

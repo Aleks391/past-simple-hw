@@ -298,1507 +298,1807 @@
     "Family": [
       {
         "en": "mother",
-        "uk": "mother",
-        "pl": "mother"
+        "ua": "мати",
+        "uk": "мати",
+        "pl": "matka"
       },
       {
         "en": "father",
-        "uk": "father",
-        "pl": "father"
+        "ua": "батько",
+        "uk": "батько",
+        "pl": "ojciec"
       },
       {
         "en": "sister",
-        "uk": "sister",
-        "pl": "sister"
+        "ua": "сестра",
+        "uk": "сестра",
+        "pl": "siostra"
       },
       {
         "en": "brother",
-        "uk": "brother",
-        "pl": "brother"
+        "ua": "брат",
+        "uk": "брат",
+        "pl": "brat"
       },
       {
         "en": "daughter",
-        "uk": "daughter",
-        "pl": "daughter"
+        "ua": "дочка",
+        "uk": "дочка",
+        "pl": "córka"
       },
       {
         "en": "son",
-        "uk": "son",
-        "pl": "son"
+        "ua": "син",
+        "uk": "син",
+        "pl": "syn"
       },
       {
         "en": "grandmother",
-        "uk": "grandmother",
-        "pl": "grandmother"
+        "ua": "бабуся",
+        "uk": "бабуся",
+        "pl": "babcia"
       },
       {
         "en": "grandfather",
-        "uk": "grandfather",
-        "pl": "grandfather"
+        "ua": "дідусь",
+        "uk": "дідусь",
+        "pl": "dziadek"
       },
       {
         "en": "aunt",
-        "uk": "aunt",
-        "pl": "aunt"
+        "ua": "тітка",
+        "uk": "тітка",
+        "pl": "ciotka"
       },
       {
         "en": "uncle",
-        "uk": "uncle",
-        "pl": "uncle"
+        "ua": "дядько",
+        "uk": "дядько",
+        "pl": "wujek"
       },
       {
         "en": "cousin",
-        "uk": "cousin",
-        "pl": "cousin"
+        "ua": "двоюрідний брат",
+        "uk": "двоюрідний брат",
+        "pl": "kuzyn"
       },
       {
         "en": "wife",
-        "uk": "wife",
-        "pl": "wife"
+        "ua": "дружина",
+        "uk": "дружина",
+        "pl": "żona"
       },
       {
         "en": "that",
-        "uk": "that",
-        "pl": "that"
+        "ua": "що",
+        "uk": "що",
+        "pl": "To"
       },
       {
         "en": "with",
-        "uk": "with",
-        "pl": "with"
+        "ua": "з",
+        "uk": "з",
+        "pl": "z"
       },
       {
         "en": "this",
-        "uk": "this",
-        "pl": "this"
+        "ua": "це",
+        "uk": "це",
+        "pl": "Ten"
       },
       {
         "en": "have",
-        "uk": "have",
-        "pl": "have"
+        "ua": "мати",
+        "uk": "мати",
+        "pl": "Posiadać"
       },
       {
         "en": "from",
-        "uk": "from",
-        "pl": "from"
+        "ua": "від",
+        "uk": "від",
+        "pl": "z"
       },
       {
         "en": "your",
-        "uk": "your",
-        "pl": "your"
+        "ua": "ваш",
+        "uk": "ваш",
+        "pl": "twój"
       },
       {
         "en": "they",
-        "uk": "they",
-        "pl": "they"
+        "ua": "вони",
+        "uk": "вони",
+        "pl": "Oni"
       },
       {
         "en": "will",
-        "uk": "will",
-        "pl": "will"
+        "ua": "буде",
+        "uk": "буде",
+        "pl": "będzie"
       },
       {
         "en": "just",
-        "uk": "just",
-        "pl": "just"
+        "ua": "просто",
+        "uk": "просто",
+        "pl": "Tylko"
       },
       {
         "en": "like",
-        "uk": "like",
-        "pl": "like"
+        "ua": "як",
+        "uk": "як",
+        "pl": "tak jak"
       },
       {
         "en": "about",
-        "uk": "about",
-        "pl": "about"
+        "ua": "приблизно",
+        "uk": "приблизно",
+        "pl": "o"
       },
       {
         "en": "what",
-        "uk": "what",
-        "pl": "what"
+        "ua": "що",
+        "uk": "що",
+        "pl": "Co"
       },
       {
         "en": "when",
-        "uk": "when",
-        "pl": "when"
+        "ua": "коли",
+        "uk": "коли",
+        "pl": "Kiedy"
       },
       {
         "en": "more",
-        "uk": "more",
-        "pl": "more"
+        "ua": "більше",
+        "uk": "більше",
+        "pl": "więcej"
       },
       {
         "en": "were",
-        "uk": "were",
-        "pl": "were"
+        "ua": "були",
+        "uk": "були",
+        "pl": "był"
       },
       {
         "en": "their",
-        "uk": "their",
-        "pl": "their"
+        "ua": "їх",
+        "uk": "їх",
+        "pl": "ich"
       },
       {
         "en": "there",
-        "uk": "there",
-        "pl": "there"
+        "ua": "там",
+        "uk": "там",
+        "pl": "Tam"
       },
       {
         "en": "which",
-        "uk": "which",
-        "pl": "which"
+        "ua": "який",
+        "uk": "який",
+        "pl": "Który"
       },
       {
         "en": "time",
-        "uk": "time",
-        "pl": "time"
+        "ua": "час",
+        "uk": "час",
+        "pl": "czas"
       },
       {
         "en": "been",
-        "uk": "been",
-        "pl": "been"
+        "ua": "був",
+        "uk": "був",
+        "pl": "został"
       },
       {
         "en": "would",
-        "uk": "would",
-        "pl": "would"
+        "ua": "би",
+        "uk": "би",
+        "pl": "zrobiłbym"
       },
       {
         "en": "people",
-        "uk": "people",
-        "pl": "people"
+        "ua": "людей",
+        "uk": "людей",
+        "pl": "ludzie"
       },
       {
         "en": "some",
-        "uk": "some",
-        "pl": "some"
+        "ua": "деякі",
+        "uk": "деякі",
+        "pl": "Niektóre"
       },
       {
         "en": "also",
-        "uk": "also",
-        "pl": "also"
+        "ua": "також",
+        "uk": "також",
+        "pl": "Również"
       },
       {
         "en": "them",
-        "uk": "them",
-        "pl": "them"
+        "ua": "їх",
+        "uk": "їх",
+        "pl": "ich"
       },
       {
         "en": "other",
-        "uk": "other",
-        "pl": "other"
+        "ua": "інші",
+        "uk": "інші",
+        "pl": "Inny"
       },
       {
         "en": "than",
-        "uk": "than",
-        "pl": "than"
+        "ua": "ніж",
+        "uk": "ніж",
+        "pl": "niż"
       },
       {
         "en": "good",
-        "uk": "good",
-        "pl": "good"
+        "ua": "добре",
+        "uk": "добре",
+        "pl": "Dobry"
       },
       {
         "en": "only",
-        "uk": "only",
-        "pl": "only"
+        "ua": "тільки",
+        "uk": "тільки",
+        "pl": "tylko"
       },
       {
         "en": "after",
-        "uk": "after",
-        "pl": "after"
+        "ua": "після",
+        "uk": "після",
+        "pl": "Po"
       },
       {
         "en": "first",
-        "uk": "first",
-        "pl": "first"
+        "ua": "перший",
+        "uk": "перший",
+        "pl": "Pierwszy"
       },
       {
         "en": "into",
-        "uk": "into",
-        "pl": "into"
+        "ua": "в",
+        "uk": "в",
+        "pl": "do"
       },
       {
         "en": "know",
-        "uk": "know",
-        "pl": "know"
+        "ua": "знати",
+        "uk": "знати",
+        "pl": "wiedzieć"
       },
       {
         "en": "make",
-        "uk": "make",
-        "pl": "make"
+        "ua": "зробити",
+        "uk": "зробити",
+        "pl": "robić"
       },
       {
         "en": "over",
-        "uk": "over",
-        "pl": "over"
+        "ua": "закінчено",
+        "uk": "закінчено",
+        "pl": "nad"
       },
       {
         "en": "think",
-        "uk": "think",
-        "pl": "think"
+        "ua": "думаю",
+        "uk": "думаю",
+        "pl": "myśleć"
       },
       {
         "en": "then",
-        "uk": "then",
-        "pl": "then"
+        "ua": "потім",
+        "uk": "потім",
+        "pl": "Następnie"
       },
       {
         "en": "could",
-        "uk": "could",
-        "pl": "could"
+        "ua": "міг би",
+        "uk": "міг би",
+        "pl": "mógł"
       },
       {
         "en": "back",
-        "uk": "back",
-        "pl": "back"
+        "ua": "назад",
+        "uk": "назад",
+        "pl": "z powrotem"
       },
       {
         "en": "these",
-        "uk": "these",
-        "pl": "these"
+        "ua": "ці",
+        "uk": "ці",
+        "pl": "te"
       },
       {
         "en": "want",
-        "uk": "want",
-        "pl": "want"
+        "ua": "хочуть",
+        "uk": "хочуть",
+        "pl": "chcieć"
       },
       {
         "en": "because",
-        "uk": "because",
-        "pl": "because"
+        "ua": "тому що",
+        "uk": "тому що",
+        "pl": "ponieważ"
       },
       {
         "en": "well",
-        "uk": "well",
-        "pl": "well"
+        "ua": "добре",
+        "uk": "добре",
+        "pl": "Dobrze"
       },
       {
         "en": "said",
-        "uk": "said",
-        "pl": "said"
+        "ua": "сказав",
+        "uk": "сказав",
+        "pl": "powiedział"
       },
       {
         "en": "most",
-        "uk": "most",
-        "pl": "most"
+        "ua": "більшість",
+        "uk": "більшість",
+        "pl": "bardzo"
       },
       {
         "en": "much",
-        "uk": "much",
-        "pl": "much"
+        "ua": "багато",
+        "uk": "багато",
+        "pl": "dużo"
       },
       {
         "en": "very",
-        "uk": "very",
-        "pl": "very"
+        "ua": "дуже",
+        "uk": "дуже",
+        "pl": "bardzo"
       },
       {
         "en": "where",
-        "uk": "where",
-        "pl": "where"
+        "ua": "де",
+        "uk": "де",
+        "pl": "Gdzie"
       },
       {
         "en": "even",
-        "uk": "even",
-        "pl": "even"
+        "ua": "навіть",
+        "uk": "навіть",
+        "pl": "nawet"
       },
       {
         "en": "should",
-        "uk": "should",
-        "pl": "should"
+        "ua": "повинен",
+        "uk": "повинен",
+        "pl": "powinien"
       },
       {
         "en": "here",
-        "uk": "here",
-        "pl": "here"
+        "ua": "тут",
+        "uk": "тут",
+        "pl": "Tutaj"
       },
       {
         "en": "need",
-        "uk": "need",
-        "pl": "need"
+        "ua": "потреба",
+        "uk": "потреба",
+        "pl": "potrzebować"
       },
       {
         "en": "really",
-        "uk": "really",
-        "pl": "really"
+        "ua": "насправді",
+        "uk": "насправді",
+        "pl": "Naprawdę"
       },
       {
         "en": "right",
-        "uk": "right",
-        "pl": "right"
+        "ua": "правильно",
+        "uk": "правильно",
+        "pl": "Prawidłowy"
       },
       {
         "en": "work",
-        "uk": "work",
-        "pl": "work"
+        "ua": "працювати",
+        "uk": "працювати",
+        "pl": "praca"
       },
       {
         "en": "year",
-        "uk": "year",
-        "pl": "year"
+        "ua": "рік",
+        "uk": "рік",
+        "pl": "rok"
       },
       {
         "en": "years",
-        "uk": "years",
-        "pl": "years"
+        "ua": "років",
+        "uk": "років",
+        "pl": "lata"
       },
       {
         "en": "being",
-        "uk": "being",
-        "pl": "being"
+        "ua": "буття",
+        "uk": "буття",
+        "pl": "istnienie"
       },
       {
         "en": "going",
-        "uk": "going",
-        "pl": "going"
+        "ua": "йде",
+        "uk": "йде",
+        "pl": "pójście"
       },
       {
         "en": "before",
-        "uk": "before",
-        "pl": "before"
+        "ua": "раніше",
+        "uk": "раніше",
+        "pl": "zanim"
       },
       {
         "en": "made",
-        "uk": "made",
-        "pl": "made"
+        "ua": "зробив",
+        "uk": "зробив",
+        "pl": "zrobiony"
       },
       {
         "en": "still",
-        "uk": "still",
-        "pl": "still"
+        "ua": "досі",
+        "uk": "досі",
+        "pl": "Nadal"
       },
       {
         "en": "take",
-        "uk": "take",
-        "pl": "take"
+        "ua": "взяти",
+        "uk": "взяти",
+        "pl": "Brać"
       },
       {
         "en": "many",
-        "uk": "many",
-        "pl": "many"
+        "ua": "багато",
+        "uk": "багато",
+        "pl": "wiele"
       },
       {
         "en": "never",
-        "uk": "never",
-        "pl": "never"
+        "ua": "ніколи",
+        "uk": "ніколи",
+        "pl": "nigdy"
       },
       {
         "en": "those",
-        "uk": "those",
-        "pl": "those"
+        "ua": "ті",
+        "uk": "ті",
+        "pl": "te"
       },
       {
         "en": "life",
-        "uk": "life",
-        "pl": "life"
+        "ua": "життя",
+        "uk": "життя",
+        "pl": "życie"
       },
       {
         "en": "world",
-        "uk": "world",
-        "pl": "world"
+        "ua": "світ",
+        "uk": "світ",
+        "pl": "świat"
       },
       {
         "en": "down",
-        "uk": "down",
-        "pl": "down"
+        "ua": "вниз",
+        "uk": "вниз",
+        "pl": "w dół"
       },
       {
         "en": "great",
-        "uk": "great",
-        "pl": "great"
+        "ua": "чудово",
+        "uk": "чудово",
+        "pl": "Świetnie"
       },
       {
         "en": "through",
-        "uk": "through",
-        "pl": "through"
+        "ua": "через",
+        "uk": "через",
+        "pl": "Poprzez"
       },
       {
         "en": "last",
-        "uk": "last",
-        "pl": "last"
+        "ua": "останній",
+        "uk": "останній",
+        "pl": "ostatni"
       },
       {
         "en": "while",
-        "uk": "while",
-        "pl": "while"
+        "ua": "поки",
+        "uk": "поки",
+        "pl": "chwila"
       },
       {
         "en": "best",
-        "uk": "best",
-        "pl": "best"
+        "ua": "найкращий",
+        "uk": "найкращий",
+        "pl": "to, co najlepsze"
       },
       {
         "en": "such",
-        "uk": "such",
-        "pl": "such"
+        "ua": "такий",
+        "uk": "такий",
+        "pl": "taki"
       },
       {
         "en": "love",
-        "uk": "love",
-        "pl": "love"
+        "ua": "любов",
+        "uk": "любов",
+        "pl": "Miłość"
       },
       {
         "en": "home",
-        "uk": "home",
-        "pl": "home"
+        "ua": "додому",
+        "uk": "додому",
+        "pl": "dom"
       },
       {
         "en": "long",
-        "uk": "long",
-        "pl": "long"
+        "ua": "довго",
+        "uk": "довго",
+        "pl": "długi"
       },
       {
         "en": "look",
-        "uk": "look",
-        "pl": "look"
+        "ua": "подивіться",
+        "uk": "подивіться",
+        "pl": "Patrzeć"
       },
       {
         "en": "something",
-        "uk": "something",
-        "pl": "something"
+        "ua": "щось",
+        "uk": "щось",
+        "pl": "coś"
       },
       {
         "en": "same",
-        "uk": "same",
-        "pl": "same"
+        "ua": "те саме",
+        "uk": "те саме",
+        "pl": "To samo"
       },
       {
         "en": "used",
-        "uk": "used",
-        "pl": "used"
+        "ua": "використовується",
+        "uk": "використовується",
+        "pl": "używany"
       },
       {
         "en": "both",
-        "uk": "both",
-        "pl": "both"
+        "ua": "обидва",
+        "uk": "обидва",
+        "pl": "Zarówno"
       },
       {
         "en": "every",
-        "uk": "every",
-        "pl": "every"
+        "ua": "кожен",
+        "uk": "кожен",
+        "pl": "każdy"
       },
       {
         "en": "come",
-        "uk": "come",
-        "pl": "come"
+        "ua": "прийти",
+        "uk": "прийти",
+        "pl": "przychodzić"
       },
       {
         "en": "part",
-        "uk": "part",
-        "pl": "part"
+        "ua": "частина",
+        "uk": "частина",
+        "pl": "część"
       },
       {
         "en": "state",
-        "uk": "state",
-        "pl": "state"
+        "ua": "стан",
+        "uk": "стан",
+        "pl": "państwo"
       },
       {
         "en": "three",
-        "uk": "three",
-        "pl": "three"
+        "ua": "три",
+        "uk": "три",
+        "pl": "trzy"
       }
     ],
     "Home": [
       {
         "en": "kitchen",
-        "uk": "kitchen",
-        "pl": "kitchen"
+        "ua": "кухня",
+        "uk": "кухня",
+        "pl": "kuchnia"
       },
       {
         "en": "bedroom",
-        "uk": "bedroom",
-        "pl": "bedroom"
+        "ua": "спальня",
+        "uk": "спальня",
+        "pl": "sypialnia"
       },
       {
         "en": "bathroom",
-        "uk": "bathroom",
-        "pl": "bathroom"
+        "ua": "ванна кімната",
+        "uk": "ванна кімната",
+        "pl": "łazienka"
       },
       {
         "en": "window",
-        "uk": "window",
-        "pl": "window"
+        "ua": "вікно",
+        "uk": "вікно",
+        "pl": "okno"
       },
       {
         "en": "door",
-        "uk": "door",
-        "pl": "door"
+        "ua": "двері",
+        "uk": "двері",
+        "pl": "drzwi"
       },
       {
         "en": "table",
-        "uk": "table",
-        "pl": "table"
+        "ua": "стіл",
+        "uk": "стіл",
+        "pl": "tabela"
       },
       {
         "en": "chair",
-        "uk": "chair",
-        "pl": "chair"
+        "ua": "стілець",
+        "uk": "стілець",
+        "pl": "krzesło"
       },
       {
         "en": "sofa",
-        "uk": "sofa",
-        "pl": "sofa"
+        "ua": "диван",
+        "uk": "диван",
+        "pl": "kanapa"
       },
       {
         "en": "lamp",
-        "uk": "lamp",
-        "pl": "lamp"
+        "ua": "лампа",
+        "uk": "лампа",
+        "pl": "lampa"
       },
       {
         "en": "floor",
-        "uk": "floor",
-        "pl": "floor"
+        "ua": "поверх",
+        "uk": "поверх",
+        "pl": "podłoga"
       },
       {
         "en": "ceiling",
-        "uk": "ceiling",
-        "pl": "ceiling"
+        "ua": "стеля",
+        "uk": "стеля",
+        "pl": "sufit"
       },
       {
         "en": "mirror",
-        "uk": "mirror",
-        "pl": "mirror"
+        "ua": "дзеркало",
+        "uk": "дзеркало",
+        "pl": "lustro"
       },
       {
         "en": "around",
-        "uk": "around",
-        "pl": "around"
+        "ua": "навколо",
+        "uk": "навколо",
+        "pl": "wokół"
       },
       {
         "en": "between",
-        "uk": "between",
-        "pl": "between"
+        "ua": "між",
+        "uk": "між",
+        "pl": "między"
       },
       {
         "en": "always",
-        "uk": "always",
-        "pl": "always"
+        "ua": "завжди",
+        "uk": "завжди",
+        "pl": "zawsze"
       },
       {
         "en": "better",
-        "uk": "better",
-        "pl": "better"
+        "ua": "краще",
+        "uk": "краще",
+        "pl": "lepsza"
       },
       {
         "en": "find",
-        "uk": "find",
-        "pl": "find"
+        "ua": "знайти",
+        "uk": "знайти",
+        "pl": "znajdować"
       },
       {
         "en": "help",
-        "uk": "help",
-        "pl": "help"
+        "ua": "допомогти",
+        "uk": "допомогти",
+        "pl": "pomoc"
       },
       {
         "en": "high",
-        "uk": "high",
-        "pl": "high"
+        "ua": "висока",
+        "uk": "висока",
+        "pl": "wysoki"
       },
       {
         "en": "little",
-        "uk": "little",
-        "pl": "little"
+        "ua": "мало",
+        "uk": "мало",
+        "pl": "mały"
       },
       {
         "en": "since",
-        "uk": "since",
-        "pl": "since"
+        "ua": "оскільки",
+        "uk": "оскільки",
+        "pl": "od"
       },
       {
         "en": "another",
-        "uk": "another",
-        "pl": "another"
+        "ua": "інший",
+        "uk": "інший",
+        "pl": "inny"
       },
       {
         "en": "does",
-        "uk": "does",
-        "pl": "does"
+        "ua": "робить",
+        "uk": "робить",
+        "pl": "robi"
       },
       {
         "en": "things",
-        "uk": "things",
-        "pl": "things"
+        "ua": "речі",
+        "uk": "речі",
+        "pl": "rzeczy"
       },
       {
         "en": "under",
-        "uk": "under",
-        "pl": "under"
+        "ua": "під",
+        "uk": "під",
+        "pl": "pod"
       },
       {
         "en": "during",
-        "uk": "during",
-        "pl": "during"
+        "ua": "протягом",
+        "uk": "протягом",
+        "pl": "podczas"
       },
       {
         "en": "game",
-        "uk": "game",
-        "pl": "game"
+        "ua": "гра",
+        "uk": "гра",
+        "pl": "gra"
       },
       {
         "en": "thing",
-        "uk": "thing",
-        "pl": "thing"
+        "ua": "річ",
+        "uk": "річ",
+        "pl": "rzecz"
       },
       {
         "en": "give",
-        "uk": "give",
-        "pl": "give"
+        "ua": "дати",
+        "uk": "дати",
+        "pl": "dawać"
       },
       {
         "en": "house",
-        "uk": "house",
-        "pl": "house"
+        "ua": "будинок",
+        "uk": "будинок",
+        "pl": "dom"
       },
       {
         "en": "place",
-        "uk": "place",
-        "pl": "place"
+        "ua": "місце",
+        "uk": "місце",
+        "pl": "miejsce"
       },
       {
         "en": "school",
-        "uk": "school",
-        "pl": "school"
+        "ua": "школа",
+        "uk": "школа",
+        "pl": "szkoła"
       },
       {
         "en": "again",
-        "uk": "again",
-        "pl": "again"
+        "ua": "знову",
+        "uk": "знову",
+        "pl": "Ponownie"
       },
       {
         "en": "next",
-        "uk": "next",
-        "pl": "next"
+        "ua": "наступний",
+        "uk": "наступний",
+        "pl": "Następny"
       },
       {
         "en": "each",
-        "uk": "each",
-        "pl": "each"
+        "ua": "кожен",
+        "uk": "кожен",
+        "pl": "każdy"
       },
       {
         "en": "without",
-        "uk": "without",
-        "pl": "without"
+        "ua": "без",
+        "uk": "без",
+        "pl": "bez"
       },
       {
         "en": "against",
-        "uk": "against",
-        "pl": "against"
+        "ua": "проти",
+        "uk": "проти",
+        "pl": "przeciwko"
       },
       {
         "en": "found",
-        "uk": "found",
-        "pl": "found"
+        "ua": "знайдено",
+        "uk": "знайдено",
+        "pl": "znaleziony"
       },
       {
         "en": "must",
-        "uk": "must",
-        "pl": "must"
+        "ua": "повинен",
+        "uk": "повинен",
+        "pl": "musieć"
       },
       {
         "en": "show",
-        "uk": "show",
-        "pl": "show"
+        "ua": "шоу",
+        "uk": "шоу",
+        "pl": "pokazywać"
       },
       {
         "en": "feel",
-        "uk": "feel",
-        "pl": "feel"
+        "ua": "відчувати",
+        "uk": "відчувати",
+        "pl": "czuć"
       },
       {
         "en": "sure",
-        "uk": "sure",
-        "pl": "sure"
+        "ua": "впевнений",
+        "uk": "впевнений",
+        "pl": "Jasne"
       },
       {
         "en": "team",
-        "uk": "team",
-        "pl": "team"
+        "ua": "команда",
+        "uk": "команда",
+        "pl": "zespół"
       },
       {
         "en": "ever",
-        "uk": "ever",
-        "pl": "ever"
+        "ua": "будь-коли",
+        "uk": "будь-коли",
+        "pl": "kiedykolwiek"
       },
       {
         "en": "family",
-        "uk": "family",
-        "pl": "family"
+        "ua": "родина",
+        "uk": "родина",
+        "pl": "rodzina"
       },
       {
         "en": "keep",
-        "uk": "keep",
-        "pl": "keep"
+        "ua": "зберегти",
+        "uk": "зберегти",
+        "pl": "trzymać"
       },
       {
         "en": "might",
-        "uk": "might",
-        "pl": "might"
+        "ua": "могутність",
+        "uk": "могутність",
+        "pl": "móc"
       },
       {
         "en": "please",
-        "uk": "please",
-        "pl": "please"
+        "ua": "будь ласка",
+        "uk": "будь ласка",
+        "pl": "Proszę"
       },
       {
         "en": "money",
-        "uk": "money",
-        "pl": "money"
+        "ua": "гроші",
+        "uk": "гроші",
+        "pl": "pieniądze"
       },
       {
         "en": "free",
-        "uk": "free",
-        "pl": "free"
+        "ua": "безкоштовно",
+        "uk": "безкоштовно",
+        "pl": "bezpłatny"
       },
       {
         "en": "second",
-        "uk": "second",
-        "pl": "second"
+        "ua": "другий",
+        "uk": "другий",
+        "pl": "drugi"
       },
       {
         "en": "someone",
-        "uk": "someone",
-        "pl": "someone"
+        "ua": "хтось",
+        "uk": "хтось",
+        "pl": "ktoś"
       },
       {
         "en": "away",
-        "uk": "away",
-        "pl": "away"
+        "ua": "геть",
+        "uk": "геть",
+        "pl": "z dala"
       },
       {
         "en": "left",
-        "uk": "left",
-        "pl": "left"
+        "ua": "зліва",
+        "uk": "зліва",
+        "pl": "lewy"
       },
       {
         "en": "number",
-        "uk": "number",
-        "pl": "number"
+        "ua": "номер",
+        "uk": "номер",
+        "pl": "numer"
       },
       {
         "en": "city",
-        "uk": "city",
-        "pl": "city"
+        "ua": "місто",
+        "uk": "місто",
+        "pl": "miasto"
       },
       {
         "en": "days",
-        "uk": "days",
-        "pl": "days"
+        "ua": "днів",
+        "uk": "днів",
+        "pl": "dni"
       },
       {
         "en": "name",
-        "uk": "name",
-        "pl": "name"
+        "ua": "назва",
+        "uk": "назва",
+        "pl": "nazwa"
       },
       {
         "en": "night",
-        "uk": "night",
-        "pl": "night"
+        "ua": "ніч",
+        "uk": "ніч",
+        "pl": "noc"
       },
       {
         "en": "play",
-        "uk": "play",
-        "pl": "play"
+        "ua": "грати",
+        "uk": "грати",
+        "pl": "grać"
       },
       {
         "en": "until",
-        "uk": "until",
-        "pl": "until"
+        "ua": "поки",
+        "uk": "поки",
+        "pl": "dopóki"
       },
       {
         "en": "company",
-        "uk": "company",
-        "pl": "company"
+        "ua": "компанії",
+        "uk": "компанії",
+        "pl": "firma"
       },
       {
         "en": "doing",
-        "uk": "doing",
-        "pl": "doing"
+        "ua": "робити",
+        "uk": "робити",
+        "pl": "czyn"
       },
       {
         "en": "real",
-        "uk": "real",
-        "pl": "real"
+        "ua": "справжній",
+        "uk": "справжній",
+        "pl": "prawdziwy"
       },
       {
         "en": "called",
-        "uk": "called",
-        "pl": "called"
+        "ua": "дзвонив",
+        "uk": "дзвонив",
+        "pl": "zwany"
       },
       {
         "en": "different",
-        "uk": "different",
-        "pl": "different"
+        "ua": "різні",
+        "uk": "різні",
+        "pl": "różny"
       },
       {
         "en": "having",
-        "uk": "having",
-        "pl": "having"
+        "ua": "мати",
+        "uk": "мати",
+        "pl": "mający"
       },
       {
         "en": "thought",
-        "uk": "thought",
-        "pl": "thought"
+        "ua": "думав",
+        "uk": "думав",
+        "pl": "myśl"
       },
       {
         "en": "done",
-        "uk": "done",
-        "pl": "done"
+        "ua": "зроблено",
+        "uk": "зроблено",
+        "pl": "zrobione"
       },
       {
         "en": "however",
-        "uk": "however",
-        "pl": "however"
+        "ua": "проте",
+        "uk": "проте",
+        "pl": "Jednakże"
       },
       {
         "en": "getting",
-        "uk": "getting",
-        "pl": "getting"
+        "ua": "отримання",
+        "uk": "отримання",
+        "pl": "dostawanie"
       },
       {
         "en": "government",
-        "uk": "government",
-        "pl": "government"
+        "ua": "уряд",
+        "uk": "уряд",
+        "pl": "rząd"
       },
       {
         "en": "group",
-        "uk": "group",
-        "pl": "group"
+        "ua": "група",
+        "uk": "група",
+        "pl": "grupa"
       },
       {
         "en": "looking",
-        "uk": "looking",
-        "pl": "looking"
+        "ua": "дивлячись",
+        "uk": "дивлячись",
+        "pl": "patrzeć"
       },
       {
         "en": "public",
-        "uk": "public",
-        "pl": "public"
+        "ua": "громадськість",
+        "uk": "громадськість",
+        "pl": "publiczny"
       },
       {
         "en": "women",
-        "uk": "women",
-        "pl": "women"
+        "ua": "жінки",
+        "uk": "жінки",
+        "pl": "kobiety"
       },
       {
         "en": "business",
-        "uk": "business",
-        "pl": "business"
+        "ua": "бізнес",
+        "uk": "бізнес",
+        "pl": "biznes"
       },
       {
         "en": "care",
-        "uk": "care",
-        "pl": "care"
+        "ua": "догляд",
+        "uk": "догляд",
+        "pl": "pielęgnacja"
       },
       {
         "en": "start",
-        "uk": "start",
-        "pl": "start"
+        "ua": "почати",
+        "uk": "почати",
+        "pl": "początek"
       },
       {
         "en": "system",
-        "uk": "system",
-        "pl": "system"
+        "ua": "система",
+        "uk": "система",
+        "pl": "układ"
       },
       {
         "en": "times",
-        "uk": "times",
-        "pl": "times"
+        "ua": "разів",
+        "uk": "разів",
+        "pl": "czasy"
       },
       {
         "en": "week",
-        "uk": "week",
-        "pl": "week"
+        "ua": "тиждень",
+        "uk": "тиждень",
+        "pl": "tydzień"
       },
       {
         "en": "already",
-        "uk": "already",
-        "pl": "already"
+        "ua": "вже",
+        "uk": "вже",
+        "pl": "już"
       },
       {
         "en": "anything",
-        "uk": "anything",
-        "pl": "anything"
+        "ua": "що завгодно",
+        "uk": "що завгодно",
+        "pl": "wszystko"
       },
       {
         "en": "case",
-        "uk": "case",
-        "pl": "case"
+        "ua": "справа",
+        "uk": "справа",
+        "pl": "sprawa"
       },
       {
         "en": "nothing",
-        "uk": "nothing",
-        "pl": "nothing"
+        "ua": "нічого",
+        "uk": "нічого",
+        "pl": "Nic"
       },
       {
         "en": "person",
-        "uk": "person",
-        "pl": "person"
+        "ua": "людина",
+        "uk": "людина",
+        "pl": "osoba"
       },
       {
         "en": "today",
-        "uk": "today",
-        "pl": "today"
+        "ua": "сьогодні",
+        "uk": "сьогодні",
+        "pl": "Dzisiaj"
       },
       {
         "en": "change",
-        "uk": "change",
-        "pl": "change"
+        "ua": "змінити",
+        "uk": "змінити",
+        "pl": "zmiana"
       },
       {
         "en": "enough",
-        "uk": "enough",
-        "pl": "enough"
+        "ua": "досить",
+        "uk": "досить",
+        "pl": "wystarczająco"
       },
       {
         "en": "everything",
-        "uk": "everything",
-        "pl": "everything"
+        "ua": "все",
+        "uk": "все",
+        "pl": "wszystko"
       },
       {
         "en": "full",
-        "uk": "full",
-        "pl": "full"
+        "ua": "повний",
+        "uk": "повний",
+        "pl": "pełny"
       },
       {
         "en": "live",
-        "uk": "live",
-        "pl": "live"
+        "ua": "жити",
+        "uk": "жити",
+        "pl": "na żywo"
       },
       {
         "en": "making",
-        "uk": "making",
-        "pl": "making"
+        "ua": "виготовлення",
+        "uk": "виготовлення",
+        "pl": "zrobienie"
       },
       {
         "en": "point",
-        "uk": "point",
-        "pl": "point"
+        "ua": "точка",
+        "uk": "точка",
+        "pl": "punkt"
       },
       {
         "en": "read",
-        "uk": "read",
-        "pl": "read"
+        "ua": "читати",
+        "uk": "читати",
+        "pl": "Czytać"
       },
       {
         "en": "told",
-        "uk": "told",
-        "pl": "told"
+        "ua": "розповів",
+        "uk": "розповів",
+        "pl": "powiedział"
       },
       {
         "en": "four",
-        "uk": "four",
-        "pl": "four"
+        "ua": "чотири",
+        "uk": "чотири",
+        "pl": "cztery"
       },
       {
         "en": "hard",
-        "uk": "hard",
-        "pl": "hard"
+        "ua": "важко",
+        "uk": "важко",
+        "pl": "twardy"
       },
       {
         "en": "mean",
-        "uk": "mean",
-        "pl": "mean"
+        "ua": "означає",
+        "uk": "означає",
+        "pl": "mieć na myśli"
       }
     ],
     "Food": [
       {
         "en": "bread",
-        "uk": "bread",
-        "pl": "bread"
+        "ua": "хліб",
+        "uk": "хліб",
+        "pl": "chleb"
       },
       {
         "en": "milk",
-        "uk": "milk",
-        "pl": "milk"
+        "ua": "молоко",
+        "uk": "молоко",
+        "pl": "mleko"
       },
       {
         "en": "cheese",
-        "uk": "cheese",
-        "pl": "cheese"
+        "ua": "сир",
+        "uk": "сир",
+        "pl": "ser"
       },
       {
         "en": "meat",
-        "uk": "meat",
-        "pl": "meat"
+        "ua": "м'ясо",
+        "uk": "м'ясо",
+        "pl": "mięso"
       },
       {
         "en": "fish",
-        "uk": "fish",
-        "pl": "fish"
+        "ua": "риба",
+        "uk": "риба",
+        "pl": "ryba"
       },
       {
         "en": "egg",
-        "uk": "egg",
-        "pl": "egg"
+        "ua": "яйце",
+        "uk": "яйце",
+        "pl": "jajko"
       },
       {
         "en": "rice",
-        "uk": "rice",
-        "pl": "rice"
+        "ua": "рис",
+        "uk": "рис",
+        "pl": "ryż"
       },
       {
         "en": "soup",
-        "uk": "soup",
-        "pl": "soup"
+        "ua": "суп",
+        "uk": "суп",
+        "pl": "zupa"
       },
       {
         "en": "salad",
-        "uk": "salad",
-        "pl": "salad"
+        "ua": "салат",
+        "uk": "салат",
+        "pl": "sałatka"
       },
       {
         "en": "apple",
-        "uk": "apple",
-        "pl": "apple"
+        "ua": "яблуко",
+        "uk": "яблуко",
+        "pl": "jabłko"
       },
       {
         "en": "banana",
-        "uk": "banana",
-        "pl": "banana"
+        "ua": "банан",
+        "uk": "банан",
+        "pl": "banan"
       },
       {
         "en": "sugar",
-        "uk": "sugar",
-        "pl": "sugar"
+        "ua": "цукор",
+        "uk": "цукор",
+        "pl": "cukier"
       },
       {
         "en": "once",
-        "uk": "once",
-        "pl": "once"
+        "ua": "один раз",
+        "uk": "один раз",
+        "pl": "raz"
       },
       {
         "en": "support",
-        "uk": "support",
-        "pl": "support"
+        "ua": "підтримка",
+        "uk": "підтримка",
+        "pl": "wsparcie"
       },
       {
         "en": "tell",
-        "uk": "tell",
-        "pl": "tell"
+        "ua": "розповідати",
+        "uk": "розповідати",
+        "pl": "powiedzieć"
       },
       {
         "en": "including",
-        "uk": "including",
-        "pl": "including"
+        "ua": "в тому числі",
+        "uk": "в тому числі",
+        "pl": "w tym"
       },
       {
         "en": "music",
-        "uk": "music",
-        "pl": "music"
+        "ua": "музика",
+        "uk": "музика",
+        "pl": "muzyka"
       },
       {
         "en": "power",
-        "uk": "power",
-        "pl": "power"
+        "ua": "потужність",
+        "uk": "потужність",
+        "pl": "moc"
       },
       {
         "en": "seen",
-        "uk": "seen",
-        "pl": "seen"
+        "ua": "бачив",
+        "uk": "бачив",
+        "pl": "widziany"
       },
       {
         "en": "states",
-        "uk": "states",
-        "pl": "states"
+        "ua": "держави",
+        "uk": "держави",
+        "pl": "stwierdza"
       },
       {
         "en": "stop",
-        "uk": "stop",
-        "pl": "stop"
+        "ua": "СТІЙ",
+        "uk": "СТІЙ",
+        "pl": "zatrzymywać się"
       },
       {
         "en": "water",
-        "uk": "water",
-        "pl": "water"
+        "ua": "води",
+        "uk": "води",
+        "pl": "woda"
       },
       {
         "en": "based",
-        "uk": "based",
-        "pl": "based"
+        "ua": "на основі",
+        "uk": "на основі",
+        "pl": "na podstawie"
       },
       {
         "en": "believe",
-        "uk": "believe",
-        "pl": "believe"
+        "ua": "вірити",
+        "uk": "вірити",
+        "pl": "uważać"
       },
       {
         "en": "call",
-        "uk": "call",
-        "pl": "call"
+        "ua": "дзвінок",
+        "uk": "дзвінок",
+        "pl": "dzwonić"
       },
       {
         "en": "head",
-        "uk": "head",
-        "pl": "head"
+        "ua": "голова",
+        "uk": "голова",
+        "pl": "głowa"
       },
       {
         "en": "national",
-        "uk": "national",
-        "pl": "national"
+        "ua": "національний",
+        "uk": "національний",
+        "pl": "krajowy"
       },
       {
         "en": "small",
-        "uk": "small",
-        "pl": "small"
+        "ua": "маленький",
+        "uk": "маленький",
+        "pl": "mały"
       },
       {
         "en": "took",
-        "uk": "took",
-        "pl": "took"
+        "ua": "взяв",
+        "uk": "взяв",
+        "pl": "wziął"
       },
       {
         "en": "white",
-        "uk": "white",
-        "pl": "white"
+        "ua": "білий",
+        "uk": "білий",
+        "pl": "biały"
       },
       {
         "en": "came",
-        "uk": "came",
-        "pl": "came"
+        "ua": "прийшов",
+        "uk": "прийшов",
+        "pl": "wszedł"
       },
       {
         "en": "side",
-        "uk": "side",
-        "pl": "side"
+        "ua": "бік",
+        "uk": "бік",
+        "pl": "strona"
       },
       {
         "en": "though",
-        "uk": "though",
-        "pl": "though"
+        "ua": "хоча",
+        "uk": "хоча",
+        "pl": "chociaż"
       },
       {
         "en": "went",
-        "uk": "went",
-        "pl": "went"
+        "ua": "пішов",
+        "uk": "пішов",
+        "pl": "wszedł"
       },
       {
         "en": "actually",
-        "uk": "actually",
-        "pl": "actually"
+        "ua": "насправді",
+        "uk": "насправді",
+        "pl": "Właściwie"
       },
       {
         "en": "american",
-        "uk": "american",
-        "pl": "american"
+        "ua": "американський",
+        "uk": "американський",
+        "pl": "amerykański"
       },
       {
         "en": "later",
-        "uk": "later",
-        "pl": "later"
+        "ua": "пізніше",
+        "uk": "пізніше",
+        "pl": "później"
       },
       {
         "en": "less",
-        "uk": "less",
-        "pl": "less"
+        "ua": "менше",
+        "uk": "менше",
+        "pl": "mniej"
       },
       {
         "en": "line",
-        "uk": "line",
-        "pl": "line"
+        "ua": "лінія",
+        "uk": "лінія",
+        "pl": "linia"
       },
       {
         "en": "order",
-        "uk": "order",
-        "pl": "order"
+        "ua": "порядок",
+        "uk": "порядок",
+        "pl": "zamówienie"
       },
       {
         "en": "party",
-        "uk": "party",
-        "pl": "party"
+        "ua": "вечірка",
+        "uk": "вечірка",
+        "pl": "impreza"
       },
       {
         "en": "says",
-        "uk": "says",
-        "pl": "says"
+        "ua": "каже",
+        "uk": "каже",
+        "pl": "mówi"
       },
       {
         "en": "service",
-        "uk": "service",
-        "pl": "service"
+        "ua": "обслуговування",
+        "uk": "обслуговування",
+        "pl": "praca"
       },
       {
         "en": "country",
-        "uk": "country",
-        "pl": "country"
+        "ua": "країна",
+        "uk": "країна",
+        "pl": "kraj"
       },
       {
         "en": "open",
-        "uk": "open",
-        "pl": "open"
+        "ua": "ВІДЧИНЕНО",
+        "uk": "ВІДЧИНЕНО",
+        "pl": "Otwarte"
       },
       {
         "en": "season",
-        "uk": "season",
-        "pl": "season"
+        "ua": "сезон",
+        "uk": "сезон",
+        "pl": "sezon"
       },
       {
         "en": "shit",
-        "uk": "shit",
-        "pl": "shit"
+        "ua": "лайно",
+        "uk": "лайно",
+        "pl": "gówno"
       },
       {
         "en": "thank",
-        "uk": "thank",
-        "pl": "thank"
+        "ua": "дякую",
+        "uk": "дякую",
+        "pl": "dziękować"
       },
       {
         "en": "children",
-        "uk": "children",
-        "pl": "children"
+        "ua": "дітей",
+        "uk": "дітей",
+        "pl": "dzieci"
       },
       {
         "en": "everyone",
-        "uk": "everyone",
-        "pl": "everyone"
+        "ua": "кожен",
+        "uk": "кожен",
+        "pl": "wszyscy"
       },
       {
         "en": "general",
-        "uk": "general",
-        "pl": "general"
+        "ua": "загальний",
+        "uk": "загальний",
+        "pl": "ogólny"
       },
       {
         "en": "trying",
-        "uk": "trying",
-        "pl": "trying"
+        "ua": "намагаючись",
+        "uk": "намагаючись",
+        "pl": "męczący"
       },
       {
         "en": "united",
-        "uk": "united",
-        "pl": "united"
+        "ua": "об'єднані",
+        "uk": "об'єднані",
+        "pl": "zjednoczony"
       },
       {
         "en": "using",
-        "uk": "using",
-        "pl": "using"
+        "ua": "використовуючи",
+        "uk": "використовуючи",
+        "pl": "używając"
       },
       {
         "en": "area",
-        "uk": "area",
-        "pl": "area"
+        "ua": "область",
+        "uk": "область",
+        "pl": "obszar"
       },
       {
         "en": "black",
-        "uk": "black",
-        "pl": "black"
+        "ua": "чорний",
+        "uk": "чорний",
+        "pl": "czarny"
       },
       {
         "en": "following",
-        "uk": "following",
-        "pl": "following"
+        "ua": "наступні",
+        "uk": "наступні",
+        "pl": "następny"
       },
       {
         "en": "makes",
-        "uk": "makes",
-        "pl": "makes"
+        "ua": "робить",
+        "uk": "робить",
+        "pl": "sprawia"
       },
       {
         "en": "together",
-        "uk": "together",
-        "pl": "together"
+        "ua": "разом",
+        "uk": "разом",
+        "pl": "razem"
       },
       {
         "en": "whole",
-        "uk": "whole",
-        "pl": "whole"
+        "ua": "ціле",
+        "uk": "ціле",
+        "pl": "cały"
       },
       {
         "en": "face",
-        "uk": "face",
-        "pl": "face"
+        "ua": "обличчя",
+        "uk": "обличчя",
+        "pl": "twarz"
       },
       {
         "en": "five",
-        "uk": "five",
-        "pl": "five"
+        "ua": "п'ять",
+        "uk": "п'ять",
+        "pl": "pięć"
       },
       {
         "en": "kind",
-        "uk": "kind",
-        "pl": "kind"
+        "ua": "вид",
+        "uk": "вид",
+        "pl": "Uprzejmy"
       },
       {
         "en": "maybe",
-        "uk": "maybe",
-        "pl": "maybe"
+        "ua": "можливо",
+        "uk": "можливо",
+        "pl": "Może"
       },
       {
         "en": "president",
-        "uk": "president",
-        "pl": "president"
+        "ua": "президент",
+        "uk": "президент",
+        "pl": "prezydent"
       },
       {
         "en": "story",
-        "uk": "story",
-        "pl": "story"
+        "ua": "історія",
+        "uk": "історія",
+        "pl": "historia"
       },
       {
         "en": "working",
-        "uk": "working",
-        "pl": "working"
+        "ua": "працює",
+        "uk": "працює",
+        "pl": "pracujący"
       },
       {
         "en": "course",
-        "uk": "course",
-        "pl": "course"
+        "ua": "курс",
+        "uk": "курс",
+        "pl": "kurs"
       },
       {
         "en": "games",
-        "uk": "games",
-        "pl": "games"
+        "ua": "ігри",
+        "uk": "ігри",
+        "pl": "zawody sportowe"
       },
       {
         "en": "health",
-        "uk": "health",
-        "pl": "health"
+        "ua": "здоров'я",
+        "uk": "здоров'я",
+        "pl": "zdrowie"
       },
       {
         "en": "hope",
-        "uk": "hope",
-        "pl": "hope"
+        "ua": "надія",
+        "uk": "надія",
+        "pl": "mieć nadzieję"
       },
       {
         "en": "important",
-        "uk": "important",
-        "pl": "important"
+        "ua": "важливо",
+        "uk": "важливо",
+        "pl": "ważny"
       },
       {
         "en": "least",
-        "uk": "least",
-        "pl": "least"
+        "ua": "найменше",
+        "uk": "найменше",
+        "pl": "najmniej"
       },
       {
         "en": "means",
-        "uk": "means",
-        "pl": "means"
+        "ua": "засоби",
+        "uk": "засоби",
+        "pl": "oznacza"
       },
       {
         "en": "news",
-        "uk": "news",
-        "pl": "news"
+        "ua": "новини",
+        "uk": "новини",
+        "pl": "aktualności"
       },
       {
         "en": "within",
-        "uk": "within",
-        "pl": "within"
+        "ua": "в межах",
+        "uk": "в межах",
+        "pl": "w"
       },
       {
         "en": "able",
-        "uk": "able",
-        "pl": "able"
+        "ua": "здатний",
+        "uk": "здатний",
+        "pl": "zdolny"
       },
       {
         "en": "book",
-        "uk": "book",
-        "pl": "book"
+        "ua": "книга",
+        "uk": "книга",
+        "pl": "książka"
       },
       {
         "en": "early",
-        "uk": "early",
-        "pl": "early"
+        "ua": "рано",
+        "uk": "рано",
+        "pl": "wczesny"
       },
       {
         "en": "friends",
-        "uk": "friends",
-        "pl": "friends"
+        "ua": "друзі",
+        "uk": "друзі",
+        "pl": "przyjaciele"
       },
       {
         "en": "information",
-        "uk": "information",
-        "pl": "information"
+        "ua": "інформації",
+        "uk": "інформації",
+        "pl": "informacja"
       },
       {
         "en": "local",
-        "uk": "local",
-        "pl": "local"
+        "ua": "місцевий",
+        "uk": "місцевий",
+        "pl": "lokalny"
       },
       {
         "en": "post",
-        "uk": "post",
-        "pl": "post"
+        "ua": "пост",
+        "uk": "пост",
+        "pl": "wpis"
       },
       {
         "en": "thanks",
-        "uk": "thanks",
-        "pl": "thanks"
+        "ua": "дякую",
+        "uk": "дякую",
+        "pl": "Dzięki"
       },
       {
         "en": "video",
-        "uk": "video",
-        "pl": "video"
+        "ua": "відео",
+        "uk": "відео",
+        "pl": "wideo"
       },
       {
         "en": "young",
-        "uk": "young",
-        "pl": "young"
+        "ua": "молодий",
+        "uk": "молодий",
+        "pl": "młody"
       },
       {
         "en": "others",
-        "uk": "others",
-        "pl": "others"
+        "ua": "інші",
+        "uk": "інші",
+        "pl": "inni"
       },
       {
         "en": "social",
-        "uk": "social",
-        "pl": "social"
+        "ua": "соціальні",
+        "uk": "соціальні",
+        "pl": "społeczny"
       },
       {
         "en": "talk",
-        "uk": "talk",
-        "pl": "talk"
+        "ua": "говорити",
+        "uk": "говорити",
+        "pl": "rozmawiać"
       },
       {
         "en": "court",
-        "uk": "court",
-        "pl": "court"
+        "ua": "суд",
+        "uk": "суд",
+        "pl": "sąd"
       },
       {
         "en": "fact",
-        "uk": "fact",
-        "pl": "fact"
+        "ua": "факт",
+        "uk": "факт",
+        "pl": "fakt"
       },
       {
         "en": "given",
-        "uk": "given",
-        "pl": "given"
+        "ua": "дано",
+        "uk": "дано",
+        "pl": "dany"
       },
       {
         "en": "guys",
-        "uk": "guys",
-        "pl": "guys"
+        "ua": "хлопці",
+        "uk": "хлопці",
+        "pl": "Chłopaki"
       },
       {
         "en": "half",
-        "uk": "half",
-        "pl": "half"
+        "ua": "половина",
+        "uk": "половина",
+        "pl": "połowa"
       },
       {
         "en": "hand",
-        "uk": "hand",
-        "pl": "hand"
+        "ua": "руку",
+        "uk": "руку",
+        "pl": "ręka"
       },
       {
         "en": "level",
-        "uk": "level",
-        "pl": "level"
+        "ua": "рівень",
+        "uk": "рівень",
+        "pl": "poziom"
       },
       {
         "en": "mind",
-        "uk": "mind",
-        "pl": "mind"
+        "ua": "розум",
+        "uk": "розум",
+        "pl": "umysł"
       },
       {
         "en": "often",
-        "uk": "often",
-        "pl": "often"
+        "ua": "часто",
+        "uk": "часто",
+        "pl": "często"
       },
       {
         "en": "single",
-        "uk": "single",
-        "pl": "single"
+        "ua": "неодружений",
+        "uk": "неодружений",
+        "pl": "pojedynczy"
       },
       {
         "en": "become",
-        "uk": "become",
-        "pl": "become"
+        "ua": "стати",
+        "uk": "стати",
+        "pl": "stać się"
       }
     ]
   },
@@ -1806,1507 +2106,1783 @@
     "Travel": [
       {
         "en": "airport",
-        "uk": "airport",
-        "pl": "airport"
+        "ua": "аеропорт",
+        "uk": "аеропорт",
+        "pl": "lotnisko"
       },
       {
         "en": "passport",
-        "uk": "passport",
-        "pl": "passport"
+        "ua": "паспорт",
+        "uk": "паспорт",
+        "pl": "paszport"
       },
       {
         "en": "luggage",
-        "uk": "luggage",
-        "pl": "luggage"
+        "ua": "багаж",
+        "uk": "багаж",
+        "pl": "bagaż"
       },
       {
         "en": "boarding pass",
-        "uk": "boarding pass",
-        "pl": "boarding pass"
+        "ua": "посадковий талон",
+        "uk": "посадковий талон",
+        "pl": "karta pokładowa"
       },
       {
         "en": "platform",
-        "uk": "platform",
-        "pl": "platform"
+        "ua": "платформа",
+        "uk": "платформа",
+        "pl": "platforma"
       },
       {
         "en": "ticket",
-        "uk": "ticket",
-        "pl": "ticket"
+        "ua": "квиток",
+        "uk": "квиток",
+        "pl": "bilet"
       },
       {
         "en": "journey",
-        "uk": "journey",
-        "pl": "journey"
+        "ua": "подорож",
+        "uk": "подорож",
+        "pl": "podróż"
       },
       {
         "en": "hostel",
-        "uk": "hostel",
-        "pl": "hostel"
+        "ua": "гуртожиток",
+        "uk": "гуртожиток",
+        "pl": "schronisko"
       },
       {
         "en": "reservation",
-        "uk": "reservation",
-        "pl": "reservation"
+        "ua": "бронювання",
+        "uk": "бронювання",
+        "pl": "rezerwacja"
       },
       {
         "en": "landmark",
-        "uk": "landmark",
-        "pl": "landmark"
+        "ua": "орієнтир",
+        "uk": "орієнтир",
+        "pl": "punkt orientacyjny"
       },
       {
         "en": "guidebook",
-        "uk": "guidebook",
-        "pl": "guidebook"
+        "ua": "путівник",
+        "uk": "путівник",
+        "pl": "przewodnik"
       },
       {
         "en": "take off",
-        "uk": "take off",
-        "pl": "take off"
+        "ua": "злітати",
+        "uk": "злітати",
+        "pl": "startować"
       },
       {
         "en": "body",
-        "uk": "body",
-        "pl": "body"
+        "ua": "тіло",
+        "uk": "тіло",
+        "pl": "ciało"
       },
       {
         "en": "coming",
-        "uk": "coming",
-        "pl": "coming"
+        "ua": "приходить",
+        "uk": "приходить",
+        "pl": "nadchodzący"
       },
       {
         "en": "control",
-        "uk": "control",
-        "pl": "control"
+        "ua": "КОНТРОЛЬ",
+        "uk": "КОНТРОЛЬ",
+        "pl": "kontrola"
       },
       {
         "en": "death",
-        "uk": "death",
-        "pl": "death"
+        "ua": "смерть",
+        "uk": "смерть",
+        "pl": "śmierć"
       },
       {
         "en": "food",
-        "uk": "food",
-        "pl": "food"
+        "ua": "харчування",
+        "uk": "харчування",
+        "pl": "żywność"
       },
       {
         "en": "hours",
-        "uk": "hours",
-        "pl": "hours"
+        "ua": "години",
+        "uk": "години",
+        "pl": "godziny"
       },
       {
         "en": "office",
-        "uk": "office",
-        "pl": "office"
+        "ua": "офіс",
+        "uk": "офіс",
+        "pl": "biuro"
       },
       {
         "en": "problem",
-        "uk": "problem",
-        "pl": "problem"
+        "ua": "проблема",
+        "uk": "проблема",
+        "pl": "kłopot"
       },
       {
         "en": "south",
-        "uk": "south",
-        "pl": "south"
+        "ua": "південь",
+        "uk": "південь",
+        "pl": "południe"
       },
       {
         "en": "true",
-        "uk": "true",
-        "pl": "true"
+        "ua": "правда",
+        "uk": "правда",
+        "pl": "PRAWDA"
       },
       {
         "en": "almost",
-        "uk": "almost",
-        "pl": "almost"
+        "ua": "майже",
+        "uk": "майже",
+        "pl": "prawie"
       },
       {
         "en": "fuck",
-        "uk": "fuck",
-        "pl": "fuck"
+        "ua": "ебать",
+        "uk": "ебать",
+        "pl": "pierdolić"
       },
       {
         "en": "history",
-        "uk": "history",
-        "pl": "history"
+        "ua": "історії",
+        "uk": "історії",
+        "pl": "historia"
       },
       {
         "en": "known",
-        "uk": "known",
-        "pl": "known"
+        "ua": "відомий",
+        "uk": "відомий",
+        "pl": "znany"
       },
       {
         "en": "large",
-        "uk": "large",
-        "pl": "large"
+        "ua": "великий",
+        "uk": "великий",
+        "pl": "duży"
       },
       {
         "en": "lost",
-        "uk": "lost",
-        "pl": "lost"
+        "ua": "втрачено",
+        "uk": "втрачено",
+        "pl": "zaginiony"
       },
       {
         "en": "research",
-        "uk": "research",
-        "pl": "research"
+        "ua": "дослідження",
+        "uk": "дослідження",
+        "pl": "badania"
       },
       {
         "en": "room",
-        "uk": "room",
-        "pl": "room"
+        "ua": "кімната",
+        "uk": "кімната",
+        "pl": "pokój"
       },
       {
         "en": "several",
-        "uk": "several",
-        "pl": "several"
+        "ua": "декілька",
+        "uk": "декілька",
+        "pl": "kilka"
       },
       {
         "en": "started",
-        "uk": "started",
-        "pl": "started"
+        "ua": "почався",
+        "uk": "почався",
+        "pl": "zaczął"
       },
       {
         "en": "taking",
-        "uk": "taking",
-        "pl": "taking"
+        "ua": "беручи",
+        "uk": "беручи",
+        "pl": "nabierający"
       },
       {
         "en": "university",
-        "uk": "university",
-        "pl": "university"
+        "ua": "університет",
+        "uk": "університет",
+        "pl": "uniwersytet"
       },
       {
         "en": "wrong",
-        "uk": "wrong",
-        "pl": "wrong"
+        "ua": "неправильно",
+        "uk": "неправильно",
+        "pl": "zło"
       },
       {
         "en": "along",
-        "uk": "along",
-        "pl": "along"
+        "ua": "уздовж",
+        "uk": "уздовж",
+        "pl": "przed siebie"
       },
       {
         "en": "anyone",
-        "uk": "anyone",
-        "pl": "anyone"
+        "ua": "хто завгодно",
+        "uk": "хто завгодно",
+        "pl": "ktokolwiek"
       },
       {
         "en": "else",
-        "uk": "else",
-        "pl": "else"
+        "ua": "інше",
+        "uk": "інше",
+        "pl": "w przeciwnym razie"
       },
       {
         "en": "girl",
-        "uk": "girl",
-        "pl": "girl"
+        "ua": "дівчина",
+        "uk": "дівчина",
+        "pl": "dziewczyna"
       },
       {
         "en": "john",
-        "uk": "john",
-        "pl": "john"
+        "ua": "Джон",
+        "uk": "Джон",
+        "pl": "Jan"
       },
       {
         "en": "matter",
-        "uk": "matter",
-        "pl": "matter"
+        "ua": "справа",
+        "uk": "справа",
+        "pl": "materiał"
       },
       {
         "en": "pretty",
-        "uk": "pretty",
-        "pl": "pretty"
+        "ua": "гарна",
+        "uk": "гарна",
+        "pl": "ładny"
       },
       {
         "en": "remember",
-        "uk": "remember",
-        "pl": "remember"
+        "ua": "запам'ятати",
+        "uk": "запам'ятати",
+        "pl": "Pamiętać"
       },
       {
         "en": "friend",
-        "uk": "friend",
-        "pl": "friend"
+        "ua": "друг",
+        "uk": "друг",
+        "pl": "przyjaciel"
       },
       {
         "en": "needs",
-        "uk": "needs",
-        "pl": "needs"
+        "ua": "потреби",
+        "uk": "потреби",
+        "pl": "wymagania"
       },
       {
         "en": "nice",
-        "uk": "nice",
-        "pl": "nice"
+        "ua": "приємно",
+        "uk": "приємно",
+        "pl": "Ładny"
       },
       {
         "en": "playing",
-        "uk": "playing",
-        "pl": "playing"
+        "ua": "граючи",
+        "uk": "граючи",
+        "pl": "gra"
       },
       {
         "en": "probably",
-        "uk": "probably",
-        "pl": "probably"
+        "ua": "ймовірно",
+        "uk": "ймовірно",
+        "pl": "prawdopodobnie"
       },
       {
         "en": "saying",
-        "uk": "saying",
-        "pl": "saying"
+        "ua": "кажучи",
+        "uk": "кажучи",
+        "pl": "powiedzenie"
       },
       {
         "en": "understand",
-        "uk": "understand",
-        "pl": "understand"
+        "ua": "зрозуміти",
+        "uk": "зрозуміти",
+        "pl": "zrozumieć"
       },
       {
         "en": "yeah",
-        "uk": "yeah",
-        "pl": "yeah"
+        "ua": "так",
+        "uk": "так",
+        "pl": "Tak"
       },
       {
         "en": "york",
-        "uk": "york",
-        "pl": "york"
+        "ua": "йорк",
+        "uk": "йорк",
+        "pl": "miasto York"
       },
       {
         "en": "class",
-        "uk": "class",
-        "pl": "class"
+        "ua": "клас",
+        "uk": "клас",
+        "pl": "klasa"
       },
       {
         "en": "close",
-        "uk": "close",
-        "pl": "close"
+        "ua": "закрити",
+        "uk": "закрити",
+        "pl": "zamknąć"
       },
       {
         "en": "comes",
-        "uk": "comes",
-        "pl": "comes"
+        "ua": "приходить",
+        "uk": "приходить",
+        "pl": "komes"
       },
       {
         "en": "idea",
-        "uk": "idea",
-        "pl": "idea"
+        "ua": "ідея",
+        "uk": "ідея",
+        "pl": "pomysł"
       },
       {
         "en": "international",
-        "uk": "international",
-        "pl": "international"
+        "ua": "міжнародний",
+        "uk": "міжнародний",
+        "pl": "międzynarodowy"
       },
       {
         "en": "looks",
-        "uk": "looks",
-        "pl": "looks"
+        "ua": "виглядає",
+        "uk": "виглядає",
+        "pl": "wygląda"
       },
       {
         "en": "past",
-        "uk": "past",
-        "pl": "past"
+        "ua": "минуле",
+        "uk": "минуле",
+        "pl": "przeszłość"
       },
       {
         "en": "possible",
-        "uk": "possible",
-        "pl": "possible"
+        "ua": "можливо",
+        "uk": "можливо",
+        "pl": "możliwy"
       },
       {
         "en": "wanted",
-        "uk": "wanted",
-        "pl": "wanted"
+        "ua": "хотів",
+        "uk": "хотів",
+        "pl": "poszukiwany"
       },
       {
         "en": "cause",
-        "uk": "cause",
-        "pl": "cause"
+        "ua": "причина",
+        "uk": "причина",
+        "pl": "przyczyna"
       },
       {
         "en": "happy",
-        "uk": "happy",
-        "pl": "happy"
+        "ua": "щасливий",
+        "uk": "щасливий",
+        "pl": "szczęśliwy"
       },
       {
         "en": "human",
-        "uk": "human",
-        "pl": "human"
+        "ua": "людини",
+        "uk": "людини",
+        "pl": "człowiek"
       },
       {
         "en": "members",
-        "uk": "members",
-        "pl": "members"
+        "ua": "членів",
+        "uk": "членів",
+        "pl": "członkowie"
       },
       {
         "en": "months",
-        "uk": "months",
-        "pl": "months"
+        "ua": "місяців",
+        "uk": "місяців",
+        "pl": "miesiące"
       },
       {
         "en": "move",
-        "uk": "move",
-        "pl": "move"
+        "ua": "рухатися",
+        "uk": "рухатися",
+        "pl": "przenosić"
       },
       {
         "en": "question",
-        "uk": "question",
-        "pl": "question"
+        "ua": "запитання",
+        "uk": "запитання",
+        "pl": "pytanie"
       },
       {
         "en": "series",
-        "uk": "series",
-        "pl": "series"
+        "ua": "серії",
+        "uk": "серії",
+        "pl": "szereg"
       },
       {
         "en": "wait",
-        "uk": "wait",
-        "pl": "wait"
+        "ua": "чекати",
+        "uk": "чекати",
+        "pl": "Czekać"
       },
       {
         "en": "woman",
-        "uk": "woman",
-        "pl": "woman"
+        "ua": "жінка",
+        "uk": "жінка",
+        "pl": "kobieta"
       },
       {
         "en": "community",
-        "uk": "community",
-        "pl": "community"
+        "ua": "громада",
+        "uk": "громада",
+        "pl": "wspólnota"
       },
       {
         "en": "data",
-        "uk": "data",
-        "pl": "data"
+        "ua": "даних",
+        "uk": "даних",
+        "pl": "dane"
       },
       {
         "en": "late",
-        "uk": "late",
-        "pl": "late"
+        "ua": "пізно",
+        "uk": "пізно",
+        "pl": "późno"
       },
       {
         "en": "leave",
-        "uk": "leave",
-        "pl": "leave"
+        "ua": "залишити",
+        "uk": "залишити",
+        "pl": "Zostawić"
       },
       {
         "en": "north",
-        "uk": "north",
-        "pl": "north"
+        "ua": "північ",
+        "uk": "північ",
+        "pl": "północ"
       },
       {
         "en": "special",
-        "uk": "special",
-        "pl": "special"
+        "ua": "спеціальні",
+        "uk": "спеціальні",
+        "pl": "specjalny"
       },
       {
         "en": "watch",
-        "uk": "watch",
-        "pl": "watch"
+        "ua": "дивитися",
+        "uk": "дивитися",
+        "pl": "oglądać"
       },
       {
         "en": "either",
-        "uk": "either",
-        "pl": "either"
+        "ua": "або",
+        "uk": "або",
+        "pl": "albo"
       },
       {
         "en": "fucking",
-        "uk": "fucking",
-        "pl": "fucking"
+        "ua": "блядь",
+        "uk": "блядь",
+        "pl": "pierdolony"
       },
       {
         "en": "future",
-        "uk": "future",
-        "pl": "future"
+        "ua": "майбутнє",
+        "uk": "майбутнє",
+        "pl": "przyszły"
       },
       {
         "en": "light",
-        "uk": "light",
-        "pl": "light"
+        "ua": "світло",
+        "uk": "світло",
+        "pl": "światło"
       },
       {
         "en": "million",
-        "uk": "million",
-        "pl": "million"
+        "ua": "мільйон",
+        "uk": "мільйон",
+        "pl": "milion"
       },
       {
         "en": "morning",
-        "uk": "morning",
-        "pl": "morning"
+        "ua": "ранок",
+        "uk": "ранок",
+        "pl": "Poranek"
       },
       {
         "en": "police",
-        "uk": "police",
-        "pl": "police"
+        "ua": "поліція",
+        "uk": "поліція",
+        "pl": "Policja"
       },
       {
         "en": "short",
-        "uk": "short",
-        "pl": "short"
+        "ua": "короткий",
+        "uk": "короткий",
+        "pl": "krótki"
       },
       {
         "en": "stay",
-        "uk": "stay",
-        "pl": "stay"
+        "ua": "залишитися",
+        "uk": "залишитися",
+        "pl": "zostawać"
       },
       {
         "en": "taken",
-        "uk": "taken",
-        "pl": "taken"
+        "ua": "взято",
+        "uk": "взято",
+        "pl": "zajęty"
       },
       {
         "en": "deal",
-        "uk": "deal",
-        "pl": "deal"
+        "ua": "справа",
+        "uk": "справа",
+        "pl": "umowa"
       },
       {
         "en": "rather",
-        "uk": "rather",
-        "pl": "rather"
+        "ua": "швидше",
+        "uk": "швидше",
+        "pl": "raczej"
       },
       {
         "en": "reason",
-        "uk": "reason",
-        "pl": "reason"
+        "ua": "причина",
+        "uk": "причина",
+        "pl": "powód"
       },
       {
         "en": "report",
-        "uk": "report",
-        "pl": "report"
+        "ua": "звіт",
+        "uk": "звіт",
+        "pl": "raport"
       },
       {
         "en": "soon",
-        "uk": "soon",
-        "pl": "soon"
+        "ua": "скоро",
+        "uk": "скоро",
+        "pl": "Wkrótce"
       },
       {
         "en": "third",
-        "uk": "third",
-        "pl": "third"
+        "ua": "третій",
+        "uk": "третій",
+        "pl": "trzeci"
       },
       {
         "en": "turn",
-        "uk": "turn",
-        "pl": "turn"
+        "ua": "поворот",
+        "uk": "поворот",
+        "pl": "zakręt"
       },
       {
         "en": "whether",
-        "uk": "whether",
-        "pl": "whether"
+        "ua": "чи",
+        "uk": "чи",
+        "pl": "czy"
       },
       {
         "en": "among",
-        "uk": "among",
-        "pl": "among"
+        "ua": "серед",
+        "uk": "серед",
+        "pl": "wśród"
       },
       {
         "en": "check",
-        "uk": "check",
-        "pl": "check"
+        "ua": "перевірка",
+        "uk": "перевірка",
+        "pl": "sprawdzać"
       },
       {
         "en": "development",
-        "uk": "development",
-        "pl": "development"
+        "ua": "розвитку",
+        "uk": "розвитку",
+        "pl": "rozwój"
       },
       {
         "en": "form",
-        "uk": "form",
-        "pl": "form"
+        "ua": "форму",
+        "uk": "форму",
+        "pl": "formularz"
       }
     ],
     "Work": [
       {
-        "en": "that",
-        "uk": "that",
-        "pl": "that"
-      },
-      {
         "en": "meeting",
-        "uk": "meeting",
-        "pl": "meeting"
+        "ua": "засідання",
+        "uk": "засідання",
+        "pl": "spotkanie"
       },
       {
         "en": "deadline",
-        "uk": "deadline",
-        "pl": "deadline"
+        "ua": "крайній термін",
+        "uk": "крайній термін",
+        "pl": "termin ostateczny"
       },
       {
         "en": "salary",
-        "uk": "salary",
-        "pl": "salary"
+        "ua": "зарплата",
+        "uk": "зарплата",
+        "pl": "wynagrodzenie"
       },
       {
         "en": "contract",
-        "uk": "contract",
-        "pl": "contract"
+        "ua": "договір",
+        "uk": "договір",
+        "pl": "umowa"
       },
       {
         "en": "manager",
-        "uk": "manager",
-        "pl": "manager"
+        "ua": "менеджер",
+        "uk": "менеджер",
+        "pl": "menedżer"
       },
       {
         "en": "colleague",
-        "uk": "colleague",
-        "pl": "colleague"
+        "ua": "колега",
+        "uk": "колега",
+        "pl": "kolega z pracy"
       },
       {
         "en": "shift",
-        "uk": "shift",
-        "pl": "shift"
+        "ua": "зміна",
+        "uk": "зміна",
+        "pl": "zmiana"
       },
       {
         "en": "interview",
-        "uk": "interview",
-        "pl": "interview"
+        "ua": "інтерв'ю",
+        "uk": "інтерв'ю",
+        "pl": "wywiad"
       },
       {
         "en": "promotion",
-        "uk": "promotion",
-        "pl": "promotion"
+        "ua": "просування по службі",
+        "uk": "просування по службі",
+        "pl": "promocja"
       },
       {
         "en": "overtime",
-        "uk": "overtime",
-        "pl": "overtime"
+        "ua": "понаднормова робота",
+        "uk": "понаднормова робота",
+        "pl": "nadgodziny"
       },
       {
         "en": "feedback",
-        "uk": "feedback",
-        "pl": "feedback"
+        "ua": "зворотній зв'язок",
+        "uk": "зворотній зв'язок",
+        "pl": "informacja zwrotna"
       },
       {
         "en": "further",
-        "uk": "further",
-        "pl": "further"
+        "ua": "далі",
+        "uk": "далі",
+        "pl": "dalej"
       },
       {
         "en": "heart",
-        "uk": "heart",
-        "pl": "heart"
+        "ua": "серце",
+        "uk": "серце",
+        "pl": "serce"
       },
       {
         "en": "minutes",
-        "uk": "minutes",
-        "pl": "minutes"
+        "ua": "хвилин",
+        "uk": "хвилин",
+        "pl": "protokół"
       },
       {
         "en": "myself",
-        "uk": "myself",
-        "pl": "myself"
+        "ua": "себе",
+        "uk": "себе",
+        "pl": "ja"
       },
       {
         "en": "services",
-        "uk": "services",
-        "pl": "services"
+        "ua": "послуги",
+        "uk": "послуги",
+        "pl": "usługi"
       },
       {
         "en": "yourself",
-        "uk": "yourself",
-        "pl": "yourself"
+        "ua": "себе",
+        "uk": "себе",
+        "pl": "się"
       },
       {
         "en": "although",
-        "uk": "although",
-        "pl": "although"
+        "ua": "хоча",
+        "uk": "хоча",
+        "pl": "Chociaż"
       },
       {
         "en": "asked",
-        "uk": "asked",
-        "pl": "asked"
+        "ua": "запитав",
+        "uk": "запитав",
+        "pl": "zapytał"
       },
       {
         "en": "child",
-        "uk": "child",
-        "pl": "child"
+        "ua": "дитина",
+        "uk": "дитина",
+        "pl": "dziecko"
       },
       {
         "en": "fire",
-        "uk": "fire",
-        "pl": "fire"
+        "ua": "вогонь",
+        "uk": "вогонь",
+        "pl": "ogień"
       },
       {
         "en": "living",
-        "uk": "living",
-        "pl": "living"
+        "ua": "життя",
+        "uk": "життя",
+        "pl": "żyjący"
       },
       {
         "en": "major",
-        "uk": "major",
-        "pl": "major"
+        "ua": "майор",
+        "uk": "майор",
+        "pl": "główny"
       },
       {
         "en": "media",
-        "uk": "media",
-        "pl": "media"
+        "ua": "ЗМІ",
+        "uk": "ЗМІ",
+        "pl": "głoska bezdźwięczna"
       },
       {
         "en": "phone",
-        "uk": "phone",
-        "pl": "phone"
+        "ua": "телефон",
+        "uk": "телефон",
+        "pl": "telefon"
       },
       {
         "en": "players",
-        "uk": "players",
-        "pl": "players"
+        "ua": "гравців",
+        "uk": "гравців",
+        "pl": "gracze"
       },
       {
         "en": "behind",
-        "uk": "behind",
-        "pl": "behind"
+        "ua": "ззаду",
+        "uk": "ззаду",
+        "pl": "za"
       },
       {
         "en": "building",
-        "uk": "building",
-        "pl": "building"
+        "ua": "будівля",
+        "uk": "будівля",
+        "pl": "budynek"
       },
       {
         "en": "easy",
-        "uk": "easy",
-        "pl": "easy"
+        "ua": "легко",
+        "uk": "легко",
+        "pl": "łatwy"
       },
       {
         "en": "gonna",
-        "uk": "gonna",
-        "pl": "gonna"
+        "ua": "збираюся",
+        "uk": "збираюся",
+        "pl": "zamierzać"
       },
       {
         "en": "market",
-        "uk": "market",
-        "pl": "market"
+        "ua": "ринку",
+        "uk": "ринку",
+        "pl": "rynek"
       },
       {
         "en": "near",
-        "uk": "near",
-        "pl": "near"
+        "ua": "поблизу",
+        "uk": "поблизу",
+        "pl": "w pobliżu"
       },
       {
         "en": "plan",
-        "uk": "plan",
-        "pl": "plan"
+        "ua": "планувати",
+        "uk": "планувати",
+        "pl": "zamysł"
       },
       {
         "en": "political",
-        "uk": "political",
-        "pl": "political"
+        "ua": "політичні",
+        "uk": "політичні",
+        "pl": "polityczny"
       },
       {
         "en": "quite",
-        "uk": "quite",
-        "pl": "quite"
+        "ua": "цілком",
+        "uk": "цілком",
+        "pl": "całkiem"
       },
       {
         "en": "talking",
-        "uk": "talking",
-        "pl": "talking"
+        "ua": "говорити",
+        "uk": "говорити",
+        "pl": "rozmawiając"
       },
       {
         "en": "west",
-        "uk": "west",
-        "pl": "west"
+        "ua": "захід",
+        "uk": "захід",
+        "pl": "Zachód"
       },
       {
         "en": "works",
-        "uk": "works",
-        "pl": "works"
+        "ua": "працює",
+        "uk": "працює",
+        "pl": "fabryka"
       },
       {
         "en": "according",
-        "uk": "according",
-        "pl": "according"
+        "ua": "відповідно",
+        "uk": "відповідно",
+        "pl": "według"
       },
       {
         "en": "available",
-        "uk": "available",
-        "pl": "available"
+        "ua": "доступний",
+        "uk": "доступний",
+        "pl": "dostępny"
       },
       {
         "en": "education",
-        "uk": "education",
-        "pl": "education"
+        "ua": "освіти",
+        "uk": "освіти",
+        "pl": "edukacja"
       },
       {
         "en": "final",
-        "uk": "final",
-        "pl": "final"
+        "ua": "остаточний",
+        "uk": "остаточний",
+        "pl": "finał"
       },
       {
         "en": "former",
-        "uk": "former",
-        "pl": "former"
+        "ua": "колишній",
+        "uk": "колишній",
+        "pl": "dawny"
       },
       {
         "en": "front",
-        "uk": "front",
-        "pl": "front"
+        "ua": "спереду",
+        "uk": "спереду",
+        "pl": "przód"
       },
       {
         "en": "kids",
-        "uk": "kids",
-        "pl": "kids"
+        "ua": "діти",
+        "uk": "діти",
+        "pl": "dzieci"
       },
       {
         "en": "list",
-        "uk": "list",
-        "pl": "list"
+        "ua": "список",
+        "uk": "список",
+        "pl": "lista"
       },
       {
         "en": "ready",
-        "uk": "ready",
-        "pl": "ready"
+        "ua": "готовий",
+        "uk": "готовий",
+        "pl": "gotowy"
       },
       {
         "en": "sometimes",
-        "uk": "sometimes",
-        "pl": "sometimes"
+        "ua": "іноді",
+        "uk": "іноді",
+        "pl": "Czasami"
       },
       {
         "en": "street",
-        "uk": "street",
-        "pl": "street"
+        "ua": "вулиця",
+        "uk": "вулиця",
+        "pl": "ulica"
       },
       {
         "en": "bring",
-        "uk": "bring",
-        "pl": "bring"
+        "ua": "принести",
+        "uk": "принести",
+        "pl": "przynieść"
       },
       {
         "en": "college",
-        "uk": "college",
-        "pl": "college"
+        "ua": "коледж",
+        "uk": "коледж",
+        "pl": "kolegium"
       },
       {
         "en": "current",
-        "uk": "current",
-        "pl": "current"
+        "ua": "поточний",
+        "uk": "поточний",
+        "pl": "aktualny"
       },
       {
         "en": "example",
-        "uk": "example",
-        "pl": "example"
+        "ua": "приклад",
+        "uk": "приклад",
+        "pl": "przykład"
       },
       {
         "en": "experience",
-        "uk": "experience",
-        "pl": "experience"
+        "ua": "досвід",
+        "uk": "досвід",
+        "pl": "doświadczenie"
       },
       {
         "en": "heard",
-        "uk": "heard",
-        "pl": "heard"
+        "ua": "чув",
+        "uk": "чув",
+        "pl": "usłyszał"
       },
       {
         "en": "london",
-        "uk": "london",
-        "pl": "london"
+        "ua": "лондон",
+        "uk": "лондон",
+        "pl": "Londyn"
       },
       {
         "en": "meet",
-        "uk": "meet",
-        "pl": "meet"
+        "ua": "зустріти",
+        "uk": "зустріти",
+        "pl": "poznać"
       },
       {
         "en": "program",
-        "uk": "program",
-        "pl": "program"
+        "ua": "програма",
+        "uk": "програма",
+        "pl": "aplikacja"
       },
       {
         "en": "type",
-        "uk": "type",
-        "pl": "type"
+        "ua": "типу",
+        "uk": "типу",
+        "pl": "typ"
       },
       {
         "en": "baby",
-        "uk": "baby",
-        "pl": "baby"
+        "ua": "дитина",
+        "uk": "дитина",
+        "pl": "Dziecko"
       },
       {
         "en": "chance",
-        "uk": "chance",
-        "pl": "chance"
-      },
-      {
-        "en": "father",
-        "uk": "father",
-        "pl": "father"
+        "ua": "шанс",
+        "uk": "шанс",
+        "pl": "szansa"
       },
       {
         "en": "march",
-        "uk": "march",
-        "pl": "march"
+        "ua": "марш",
+        "uk": "марш",
+        "pl": "marzec"
       },
       {
         "en": "process",
-        "uk": "process",
-        "pl": "process"
+        "ua": "процес",
+        "uk": "процес",
+        "pl": "proces"
       },
       {
         "en": "song",
-        "uk": "song",
-        "pl": "song"
+        "ua": "пісня",
+        "uk": "пісня",
+        "pl": "piosenka"
       },
       {
         "en": "study",
-        "uk": "study",
-        "pl": "study"
+        "ua": "вивчення",
+        "uk": "вивчення",
+        "pl": "badanie"
       },
       {
         "en": "word",
-        "uk": "word",
-        "pl": "word"
+        "ua": "слово",
+        "uk": "слово",
+        "pl": "słowo"
       },
       {
         "en": "across",
-        "uk": "across",
-        "pl": "across"
+        "ua": "поперек",
+        "uk": "поперек",
+        "pl": "przez"
       },
       {
         "en": "action",
-        "uk": "action",
-        "pl": "action"
+        "ua": "дію",
+        "uk": "дію",
+        "pl": "działanie"
       },
       {
         "en": "clear",
-        "uk": "clear",
-        "pl": "clear"
+        "ua": "ясно",
+        "uk": "ясно",
+        "pl": "jasne"
       },
       {
         "en": "gave",
-        "uk": "gave",
-        "pl": "gave"
+        "ua": "дав",
+        "uk": "дав",
+        "pl": "dał"
       },
       {
         "en": "gets",
-        "uk": "gets",
-        "pl": "gets"
+        "ua": "отримує",
+        "uk": "отримує",
+        "pl": "dostaje"
       },
       {
         "en": "himself",
-        "uk": "himself",
-        "pl": "himself"
+        "ua": "себе",
+        "uk": "себе",
+        "pl": "się"
       },
       {
         "en": "month",
-        "uk": "month",
-        "pl": "month"
+        "ua": "місяць",
+        "uk": "місяць",
+        "pl": "miesiąc"
       },
       {
         "en": "outside",
-        "uk": "outside",
-        "pl": "outside"
+        "ua": "назовні",
+        "uk": "назовні",
+        "pl": "poza"
       },
       {
         "en": "self",
-        "uk": "self",
-        "pl": "self"
+        "ua": "себе",
+        "uk": "себе",
+        "pl": "ja"
       },
       {
         "en": "students",
-        "uk": "students",
-        "pl": "students"
+        "ua": "студентів",
+        "uk": "студентів",
+        "pl": "studenci"
       },
       {
         "en": "words",
-        "uk": "words",
-        "pl": "words"
+        "ua": "слова",
+        "uk": "слова",
+        "pl": "słowa"
       },
       {
         "en": "board",
-        "uk": "board",
-        "pl": "board"
+        "ua": "дошка",
+        "uk": "дошка",
+        "pl": "tablica"
       },
       {
         "en": "cost",
-        "uk": "cost",
-        "pl": "cost"
+        "ua": "вартість",
+        "uk": "вартість",
+        "pl": "koszt"
       },
       {
         "en": "field",
-        "uk": "field",
-        "pl": "field"
+        "ua": "поле",
+        "uk": "поле",
+        "pl": "pole"
       },
       {
         "en": "held",
-        "uk": "held",
-        "pl": "held"
+        "ua": "проведено",
+        "uk": "проведено",
+        "pl": "trzymany"
       },
       {
         "en": "instead",
-        "uk": "instead",
-        "pl": "instead"
+        "ua": "замість цього",
+        "uk": "замість цього",
+        "pl": "Zamiast"
       },
       {
         "en": "main",
-        "uk": "main",
-        "pl": "main"
+        "ua": "основний",
+        "uk": "основний",
+        "pl": "główny"
       },
       {
         "en": "moment",
-        "uk": "moment",
-        "pl": "moment"
-      },
-      {
-        "en": "mother",
-        "uk": "mother",
-        "pl": "mother"
+        "ua": "момент",
+        "uk": "момент",
+        "pl": "chwila"
       },
       {
         "en": "road",
-        "uk": "road",
-        "pl": "road"
+        "ua": "дорога",
+        "uk": "дорога",
+        "pl": "droga"
       },
       {
         "en": "seems",
-        "uk": "seems",
-        "pl": "seems"
+        "ua": "здається",
+        "uk": "здається",
+        "pl": "wydaje się"
       },
       {
         "en": "thinking",
-        "uk": "thinking",
-        "pl": "thinking"
+        "ua": "мислення",
+        "uk": "мислення",
+        "pl": "myślący"
       },
       {
         "en": "town",
-        "uk": "town",
-        "pl": "town"
+        "ua": "місто",
+        "uk": "місто",
+        "pl": "miasto"
       },
       {
         "en": "wants",
-        "uk": "wants",
-        "pl": "wants"
+        "ua": "хоче",
+        "uk": "хоче",
+        "pl": "chce"
       },
       {
         "en": "department",
-        "uk": "department",
-        "pl": "department"
+        "ua": "відділ",
+        "uk": "відділ",
+        "pl": "dział"
       },
       {
         "en": "energy",
-        "uk": "energy",
-        "pl": "energy"
+        "ua": "енергії",
+        "uk": "енергії",
+        "pl": "energia"
       },
       {
         "en": "fight",
-        "uk": "fight",
-        "pl": "fight"
+        "ua": "боротися",
+        "uk": "боротися",
+        "pl": "walka"
       },
       {
         "en": "fine",
-        "uk": "fine",
-        "pl": "fine"
+        "ua": "добре",
+        "uk": "добре",
+        "pl": "Cienki"
       },
       {
         "en": "force",
-        "uk": "force",
-        "pl": "force"
+        "ua": "сила",
+        "uk": "сила",
+        "pl": "siła"
       },
       {
         "en": "hear",
-        "uk": "hear",
-        "pl": "hear"
+        "ua": "чути",
+        "uk": "чути",
+        "pl": "słyszeć"
       },
       {
         "en": "issue",
-        "uk": "issue",
-        "pl": "issue"
+        "ua": "питання",
+        "uk": "питання",
+        "pl": "wydanie"
       },
       {
         "en": "played",
-        "uk": "played",
-        "pl": "played"
+        "ua": "грав",
+        "uk": "грав",
+        "pl": "grał"
       }
     ],
     "Health": [
       {
         "en": "doctor",
-        "uk": "doctor",
-        "pl": "doctor"
+        "ua": "лікар",
+        "uk": "лікар",
+        "pl": "lekarz"
       },
       {
         "en": "nurse",
-        "uk": "nurse",
-        "pl": "nurse"
+        "ua": "медсестра",
+        "uk": "медсестра",
+        "pl": "pielęgniarka"
       },
       {
         "en": "clinic",
-        "uk": "clinic",
-        "pl": "clinic"
+        "ua": "клініка",
+        "uk": "клініка",
+        "pl": "klinika"
       },
       {
         "en": "medicine",
-        "uk": "medicine",
-        "pl": "medicine"
+        "ua": "ліки",
+        "uk": "ліки",
+        "pl": "medycyna"
       },
       {
         "en": "fever",
-        "uk": "fever",
-        "pl": "fever"
+        "ua": "лихоманка",
+        "uk": "лихоманка",
+        "pl": "gorączka"
       },
       {
         "en": "cough",
-        "uk": "cough",
-        "pl": "cough"
+        "ua": "кашель",
+        "uk": "кашель",
+        "pl": "kaszel"
       },
       {
         "en": "appointment",
-        "uk": "appointment",
-        "pl": "appointment"
+        "ua": "призначення",
+        "uk": "призначення",
+        "pl": "spotkanie"
       },
       {
         "en": "diet",
-        "uk": "diet",
-        "pl": "diet"
+        "ua": "дієта",
+        "uk": "дієта",
+        "pl": "dieta"
       },
       {
         "en": "vitamin",
-        "uk": "vitamin",
-        "pl": "vitamin"
+        "ua": "вітамін",
+        "uk": "вітамін",
+        "pl": "witamina"
       },
       {
         "en": "injury",
-        "uk": "injury",
-        "pl": "injury"
+        "ua": "травма",
+        "uk": "травма",
+        "pl": "obrażenia"
       },
       {
         "en": "recovery",
-        "uk": "recovery",
-        "pl": "recovery"
+        "ua": "відновлення",
+        "uk": "відновлення",
+        "pl": "powrót do zdrowia"
       },
       {
         "en": "headache",
-        "uk": "headache",
-        "pl": "headache"
+        "ua": "головний біль",
+        "uk": "головний біль",
+        "pl": "ból głowy"
       },
       {
         "en": "points",
-        "uk": "points",
-        "pl": "points"
+        "ua": "балів",
+        "uk": "балів",
+        "pl": "zwrotnica"
       },
       {
         "en": "price",
-        "uk": "price",
-        "pl": "price"
+        "ua": "ціна",
+        "uk": "ціна",
+        "pl": "cena"
       },
       {
         "en": "rest",
-        "uk": "rest",
-        "pl": "rest"
+        "ua": "відпочинок",
+        "uk": "відпочинок",
+        "pl": "odpoczynek"
       },
       {
         "en": "results",
-        "uk": "results",
-        "pl": "results"
+        "ua": "результати",
+        "uk": "результати",
+        "pl": "wyniki"
       },
       {
         "en": "running",
-        "uk": "running",
-        "pl": "running"
+        "ua": "біг",
+        "uk": "біг",
+        "pl": "działanie"
       },
       {
         "en": "shows",
-        "uk": "shows",
-        "pl": "shows"
+        "ua": "шоу",
+        "uk": "шоу",
+        "pl": "widać"
       },
       {
         "en": "space",
-        "uk": "space",
-        "pl": "space"
+        "ua": "простір",
+        "uk": "простір",
+        "pl": "przestrzeń"
       },
       {
         "en": "summer",
-        "uk": "summer",
-        "pl": "summer"
+        "ua": "літо",
+        "uk": "літо",
+        "pl": "lato"
       },
       {
         "en": "term",
-        "uk": "term",
-        "pl": "term"
-      },
-      {
-        "en": "wife",
-        "uk": "wife",
-        "pl": "wife"
+        "ua": "термін",
+        "uk": "термін",
+        "pl": "termin"
       },
       {
         "en": "america",
-        "uk": "america",
-        "pl": "america"
+        "ua": "америка",
+        "uk": "америка",
+        "pl": "Ameryka"
       },
       {
         "en": "beautiful",
-        "uk": "beautiful",
-        "pl": "beautiful"
+        "ua": "красива",
+        "uk": "красива",
+        "pl": "Piękny"
       },
       {
         "en": "date",
-        "uk": "date",
-        "pl": "date"
+        "ua": "дата",
+        "uk": "дата",
+        "pl": "data"
       },
       {
         "en": "goes",
-        "uk": "goes",
-        "pl": "goes"
+        "ua": "йде",
+        "uk": "йде",
+        "pl": "wchodzi"
       },
       {
         "en": "killed",
-        "uk": "killed",
-        "pl": "killed"
+        "ua": "убитий",
+        "uk": "убитий",
+        "pl": "zabity"
       },
       {
         "en": "land",
-        "uk": "land",
-        "pl": "land"
+        "ua": "землі",
+        "uk": "землі",
+        "pl": "grunt"
       },
       {
         "en": "miss",
-        "uk": "miss",
-        "pl": "miss"
+        "ua": "міс",
+        "uk": "міс",
+        "pl": "chybić"
       },
       {
         "en": "project",
-        "uk": "project",
-        "pl": "project"
+        "ua": "демонструвати",
+        "uk": "демонструвати",
+        "pl": "projekt"
       },
       {
         "en": "shot",
-        "uk": "shot",
-        "pl": "shot"
+        "ua": "постріл",
+        "uk": "постріл",
+        "pl": "strzał"
       },
       {
         "en": "site",
-        "uk": "site",
-        "pl": "site"
+        "ua": "сайт",
+        "uk": "сайт",
+        "pl": "strona"
       },
       {
         "en": "strong",
-        "uk": "strong",
-        "pl": "strong"
+        "ua": "сильний",
+        "uk": "сильний",
+        "pl": "mocny"
       },
       {
         "en": "account",
-        "uk": "account",
-        "pl": "account"
+        "ua": "рахунок",
+        "uk": "рахунок",
+        "pl": "konto"
       },
       {
         "en": "especially",
-        "uk": "especially",
-        "pl": "especially"
+        "ua": "особливо",
+        "uk": "особливо",
+        "pl": "zwłaszcza"
       },
       {
         "en": "eyes",
-        "uk": "eyes",
-        "pl": "eyes"
+        "ua": "очі",
+        "uk": "очі",
+        "pl": "oczy"
       },
       {
         "en": "include",
-        "uk": "include",
-        "pl": "include"
+        "ua": "включити",
+        "uk": "включити",
+        "pl": "włączać"
       },
       {
         "en": "june",
-        "uk": "june",
-        "pl": "june"
+        "ua": "червень",
+        "uk": "червень",
+        "pl": "czerwiec"
       },
       {
         "en": "parents",
-        "uk": "parents",
-        "pl": "parents"
+        "ua": "батьки",
+        "uk": "батьки",
+        "pl": "rodzice"
       },
       {
         "en": "period",
-        "uk": "period",
-        "pl": "period"
+        "ua": "період",
+        "uk": "період",
+        "pl": "okres"
       },
       {
         "en": "position",
-        "uk": "position",
-        "pl": "position"
+        "ua": "положення",
+        "uk": "положення",
+        "pl": "pozycja"
       },
       {
         "en": "record",
-        "uk": "record",
-        "pl": "record"
+        "ua": "запис",
+        "uk": "запис",
+        "pl": "nagrywać"
       },
       {
         "en": "similar",
-        "uk": "similar",
-        "pl": "similar"
+        "ua": "подібні",
+        "uk": "подібні",
+        "pl": "podobny"
       },
       {
         "en": "total",
-        "uk": "total",
-        "pl": "total"
+        "ua": "всього",
+        "uk": "всього",
+        "pl": "całkowity"
       },
       {
         "en": "above",
-        "uk": "above",
-        "pl": "above"
+        "ua": "вище",
+        "uk": "вище",
+        "pl": "powyżej"
       },
       {
         "en": "club",
-        "uk": "club",
-        "pl": "club"
+        "ua": "клуб",
+        "uk": "клуб",
+        "pl": "klub"
       },
       {
         "en": "common",
-        "uk": "common",
-        "pl": "common"
+        "ua": "поширений",
+        "uk": "поширений",
+        "pl": "wspólny"
       },
       {
         "en": "died",
-        "uk": "died",
-        "pl": "died"
+        "ua": "померла",
+        "uk": "померла",
+        "pl": "zmarł"
       },
       {
         "en": "film",
-        "uk": "film",
-        "pl": "film"
+        "ua": "фільм",
+        "uk": "фільм",
+        "pl": "obraz filmowy"
       },
       {
         "en": "happened",
-        "uk": "happened",
-        "pl": "happened"
+        "ua": "сталося",
+        "uk": "сталося",
+        "pl": "się stało"
       },
       {
         "en": "knew",
-        "uk": "knew",
-        "pl": "knew"
+        "ua": "знав",
+        "uk": "знав",
+        "pl": "wiedział"
       },
       {
         "en": "lead",
-        "uk": "lead",
-        "pl": "lead"
+        "ua": "привести",
+        "uk": "привести",
+        "pl": "Ołów"
       },
       {
         "en": "likely",
-        "uk": "likely",
-        "pl": "likely"
+        "ua": "ймовірно",
+        "uk": "ймовірно",
+        "pl": "prawdopodobnie"
       },
       {
         "en": "military",
-        "uk": "military",
-        "pl": "military"
+        "ua": "військовий",
+        "uk": "військовий",
+        "pl": "wojskowy"
       },
       {
         "en": "perfect",
-        "uk": "perfect",
-        "pl": "perfect"
+        "ua": "ідеальний",
+        "uk": "ідеальний",
+        "pl": "doskonały"
       },
       {
         "en": "personal",
-        "uk": "personal",
-        "pl": "personal"
+        "ua": "особистий",
+        "uk": "особистий",
+        "pl": "osobisty"
       },
       {
         "en": "security",
-        "uk": "security",
-        "pl": "security"
+        "ua": "безпеки",
+        "uk": "безпеки",
+        "pl": "bezpieczeństwo"
       },
       {
         "en": "share",
-        "uk": "share",
-        "pl": "share"
+        "ua": "частка",
+        "uk": "частка",
+        "pl": "udział"
       },
       {
         "en": "april",
-        "uk": "april",
-        "pl": "april"
+        "ua": "квітень",
+        "uk": "квітень",
+        "pl": "kwiecień"
       },
       {
         "en": "center",
-        "uk": "center",
-        "pl": "center"
+        "ua": "центр",
+        "uk": "центр",
+        "pl": "centrum"
       },
       {
         "en": "county",
-        "uk": "county",
-        "pl": "county"
+        "ua": "повіт",
+        "uk": "повіт",
+        "pl": "hrabstwo"
       },
       {
         "en": "couple",
-        "uk": "couple",
-        "pl": "couple"
+        "ua": "пара",
+        "uk": "пара",
+        "pl": "para"
       },
       {
         "en": "dead",
-        "uk": "dead",
-        "pl": "dead"
+        "ua": "мертвий",
+        "uk": "мертвий",
+        "pl": "martwy"
       },
       {
         "en": "english",
-        "uk": "english",
-        "pl": "english"
+        "ua": "англійська",
+        "uk": "англійська",
+        "pl": "angielski"
       },
       {
         "en": "happen",
-        "uk": "happen",
-        "pl": "happen"
+        "ua": "статися",
+        "uk": "статися",
+        "pl": "stać się"
       },
       {
         "en": "hold",
-        "uk": "hold",
-        "pl": "hold"
+        "ua": "утримувати",
+        "uk": "утримувати",
+        "pl": "trzymać"
       },
       {
         "en": "industry",
-        "uk": "industry",
-        "pl": "industry"
+        "ua": "промисловість",
+        "uk": "промисловість",
+        "pl": "przemysł"
       },
       {
         "en": "inside",
-        "uk": "inside",
-        "pl": "inside"
+        "ua": "всередині",
+        "uk": "всередині",
+        "pl": "wewnątrz"
       },
       {
         "en": "issues",
-        "uk": "issues",
-        "pl": "issues"
+        "ua": "питань",
+        "uk": "питань",
+        "pl": "kwestie"
       },
       {
         "en": "online",
-        "uk": "online",
-        "pl": "online"
+        "ua": "онлайн",
+        "uk": "онлайн",
+        "pl": "w Internecie"
       },
       {
         "en": "player",
-        "uk": "player",
-        "pl": "player"
+        "ua": "гравець",
+        "uk": "гравець",
+        "pl": "odtwarzacz"
       },
       {
         "en": "private",
-        "uk": "private",
-        "pl": "private"
+        "ua": "приватний",
+        "uk": "приватний",
+        "pl": "prywatny"
       },
       {
         "en": "problems",
-        "uk": "problems",
-        "pl": "problems"
+        "ua": "проблеми",
+        "uk": "проблеми",
+        "pl": "problemy"
       },
       {
         "en": "return",
-        "uk": "return",
-        "pl": "return"
+        "ua": "повернення",
+        "uk": "повернення",
+        "pl": "powrót"
       },
       {
         "en": "rights",
-        "uk": "rights",
-        "pl": "rights"
+        "ua": "прав",
+        "uk": "прав",
+        "pl": "prawa"
       },
       {
         "en": "sense",
-        "uk": "sense",
-        "pl": "sense"
+        "ua": "сенс",
+        "uk": "сенс",
+        "pl": "sens"
       },
       {
         "en": "star",
-        "uk": "star",
-        "pl": "star"
+        "ua": "зірка",
+        "uk": "зірка",
+        "pl": "gwiazda"
       },
       {
         "en": "test",
-        "uk": "test",
-        "pl": "test"
+        "ua": "тест",
+        "uk": "тест",
+        "pl": "sprawdzian"
       },
       {
         "en": "view",
-        "uk": "view",
-        "pl": "view"
+        "ua": "переглянути",
+        "uk": "переглянути",
+        "pl": "pogląd"
       },
       {
         "en": "weeks",
-        "uk": "weeks",
-        "pl": "weeks"
+        "ua": "тижнів",
+        "uk": "тижнів",
+        "pl": "tygodnie"
       },
       {
         "en": "break",
-        "uk": "break",
-        "pl": "break"
+        "ua": "перерва",
+        "uk": "перерва",
+        "pl": "przerwa"
       },
       {
         "en": "british",
-        "uk": "british",
-        "pl": "british"
+        "ua": "британський",
+        "uk": "британський",
+        "pl": "brytyjski"
       },
       {
         "en": "companies",
-        "uk": "companies",
-        "pl": "companies"
+        "ua": "компаній",
+        "uk": "компаній",
+        "pl": "firmy"
       },
       {
         "en": "event",
-        "uk": "event",
-        "pl": "event"
+        "ua": "подія",
+        "uk": "подія",
+        "pl": "wydarzenie"
       },
       {
         "en": "higher",
-        "uk": "higher",
-        "pl": "higher"
+        "ua": "вище",
+        "uk": "вище",
+        "pl": "wyższy"
       },
       {
         "en": "hour",
-        "uk": "hour",
-        "pl": "hour"
+        "ua": "година",
+        "uk": "година",
+        "pl": "godzina"
       },
       {
         "en": "member",
-        "uk": "member",
-        "pl": "member"
+        "ua": "член",
+        "uk": "член",
+        "pl": "członek"
       },
       {
         "en": "middle",
-        "uk": "middle",
-        "pl": "middle"
+        "ua": "середина",
+        "uk": "середина",
+        "pl": "środek"
       },
       {
         "en": "needed",
-        "uk": "needed",
-        "pl": "needed"
+        "ua": "необхідний",
+        "uk": "необхідний",
+        "pl": "wymagany"
       },
       {
         "en": "present",
-        "uk": "present",
-        "pl": "present"
+        "ua": "присутній",
+        "uk": "присутній",
+        "pl": "obecny"
       },
       {
         "en": "result",
-        "uk": "result",
-        "pl": "result"
+        "ua": "результат",
+        "uk": "результат",
+        "pl": "wynik"
       },
       {
         "en": "sorry",
-        "uk": "sorry",
-        "pl": "sorry"
+        "ua": "вибачте",
+        "uk": "вибачте",
+        "pl": "Przepraszam"
       },
       {
         "en": "takes",
-        "uk": "takes",
-        "pl": "takes"
+        "ua": "приймає",
+        "uk": "приймає",
+        "pl": "bierze"
       },
       {
         "en": "training",
-        "uk": "training",
-        "pl": "training"
+        "ua": "навчання",
+        "uk": "навчання",
+        "pl": "szkolenie"
       },
       {
         "en": "wish",
-        "uk": "wish",
-        "pl": "wish"
+        "ua": "бажання",
+        "uk": "бажання",
+        "pl": "życzenie"
       },
       {
         "en": "answer",
-        "uk": "answer",
-        "pl": "answer"
+        "ua": "відповідь",
+        "uk": "відповідь",
+        "pl": "odpowiedź"
       },
       {
         "en": "design",
-        "uk": "design",
-        "pl": "design"
+        "ua": "дизайн",
+        "uk": "дизайн",
+        "pl": "projekt"
       },
       {
         "en": "finally",
-        "uk": "finally",
-        "pl": "finally"
+        "ua": "нарешті",
+        "uk": "нарешті",
+        "pl": "Wreszcie"
       },
       {
         "en": "girls",
-        "uk": "girls",
-        "pl": "girls"
+        "ua": "дівчата",
+        "uk": "дівчата",
+        "pl": "dziewczyny"
       },
       {
         "en": "gold",
-        "uk": "gold",
-        "pl": "gold"
+        "ua": "золото",
+        "uk": "золото",
+        "pl": "złoto"
       }
     ]
   },
@@ -3314,1507 +3890,1759 @@
     "Environment": [
       {
         "en": "pollution",
-        "uk": "pollution",
-        "pl": "pollution"
+        "ua": "забруднення",
+        "uk": "забруднення",
+        "pl": "zanieczyszczenie"
       },
       {
         "en": "recycling",
-        "uk": "recycling",
-        "pl": "recycling"
+        "ua": "переробка",
+        "uk": "переробка",
+        "pl": "recykling"
       },
       {
         "en": "wildlife",
-        "uk": "wildlife",
-        "pl": "wildlife"
+        "ua": "дика природа",
+        "uk": "дика природа",
+        "pl": "dzika przyroda"
       },
       {
         "en": "drought",
-        "uk": "drought",
-        "pl": "drought"
+        "ua": "посуха",
+        "uk": "посуха",
+        "pl": "susza"
       },
       {
         "en": "flood",
-        "uk": "flood",
-        "pl": "flood"
+        "ua": "повінь",
+        "uk": "повінь",
+        "pl": "powódź"
       },
       {
         "en": "emission",
-        "uk": "emission",
-        "pl": "emission"
+        "ua": "емісія",
+        "uk": "емісія",
+        "pl": "emisja"
       },
       {
         "en": "habitat",
-        "uk": "habitat",
-        "pl": "habitat"
+        "ua": "середовище проживання",
+        "uk": "середовище проживання",
+        "pl": "siedlisko"
       },
       {
         "en": "ecosystem",
-        "uk": "ecosystem",
-        "pl": "ecosystem"
+        "ua": "екосистема",
+        "uk": "екосистема",
+        "pl": "ekosystem"
       },
       {
         "en": "climate",
-        "uk": "climate",
-        "pl": "climate"
+        "ua": "клімат",
+        "uk": "клімат",
+        "pl": "klimat"
       },
       {
         "en": "landfill",
-        "uk": "landfill",
-        "pl": "landfill"
+        "ua": "звалище",
+        "uk": "звалище",
+        "pl": "wysypisko śmieci"
       },
       {
         "en": "conservation",
-        "uk": "conservation",
-        "pl": "conservation"
+        "ua": "збереження",
+        "uk": "збереження",
+        "pl": "ochrona"
       },
       {
         "en": "renewable",
-        "uk": "renewable",
-        "pl": "renewable"
+        "ua": "поновлюваний",
+        "uk": "поновлюваний",
+        "pl": "odnawialne"
       },
       {
         "en": "gone",
-        "uk": "gone",
-        "pl": "gone"
+        "ua": "пішов",
+        "uk": "пішов",
+        "pl": "stracony"
       },
       {
         "en": "guess",
-        "uk": "guess",
-        "pl": "guess"
+        "ua": "вгадати",
+        "uk": "вгадати",
+        "pl": "zgadywać"
       },
       {
         "en": "interest",
-        "uk": "interest",
-        "pl": "interest"
+        "ua": "інтерес",
+        "uk": "інтерес",
+        "pl": "odsetki"
       },
       {
         "en": "july",
-        "uk": "july",
-        "pl": "july"
+        "ua": "липень",
+        "uk": "липень",
+        "pl": "lipiec"
       },
       {
         "en": "king",
-        "uk": "king",
-        "pl": "king"
+        "ua": "король",
+        "uk": "король",
+        "pl": "król"
       },
       {
         "en": "learn",
-        "uk": "learn",
-        "pl": "learn"
+        "ua": "навчитися",
+        "uk": "навчитися",
+        "pl": "uczyć się"
       },
       {
         "en": "policy",
-        "uk": "policy",
-        "pl": "policy"
+        "ua": "політики",
+        "uk": "політики",
+        "pl": "polityka"
       },
       {
         "en": "society",
-        "uk": "society",
-        "pl": "society"
+        "ua": "суспільства",
+        "uk": "суспільства",
+        "pl": "społeczeństwo"
       },
       {
         "en": "added",
-        "uk": "added",
-        "pl": "added"
+        "ua": "додано",
+        "uk": "додано",
+        "pl": "w dodatku"
       },
       {
         "en": "alone",
-        "uk": "alone",
-        "pl": "alone"
+        "ua": "поодинці",
+        "uk": "поодинці",
+        "pl": "sam"
       },
       {
         "en": "average",
-        "uk": "average",
-        "pl": "average"
+        "ua": "середній",
+        "uk": "середній",
+        "pl": "przeciętny"
       },
       {
         "en": "bank",
-        "uk": "bank",
-        "pl": "bank"
+        "ua": "банку",
+        "uk": "банку",
+        "pl": "instytucja bankowa"
       },
       {
         "en": "brought",
-        "uk": "brought",
-        "pl": "brought"
+        "ua": "приніс",
+        "uk": "приніс",
+        "pl": "przyniósł"
       },
       {
         "en": "certain",
-        "uk": "certain",
-        "pl": "certain"
+        "ua": "певний",
+        "uk": "певний",
+        "pl": "niektórzy"
       },
       {
         "en": "church",
-        "uk": "church",
-        "pl": "church"
+        "ua": "церква",
+        "uk": "церква",
+        "pl": "kościół"
       },
       {
         "en": "east",
-        "uk": "east",
-        "pl": "east"
+        "ua": "схід",
+        "uk": "схід",
+        "pl": "wschód"
       },
       {
         "en": "hands",
-        "uk": "hands",
-        "pl": "hands"
+        "ua": "руками",
+        "uk": "руками",
+        "pl": "siła robocza"
       },
       {
         "en": "longer",
-        "uk": "longer",
-        "pl": "longer"
+        "ua": "довше",
+        "uk": "довше",
+        "pl": "dłużej"
       },
       {
         "en": "medical",
-        "uk": "medical",
-        "pl": "medical"
+        "ua": "медичний",
+        "uk": "медичний",
+        "pl": "medyczny"
       },
       {
         "en": "movie",
-        "uk": "movie",
-        "pl": "movie"
+        "ua": "фільм",
+        "uk": "фільм",
+        "pl": "film"
       },
       {
         "en": "original",
-        "uk": "original",
-        "pl": "original"
+        "ua": "оригінальний",
+        "uk": "оригінальний",
+        "pl": "oryginalny"
       },
       {
         "en": "park",
-        "uk": "park",
-        "pl": "park"
+        "ua": "парк",
+        "uk": "парк",
+        "pl": "teren zielony"
       },
       {
         "en": "performance",
-        "uk": "performance",
-        "pl": "performance"
+        "ua": "продуктивність",
+        "uk": "продуктивність",
+        "pl": "wydajność"
       },
       {
         "en": "press",
-        "uk": "press",
-        "pl": "press"
+        "ua": "преса",
+        "uk": "преса",
+        "pl": "naciskać"
       },
       {
         "en": "received",
-        "uk": "received",
-        "pl": "received"
+        "ua": "отримано",
+        "uk": "отримано",
+        "pl": "otrzymane"
       },
       {
         "en": "role",
-        "uk": "role",
-        "pl": "role"
+        "ua": "роль",
+        "uk": "роль",
+        "pl": "rola"
       },
       {
         "en": "sent",
-        "uk": "sent",
-        "pl": "sent"
+        "ua": "надіслано",
+        "uk": "надіслано",
+        "pl": "wysłano"
       },
       {
         "en": "themselves",
-        "uk": "themselves",
-        "pl": "themselves"
+        "ua": "себе",
+        "uk": "себе",
+        "pl": "sobie"
       },
       {
         "en": "tried",
-        "uk": "tried",
-        "pl": "tried"
+        "ua": "пробував",
+        "uk": "пробував",
+        "pl": "wypróbowany"
       },
       {
         "en": "worked",
-        "uk": "worked",
-        "pl": "worked"
+        "ua": "працював",
+        "uk": "працював",
+        "pl": "pracował"
       },
       {
         "en": "worth",
-        "uk": "worth",
-        "pl": "worth"
+        "ua": "варто",
+        "uk": "варто",
+        "pl": "wartość"
       },
       {
         "en": "areas",
-        "uk": "areas",
-        "pl": "areas"
+        "ua": "області",
+        "uk": "області",
+        "pl": "obszary"
       },
       {
         "en": "became",
-        "uk": "became",
-        "pl": "became"
+        "ua": "став",
+        "uk": "став",
+        "pl": "stał się"
       },
       {
         "en": "bill",
-        "uk": "bill",
-        "pl": "bill"
+        "ua": "рахунок",
+        "uk": "рахунок",
+        "pl": "rachunek"
       },
       {
         "en": "books",
-        "uk": "books",
-        "pl": "books"
+        "ua": "книги",
+        "uk": "книги",
+        "pl": "książki"
       },
       {
         "en": "cool",
-        "uk": "cool",
-        "pl": "cool"
+        "ua": "круто",
+        "uk": "круто",
+        "pl": "Fajny"
       },
       {
         "en": "director",
-        "uk": "director",
-        "pl": "director"
+        "ua": "директор",
+        "uk": "директор",
+        "pl": "dyrektor"
       },
       {
         "en": "exactly",
-        "uk": "exactly",
-        "pl": "exactly"
+        "ua": "точно",
+        "uk": "точно",
+        "pl": "Dokładnie"
       },
       {
         "en": "giving",
-        "uk": "giving",
-        "pl": "giving"
+        "ua": "надання",
+        "uk": "надання",
+        "pl": "dający"
       },
       {
         "en": "ground",
-        "uk": "ground",
-        "pl": "ground"
-      },
-      {
-        "en": "meeting",
-        "uk": "meeting",
-        "pl": "meeting"
+        "ua": "землю",
+        "uk": "землю",
+        "pl": "grunt"
       },
       {
         "en": "provide",
-        "uk": "provide",
-        "pl": "provide"
+        "ua": "забезпечити",
+        "uk": "забезпечити",
+        "pl": "dostarczać"
       },
       {
         "en": "questions",
-        "uk": "questions",
-        "pl": "questions"
+        "ua": "запитання",
+        "uk": "запитання",
+        "pl": "pytania"
       },
       {
         "en": "relationship",
-        "uk": "relationship",
-        "pl": "relationship"
+        "ua": "відносини",
+        "uk": "відносини",
+        "pl": "relacja"
       },
       {
         "en": "september",
-        "uk": "september",
-        "pl": "september"
+        "ua": "вересень",
+        "uk": "вересень",
+        "pl": "wrzesień"
       },
       {
         "en": "sound",
-        "uk": "sound",
-        "pl": "sound"
+        "ua": "звук",
+        "uk": "звук",
+        "pl": "dźwięk"
       },
       {
         "en": "source",
-        "uk": "source",
-        "pl": "source"
+        "ua": "джерело",
+        "uk": "джерело",
+        "pl": "źródło"
       },
       {
         "en": "usually",
-        "uk": "usually",
-        "pl": "usually"
+        "ua": "зазвичай",
+        "uk": "зазвичай",
+        "pl": "zazwyczaj"
       },
       {
         "en": "value",
-        "uk": "value",
-        "pl": "value"
+        "ua": "значення",
+        "uk": "значення",
+        "pl": "wartość"
       },
       {
         "en": "evidence",
-        "uk": "evidence",
-        "pl": "evidence"
+        "ua": "докази",
+        "uk": "докази",
+        "pl": "dowód"
       },
       {
         "en": "follow",
-        "uk": "follow",
-        "pl": "follow"
+        "ua": "слідувати",
+        "uk": "слідувати",
+        "pl": "podążać"
       },
       {
         "en": "lives",
-        "uk": "lives",
-        "pl": "lives"
+        "ua": "життя",
+        "uk": "життя",
+        "pl": "żyje"
       },
       {
         "en": "official",
-        "uk": "official",
-        "pl": "official"
+        "ua": "офіційний",
+        "uk": "офіційний",
+        "pl": "urzędnik"
       },
       {
         "en": "production",
-        "uk": "production",
-        "pl": "production"
+        "ua": "виробництва",
+        "uk": "виробництва",
+        "pl": "produkcja"
       },
       {
         "en": "rate",
-        "uk": "rate",
-        "pl": "rate"
+        "ua": "швидкість",
+        "uk": "швидкість",
+        "pl": "wskaźnik"
       },
       {
         "en": "reading",
-        "uk": "reading",
-        "pl": "reading"
+        "ua": "читання",
+        "uk": "читання",
+        "pl": "czytanie"
       },
       {
         "en": "round",
-        "uk": "round",
-        "pl": "round"
+        "ua": "круглий",
+        "uk": "круглий",
+        "pl": "okrągły"
       },
       {
         "en": "save",
-        "uk": "save",
-        "pl": "save"
+        "ua": "зберегти",
+        "uk": "зберегти",
+        "pl": "ratować"
       },
       {
         "en": "stand",
-        "uk": "stand",
-        "pl": "stand"
+        "ua": "стояти",
+        "uk": "стояти",
+        "pl": "podstawka"
       },
       {
         "en": "stuff",
-        "uk": "stuff",
-        "pl": "stuff"
+        "ua": "речі",
+        "uk": "речі",
+        "pl": "rzeczy"
       },
       {
         "en": "whatever",
-        "uk": "whatever",
-        "pl": "whatever"
+        "ua": "що завгодно",
+        "uk": "що завгодно",
+        "pl": "cokolwiek"
       },
       {
         "en": "amount",
-        "uk": "amount",
-        "pl": "amount"
+        "ua": "сума",
+        "uk": "сума",
+        "pl": "kwota"
       },
       {
         "en": "blue",
-        "uk": "blue",
-        "pl": "blue"
+        "ua": "блакитний",
+        "uk": "блакитний",
+        "pl": "niebieski"
       },
       {
         "en": "countries",
-        "uk": "countries",
-        "pl": "countries"
+        "ua": "країни",
+        "uk": "країни",
+        "pl": "kraje"
       },
       {
         "en": "david",
-        "uk": "david",
-        "pl": "david"
+        "ua": "Девід",
+        "uk": "Девід",
+        "pl": "Dawid"
       },
       {
         "en": "drive",
-        "uk": "drive",
-        "pl": "drive"
+        "ua": "диск",
+        "uk": "диск",
+        "pl": "prowadzić"
       },
       {
         "en": "fall",
-        "uk": "fall",
-        "pl": "fall"
+        "ua": "падіння",
+        "uk": "падіння",
+        "pl": "jesień"
       },
       {
         "en": "fast",
-        "uk": "fast",
-        "pl": "fast"
+        "ua": "швидко",
+        "uk": "швидко",
+        "pl": "szybko"
       },
       {
         "en": "federal",
-        "uk": "federal",
-        "pl": "federal"
+        "ua": "федеральний",
+        "uk": "федеральний",
+        "pl": "federalny"
       },
       {
         "en": "feeling",
-        "uk": "feeling",
-        "pl": "feeling"
+        "ua": "почуття",
+        "uk": "почуття",
+        "pl": "uczucie"
       },
       {
         "en": "felt",
-        "uk": "felt",
-        "pl": "felt"
+        "ua": "фетр",
+        "uk": "фетр",
+        "pl": "filc"
       },
       {
         "en": "green",
-        "uk": "green",
-        "pl": "green"
+        "ua": "зелений",
+        "uk": "зелений",
+        "pl": "zielony"
       },
       {
         "en": "league",
-        "uk": "league",
-        "pl": "league"
+        "ua": "ліга",
+        "uk": "ліга",
+        "pl": "liga"
       },
       {
         "en": "management",
-        "uk": "management",
-        "pl": "management"
+        "ua": "управління",
+        "uk": "управління",
+        "pl": "kierownictwo"
       },
       {
         "en": "match",
-        "uk": "match",
-        "pl": "match"
+        "ua": "матч",
+        "uk": "матч",
+        "pl": "mecz"
       },
       {
         "en": "model",
-        "uk": "model",
-        "pl": "model"
+        "ua": "модель",
+        "uk": "модель",
+        "pl": "wzorzec"
       },
       {
         "en": "picture",
-        "uk": "picture",
-        "pl": "picture"
+        "ua": "малюнок",
+        "uk": "малюнок",
+        "pl": "zdjęcie"
       },
       {
         "en": "size",
-        "uk": "size",
-        "pl": "size"
+        "ua": "розмір",
+        "uk": "розмір",
+        "pl": "rozmiar"
       },
       {
         "en": "step",
-        "uk": "step",
-        "pl": "step"
+        "ua": "крок",
+        "uk": "крок",
+        "pl": "krok"
       },
       {
         "en": "trust",
-        "uk": "trust",
-        "pl": "trust"
+        "ua": "довіра",
+        "uk": "довіра",
+        "pl": "zaufanie"
       },
       {
         "en": "central",
-        "uk": "central",
-        "pl": "central"
+        "ua": "центральний",
+        "uk": "центральний",
+        "pl": "centralny"
       },
       {
         "en": "changes",
-        "uk": "changes",
-        "pl": "changes"
+        "ua": "зміни",
+        "uk": "зміни",
+        "pl": "zmiany"
       },
       {
         "en": "england",
-        "uk": "england",
-        "pl": "england"
+        "ua": "Англія",
+        "uk": "Англія",
+        "pl": "anglia"
       },
       {
         "en": "forward",
-        "uk": "forward",
-        "pl": "forward"
+        "ua": "вперед",
+        "uk": "вперед",
+        "pl": "do przodu"
       },
       {
         "en": "groups",
-        "uk": "groups",
-        "pl": "groups"
+        "ua": "групи",
+        "uk": "групи",
+        "pl": "grupy"
       },
       {
         "en": "page",
-        "uk": "page",
-        "pl": "page"
+        "ua": "сторінки",
+        "uk": "сторінки",
+        "pl": "strona"
       },
       {
         "en": "paid",
-        "uk": "paid",
-        "pl": "paid"
+        "ua": "платний",
+        "uk": "платний",
+        "pl": "płatny"
       },
       {
         "en": "range",
-        "uk": "range",
-        "pl": "range"
+        "ua": "діапазон",
+        "uk": "діапазон",
+        "pl": "zakres"
       }
     ],
     "Technology": [
       {
         "en": "software",
-        "uk": "software",
-        "pl": "software"
+        "ua": "програмне забезпечення",
+        "uk": "програмне забезпечення",
+        "pl": "oprogramowanie"
       },
       {
         "en": "hardware",
-        "uk": "hardware",
-        "pl": "hardware"
+        "ua": "обладнання",
+        "uk": "обладнання",
+        "pl": "sprzęt komputerowy"
       },
       {
         "en": "network",
-        "uk": "network",
-        "pl": "network"
+        "ua": "мережі",
+        "uk": "мережі",
+        "pl": "sieć"
       },
       {
         "en": "database",
-        "uk": "database",
-        "pl": "database"
+        "ua": "бази даних",
+        "uk": "бази даних",
+        "pl": "baza danych"
       },
       {
         "en": "password",
-        "uk": "password",
-        "pl": "password"
+        "ua": "пароль",
+        "uk": "пароль",
+        "pl": "hasło"
       },
       {
         "en": "browser",
-        "uk": "browser",
-        "pl": "browser"
+        "ua": "браузер",
+        "uk": "браузер",
+        "pl": "przeglądarka"
       },
       {
         "en": "download",
-        "uk": "download",
-        "pl": "download"
+        "ua": "завантажити",
+        "uk": "завантажити",
+        "pl": "pobierać"
       },
       {
         "en": "upload",
-        "uk": "upload",
-        "pl": "upload"
+        "ua": "завантажити",
+        "uk": "завантажити",
+        "pl": "wgrywać"
       },
       {
         "en": "device",
-        "uk": "device",
-        "pl": "device"
+        "ua": "пристрій",
+        "uk": "пристрій",
+        "pl": "urządzenie"
       },
       {
         "en": "feature",
-        "uk": "feature",
-        "pl": "feature"
+        "ua": "функція",
+        "uk": "функція",
+        "pl": "funkcja"
       },
       {
         "en": "update",
-        "uk": "update",
-        "pl": "update"
+        "ua": "оновлення",
+        "uk": "оновлення",
+        "pl": "aktualizacja"
       },
       {
         "en": "shortcut",
-        "uk": "shortcut",
-        "pl": "shortcut"
+        "ua": "ярлик",
+        "uk": "ярлик",
+        "pl": "skrót"
       },
       {
         "en": "review",
-        "uk": "review",
-        "pl": "review"
+        "ua": "огляд",
+        "uk": "огляд",
+        "pl": "recenzja"
       },
       {
         "en": "science",
-        "uk": "science",
-        "pl": "science"
+        "ua": "наука",
+        "uk": "наука",
+        "pl": "nauka"
       },
       {
         "en": "trade",
-        "uk": "trade",
-        "pl": "trade"
+        "ua": "торгівля",
+        "uk": "торгівля",
+        "pl": "handel"
       },
       {
         "en": "upon",
-        "uk": "upon",
-        "pl": "upon"
+        "ua": "на",
+        "uk": "на",
+        "pl": "od"
       },
       {
         "en": "various",
-        "uk": "various",
-        "pl": "various"
+        "ua": "різні",
+        "uk": "різні",
+        "pl": "różny"
       },
       {
         "en": "attention",
-        "uk": "attention",
-        "pl": "attention"
-      },
-      {
-        "en": "brother",
-        "uk": "brother",
-        "pl": "brother"
+        "ua": "уваги",
+        "uk": "уваги",
+        "pl": "uwaga"
       },
       {
         "en": "cannot",
-        "uk": "cannot",
-        "pl": "cannot"
+        "ua": "не можна",
+        "uk": "не можна",
+        "pl": "nie mogę"
       },
       {
         "en": "character",
-        "uk": "character",
-        "pl": "character"
+        "ua": "характер",
+        "uk": "характер",
+        "pl": "charakter"
       },
       {
         "en": "chief",
-        "uk": "chief",
-        "pl": "chief"
+        "ua": "головний",
+        "uk": "головний",
+        "pl": "szef"
       },
       {
         "en": "football",
-        "uk": "football",
-        "pl": "football"
+        "ua": "футбол",
+        "uk": "футбол",
+        "pl": "piłkarski"
       },
       {
         "en": "hate",
-        "uk": "hate",
-        "pl": "hate"
+        "ua": "ненависть",
+        "uk": "ненависть",
+        "pl": "nienawidzić"
       },
       {
         "en": "james",
-        "uk": "james",
-        "pl": "james"
+        "ua": "Джеймс",
+        "uk": "Джеймс",
+        "pl": "imię James"
       },
       {
         "en": "looked",
-        "uk": "looked",
-        "pl": "looked"
+        "ua": "подивився",
+        "uk": "подивився",
+        "pl": "wyglądał"
       },
       {
         "en": "lower",
-        "uk": "lower",
-        "pl": "lower"
+        "ua": "нижче",
+        "uk": "нижче",
+        "pl": "niżej"
       },
       {
         "en": "natural",
-        "uk": "natural",
-        "pl": "natural"
+        "ua": "природний",
+        "uk": "природний",
+        "pl": "naturalny"
       },
       {
         "en": "october",
-        "uk": "october",
-        "pl": "october"
+        "ua": "жовтень",
+        "uk": "жовтень",
+        "pl": "październik"
       },
       {
         "en": "property",
-        "uk": "property",
-        "pl": "property"
+        "ua": "власність",
+        "uk": "власність",
+        "pl": "nieruchomość"
       },
       {
         "en": "quality",
-        "uk": "quality",
-        "pl": "quality"
+        "ua": "якість",
+        "uk": "якість",
+        "pl": "jakość"
       },
       {
         "en": "send",
-        "uk": "send",
-        "pl": "send"
+        "ua": "відправити",
+        "uk": "відправити",
+        "pl": "wysłać"
       },
       {
         "en": "style",
-        "uk": "style",
-        "pl": "style"
+        "ua": "стиль",
+        "uk": "стиль",
+        "pl": "styl"
       },
       {
         "en": "vote",
-        "uk": "vote",
-        "pl": "vote"
+        "ua": "голосувати",
+        "uk": "голосувати",
+        "pl": "głosować"
       },
       {
         "en": "amazing",
-        "uk": "amazing",
-        "pl": "amazing"
+        "ua": "дивовижний",
+        "uk": "дивовижний",
+        "pl": "niesamowity"
       },
       {
         "en": "august",
-        "uk": "august",
-        "pl": "august"
+        "ua": "серпень",
+        "uk": "серпень",
+        "pl": "sierpień"
       },
       {
         "en": "blood",
-        "uk": "blood",
-        "pl": "blood"
+        "ua": "кров",
+        "uk": "кров",
+        "pl": "krew"
       },
       {
         "en": "china",
-        "uk": "china",
-        "pl": "china"
+        "ua": "Китай",
+        "uk": "Китай",
+        "pl": "Chiny"
       },
       {
         "en": "complete",
-        "uk": "complete",
-        "pl": "complete"
+        "ua": "повний",
+        "uk": "повний",
+        "pl": "kompletny"
       },
       {
         "en": "economic",
-        "uk": "economic",
-        "pl": "economic"
+        "ua": "економічні",
+        "uk": "економічні",
+        "pl": "gospodarczy"
       },
       {
         "en": "hell",
-        "uk": "hell",
-        "pl": "hell"
+        "ua": "пекло",
+        "uk": "пекло",
+        "pl": "piekło"
       },
       {
         "en": "involved",
-        "uk": "involved",
-        "pl": "involved"
+        "ua": "залучений",
+        "uk": "залучений",
+        "pl": "zaangażowany"
       },
       {
         "en": "itself",
-        "uk": "itself",
-        "pl": "itself"
+        "ua": "себе",
+        "uk": "себе",
+        "pl": "się"
       },
       {
         "en": "language",
-        "uk": "language",
-        "pl": "language"
+        "ua": "мова",
+        "uk": "мова",
+        "pl": "język"
       },
       {
         "en": "lord",
-        "uk": "lord",
-        "pl": "lord"
+        "ua": "лорд",
+        "uk": "лорд",
+        "pl": "szlachcic"
       },
       {
         "en": "november",
-        "uk": "november",
-        "pl": "november"
+        "ua": "листопад",
+        "uk": "листопад",
+        "pl": "Listopad"
       },
       {
         "en": "related",
-        "uk": "related",
-        "pl": "related"
+        "ua": "пов'язані",
+        "uk": "пов'язані",
+        "pl": "powiązany"
       },
       {
         "en": "serious",
-        "uk": "serious",
-        "pl": "serious"
+        "ua": "серйозний",
+        "uk": "серйозний",
+        "pl": "poważny"
       },
       {
         "en": "stage",
-        "uk": "stage",
-        "pl": "stage"
+        "ua": "етап",
+        "uk": "етап",
+        "pl": "scena"
       },
       {
         "en": "terms",
-        "uk": "terms",
-        "pl": "terms"
+        "ua": "умови",
+        "uk": "умови",
+        "pl": "warunki"
       },
       {
         "en": "title",
-        "uk": "title",
-        "pl": "title"
+        "ua": "назва",
+        "uk": "назва",
+        "pl": "tytuł"
       },
       {
         "en": "article",
-        "uk": "article",
-        "pl": "article"
+        "ua": "стаття",
+        "uk": "стаття",
+        "pl": "artykuł"
       },
       {
         "en": "attack",
-        "uk": "attack",
-        "pl": "attack"
+        "ua": "напад",
+        "uk": "напад",
+        "pl": "atak"
       },
       {
         "en": "born",
-        "uk": "born",
-        "pl": "born"
+        "ua": "народився",
+        "uk": "народився",
+        "pl": "urodzić się"
       },
       {
         "en": "damn",
-        "uk": "damn",
-        "pl": "damn"
+        "ua": "блін",
+        "uk": "блін",
+        "pl": "Cholera"
       },
       {
         "en": "decided",
-        "uk": "decided",
-        "pl": "decided"
+        "ua": "вирішив",
+        "uk": "вирішив",
+        "pl": "zdecydowany"
       },
       {
         "en": "decision",
-        "uk": "decision",
-        "pl": "decision"
+        "ua": "рішення",
+        "uk": "рішення",
+        "pl": "decyzja"
       },
       {
         "en": "enjoy",
-        "uk": "enjoy",
-        "pl": "enjoy"
+        "ua": "насолоджуйтесь",
+        "uk": "насолоджуйтесь",
+        "pl": "Cieszyć się"
       },
       {
         "en": "entire",
-        "uk": "entire",
-        "pl": "entire"
+        "ua": "цілий",
+        "uk": "цілий",
+        "pl": "cały"
       },
       {
         "en": "french",
-        "uk": "french",
-        "pl": "french"
+        "ua": "французька",
+        "uk": "французька",
+        "pl": "francuski"
       },
       {
         "en": "january",
-        "uk": "january",
-        "pl": "january"
+        "ua": "січень",
+        "uk": "січень",
+        "pl": "Styczeń"
       },
       {
         "en": "kill",
-        "uk": "kill",
-        "pl": "kill"
+        "ua": "вбити",
+        "uk": "вбити",
+        "pl": "zabić"
       },
       {
         "en": "perhaps",
-        "uk": "perhaps",
-        "pl": "perhaps"
+        "ua": "можливо",
+        "uk": "можливо",
+        "pl": "być może"
       },
       {
         "en": "poor",
-        "uk": "poor",
-        "pl": "poor"
+        "ua": "бідний",
+        "uk": "бідний",
+        "pl": "słaby"
       },
       {
         "en": "release",
-        "uk": "release",
-        "pl": "release"
+        "ua": "реліз",
+        "uk": "реліз",
+        "pl": "uwolnienie"
       },
       {
         "en": "situation",
-        "uk": "situation",
-        "pl": "situation"
+        "ua": "ситуації",
+        "uk": "ситуації",
+        "pl": "sytuacja"
       },
       {
         "en": "technology",
-        "uk": "technology",
-        "pl": "technology"
+        "ua": "технології",
+        "uk": "технології",
+        "pl": "technologia"
       },
       {
         "en": "turned",
-        "uk": "turned",
-        "pl": "turned"
+        "ua": "повернувся",
+        "uk": "повернувся",
+        "pl": "obrócony"
       },
       {
         "en": "website",
-        "uk": "website",
-        "pl": "website"
+        "ua": "веб-сайт",
+        "uk": "веб-сайт",
+        "pl": "strona internetowa"
       },
       {
         "en": "written",
-        "uk": "written",
-        "pl": "written"
+        "ua": "написаний",
+        "uk": "написаний",
+        "pl": "pisemny"
       },
       {
         "en": "choice",
-        "uk": "choice",
-        "pl": "choice"
+        "ua": "вибір",
+        "uk": "вибір",
+        "pl": "wybór"
       },
       {
         "en": "code",
-        "uk": "code",
-        "pl": "code"
+        "ua": "код",
+        "uk": "код",
+        "pl": "kod"
       },
       {
         "en": "considered",
-        "uk": "considered",
-        "pl": "considered"
+        "ua": "розглядається",
+        "uk": "розглядається",
+        "pl": "uważany za"
       },
       {
         "en": "continue",
-        "uk": "continue",
-        "pl": "continue"
+        "ua": "продовжувати",
+        "uk": "продовжувати",
+        "pl": "Kontynuować"
       },
       {
         "en": "council",
-        "uk": "council",
-        "pl": "council"
+        "ua": "ради",
+        "uk": "ради",
+        "pl": "rada"
       },
       {
         "en": "cover",
-        "uk": "cover",
-        "pl": "cover"
+        "ua": "кришка",
+        "uk": "кришка",
+        "pl": "okładka"
       },
       {
         "en": "currently",
-        "uk": "currently",
-        "pl": "currently"
-      },
-      {
-        "en": "door",
-        "uk": "door",
-        "pl": "door"
+        "ua": "в даний час",
+        "uk": "в даний час",
+        "pl": "obecnie"
       },
       {
         "en": "election",
-        "uk": "election",
-        "pl": "election"
+        "ua": "вибори",
+        "uk": "вибори",
+        "pl": "wybór"
       },
       {
         "en": "european",
-        "uk": "european",
-        "pl": "european"
+        "ua": "європейський",
+        "uk": "європейський",
+        "pl": "europejski"
       },
       {
         "en": "events",
-        "uk": "events",
-        "pl": "events"
+        "ua": "події",
+        "uk": "події",
+        "pl": "wydarzenia"
       },
       {
         "en": "financial",
-        "uk": "financial",
-        "pl": "financial"
+        "ua": "фінансовий",
+        "uk": "фінансовий",
+        "pl": "budżetowy"
       },
       {
         "en": "foreign",
-        "uk": "foreign",
-        "pl": "foreign"
+        "ua": "іноземні",
+        "uk": "іноземні",
+        "pl": "zagraniczny"
       },
       {
         "en": "hair",
-        "uk": "hair",
-        "pl": "hair"
+        "ua": "волосся",
+        "uk": "волосся",
+        "pl": "włosy"
       },
       {
         "en": "increase",
-        "uk": "increase",
-        "pl": "increase"
+        "ua": "збільшення",
+        "uk": "збільшення",
+        "pl": "zwiększyć"
       },
       {
         "en": "legal",
-        "uk": "legal",
-        "pl": "legal"
+        "ua": "правовий",
+        "uk": "правовий",
+        "pl": "prawny"
       },
       {
         "en": "lose",
-        "uk": "lose",
-        "pl": "lose"
+        "ua": "втратити",
+        "uk": "втратити",
+        "pl": "stracić"
       },
       {
         "en": "michael",
-        "uk": "michael",
-        "pl": "michael"
+        "ua": "Майкл",
+        "uk": "Майкл",
+        "pl": "Michał"
       },
       {
         "en": "pick",
-        "uk": "pick",
-        "pl": "pick"
+        "ua": "вибрати",
+        "uk": "вибрати",
+        "pl": "wybierać"
       },
       {
         "en": "race",
-        "uk": "race",
-        "pl": "race"
+        "ua": "гонка",
+        "uk": "гонка",
+        "pl": "wyścig"
       },
       {
         "en": "seem",
-        "uk": "seem",
-        "pl": "seem"
+        "ua": "здається",
+        "uk": "здається",
+        "pl": "wydaje się"
       },
       {
         "en": "seven",
-        "uk": "seven",
-        "pl": "seven"
+        "ua": "сім",
+        "uk": "сім",
+        "pl": "siedem"
       },
       {
         "en": "sign",
-        "uk": "sign",
-        "pl": "sign"
+        "ua": "знак",
+        "uk": "знак",
+        "pl": "podpisać"
       },
       {
         "en": "simple",
-        "uk": "simple",
-        "pl": "simple"
+        "ua": "простий",
+        "uk": "простий",
+        "pl": "prosty"
       },
       {
         "en": "simply",
-        "uk": "simply",
-        "pl": "simply"
+        "ua": "просто",
+        "uk": "просто",
+        "pl": "po prostu"
       },
       {
         "en": "staff",
-        "uk": "staff",
-        "pl": "staff"
+        "ua": "персонал",
+        "uk": "персонал",
+        "pl": "personel"
       },
       {
         "en": "super",
-        "uk": "super",
-        "pl": "super"
+        "ua": "супер",
+        "uk": "супер",
+        "pl": "świetnie"
       },
       {
         "en": "union",
-        "uk": "union",
-        "pl": "union"
+        "ua": "спілка",
+        "uk": "спілка",
+        "pl": "unia"
       },
       {
         "en": "walk",
-        "uk": "walk",
-        "pl": "walk"
+        "ua": "ходити",
+        "uk": "ходити",
+        "pl": "chodzić"
       },
       {
         "en": "washington",
-        "uk": "washington",
-        "pl": "washington"
+        "ua": "Вашингтон",
+        "uk": "Вашингтон",
+        "pl": "Waszyngton"
       }
     ],
     "Society": [
       {
-        "en": "community",
-        "uk": "community",
-        "pl": "community"
-      },
-      {
         "en": "volunteer",
-        "uk": "volunteer",
-        "pl": "volunteer"
+        "ua": "волонтер",
+        "uk": "волонтер",
+        "pl": "wolontariusz"
       },
       {
         "en": "charity",
-        "uk": "charity",
-        "pl": "charity"
+        "ua": "благодійність",
+        "uk": "благодійність",
+        "pl": "organizacja pożytku publicznego"
       },
       {
         "en": "equality",
-        "uk": "equality",
-        "pl": "equality"
+        "ua": "рівність",
+        "uk": "рівність",
+        "pl": "równość"
       },
       {
         "en": "justice",
-        "uk": "justice",
-        "pl": "justice"
+        "ua": "справедливість",
+        "uk": "справедливість",
+        "pl": "sprawiedliwość"
       },
       {
         "en": "campaign",
-        "uk": "campaign",
-        "pl": "campaign"
-      },
-      {
-        "en": "that",
-        "uk": "that",
-        "pl": "that"
+        "ua": "кампанія",
+        "uk": "кампанія",
+        "pl": "kampania"
       },
       {
         "en": "citizen",
-        "uk": "citizen",
-        "pl": "citizen"
+        "ua": "громадянин",
+        "uk": "громадянин",
+        "pl": "obywatel"
       },
       {
         "en": "neighborhood",
-        "uk": "neighborhood",
-        "pl": "neighborhood"
+        "ua": "околиці",
+        "uk": "околиці",
+        "pl": "sąsiedztwo"
       },
       {
         "en": "awareness",
-        "uk": "awareness",
-        "pl": "awareness"
-      },
-      {
-        "en": "support",
-        "uk": "support",
-        "pl": "support"
+        "ua": "обізнаність",
+        "uk": "обізнаність",
+        "pl": "świadomość"
       },
       {
         "en": "benefit",
-        "uk": "benefit",
-        "pl": "benefit"
+        "ua": "користь",
+        "uk": "користь",
+        "pl": "korzyść"
       },
       {
         "en": "began",
-        "uk": "began",
-        "pl": "began"
+        "ua": "почався",
+        "uk": "почався",
+        "pl": "zaczął"
       },
       {
         "en": "built",
-        "uk": "built",
-        "pl": "built"
+        "ua": "побудований",
+        "uk": "побудований",
+        "pl": "wybudowany"
       },
       {
         "en": "career",
-        "uk": "career",
-        "pl": "career"
+        "ua": "кар'єра",
+        "uk": "кар'єра",
+        "pl": "kariera"
       },
       {
         "en": "changed",
-        "uk": "changed",
-        "pl": "changed"
+        "ua": "змінено",
+        "uk": "змінено",
+        "pl": "zmieniony"
       },
       {
         "en": "crazy",
-        "uk": "crazy",
-        "pl": "crazy"
+        "ua": "божевільний",
+        "uk": "божевільний",
+        "pl": "zwariowany"
       },
       {
         "en": "daily",
-        "uk": "daily",
-        "pl": "daily"
-      },
-      {
-        "en": "daughter",
-        "uk": "daughter",
-        "pl": "daughter"
+        "ua": "щодня",
+        "uk": "щодня",
+        "pl": "codziennie"
       },
       {
         "en": "december",
-        "uk": "december",
-        "pl": "december"
+        "ua": "грудень",
+        "uk": "грудень",
+        "pl": "grudzień"
       },
       {
         "en": "difficult",
-        "uk": "difficult",
-        "pl": "difficult"
+        "ua": "важко",
+        "uk": "важко",
+        "pl": "trudny"
       },
       {
         "en": "figure",
-        "uk": "figure",
-        "pl": "figure"
+        "ua": "фігура",
+        "uk": "фігура",
+        "pl": "postać"
       },
       {
         "en": "hospital",
-        "uk": "hospital",
-        "pl": "hospital"
+        "ua": "лікарня",
+        "uk": "лікарня",
+        "pl": "szpital"
       },
       {
         "en": "knows",
-        "uk": "knows",
-        "pl": "knows"
+        "ua": "знає",
+        "uk": "знає",
+        "pl": "wie"
       },
       {
         "en": "loss",
-        "uk": "loss",
-        "pl": "loss"
+        "ua": "втрата",
+        "uk": "втрата",
+        "pl": "strata"
       },
       {
         "en": "modern",
-        "uk": "modern",
-        "pl": "modern"
+        "ua": "сучасний",
+        "uk": "сучасний",
+        "pl": "nowoczesny"
       },
       {
         "en": "ones",
-        "uk": "ones",
-        "pl": "ones"
+        "ua": "одні",
+        "uk": "одні",
+        "pl": "te"
       },
       {
         "en": "paper",
-        "uk": "paper",
-        "pl": "paper"
+        "ua": "папір",
+        "uk": "папір",
+        "pl": "papier"
       },
       {
         "en": "parts",
-        "uk": "parts",
-        "pl": "parts"
+        "ua": "частин",
+        "uk": "частин",
+        "pl": "strony"
       },
       {
         "en": "popular",
-        "uk": "popular",
-        "pl": "popular"
+        "ua": "популярний",
+        "uk": "популярний",
+        "pl": "popularny"
       },
       {
         "en": "published",
-        "uk": "published",
-        "pl": "published"
+        "ua": "опубліковано",
+        "uk": "опубліковано",
+        "pl": "opublikowany"
       },
       {
         "en": "safe",
-        "uk": "safe",
-        "pl": "safe"
+        "ua": "безпечний",
+        "uk": "безпечний",
+        "pl": "bezpieczna"
       },
       {
         "en": "starting",
-        "uk": "starting",
-        "pl": "starting"
+        "ua": "починаючи",
+        "uk": "починаючи",
+        "pl": "startowy"
       },
       {
         "en": "systems",
-        "uk": "systems",
-        "pl": "systems"
+        "ua": "системи",
+        "uk": "системи",
+        "pl": "systemy"
       },
       {
         "en": "version",
-        "uk": "version",
-        "pl": "version"
+        "ua": "версія",
+        "uk": "версія",
+        "pl": "wersja"
       },
       {
         "en": "voice",
-        "uk": "voice",
-        "pl": "voice"
+        "ua": "голос",
+        "uk": "голос",
+        "pl": "głos"
       },
       {
         "en": "whose",
-        "uk": "whose",
-        "pl": "whose"
+        "ua": "чий",
+        "uk": "чий",
+        "pl": "którego"
       },
       {
         "en": "writing",
-        "uk": "writing",
-        "pl": "writing"
+        "ua": "написання",
+        "uk": "написання",
+        "pl": "pismo"
       },
       {
         "en": "army",
-        "uk": "army",
-        "pl": "army"
+        "ua": "армії",
+        "uk": "армії",
+        "pl": "armia"
       },
       {
         "en": "australia",
-        "uk": "australia",
-        "pl": "australia"
+        "ua": "австралія",
+        "uk": "австралія",
+        "pl": "kraj Australia"
       },
       {
         "en": "earth",
-        "uk": "earth",
-        "pl": "earth"
+        "ua": "землі",
+        "uk": "землі",
+        "pl": "ziemia"
       },
       {
         "en": "forget",
-        "uk": "forget",
-        "pl": "forget"
+        "ua": "забути",
+        "uk": "забути",
+        "pl": "zapominać"
       },
       {
         "en": "goal",
-        "uk": "goal",
-        "pl": "goal"
+        "ua": "мета",
+        "uk": "мета",
+        "pl": "bramka"
       },
       {
         "en": "huge",
-        "uk": "huge",
-        "pl": "huge"
+        "ua": "величезний",
+        "uk": "величезний",
+        "pl": "ogromny"
       },
       {
         "en": "internet",
-        "uk": "internet",
-        "pl": "internet"
+        "ua": "Інтернет",
+        "uk": "Інтернет",
+        "pl": "sieć internetowa"
       },
       {
         "en": "listen",
-        "uk": "listen",
-        "pl": "listen"
+        "ua": "слухати",
+        "uk": "слухати",
+        "pl": "Słuchać"
       },
       {
         "en": "okay",
-        "uk": "okay",
-        "pl": "okay"
+        "ua": "гаразд",
+        "uk": "гаразд",
+        "pl": "Dobra"
       },
       {
         "en": "practice",
-        "uk": "practice",
-        "pl": "practice"
+        "ua": "практика",
+        "uk": "практика",
+        "pl": "praktyka"
       },
       {
         "en": "rules",
-        "uk": "rules",
-        "pl": "rules"
+        "ua": "правил",
+        "uk": "правил",
+        "pl": "zasady"
       },
       {
         "en": "success",
-        "uk": "success",
-        "pl": "success"
+        "ua": "успіх",
+        "uk": "успіх",
+        "pl": "sukces"
       },
       {
         "en": "towards",
-        "uk": "towards",
-        "pl": "towards"
+        "ua": "назустріч",
+        "uk": "назустріч",
+        "pl": "w kierunku"
       },
       {
         "en": "waiting",
-        "uk": "waiting",
-        "pl": "waiting"
+        "ua": "очікування",
+        "uk": "очікування",
+        "pl": "czekanie"
       },
       {
         "en": "ways",
-        "uk": "ways",
-        "pl": "ways"
+        "ua": "шляхи",
+        "uk": "шляхи",
+        "pl": "sposoby"
       },
       {
         "en": "access",
-        "uk": "access",
-        "pl": "access"
+        "ua": "доступу",
+        "uk": "доступу",
+        "pl": "dostęp"
       },
       {
         "en": "base",
-        "uk": "base",
-        "pl": "base"
+        "ua": "база",
+        "uk": "база",
+        "pl": "opierać"
       },
       {
         "en": "below",
-        "uk": "below",
-        "pl": "below"
+        "ua": "нижче",
+        "uk": "нижче",
+        "pl": "poniżej"
       },
       {
         "en": "created",
-        "uk": "created",
-        "pl": "created"
+        "ua": "створений",
+        "uk": "створений",
+        "pl": "stworzony"
       },
       {
         "en": "deep",
-        "uk": "deep",
-        "pl": "deep"
+        "ua": "глибокий",
+        "uk": "глибокий",
+        "pl": "głęboko"
       },
       {
         "en": "followed",
-        "uk": "followed",
-        "pl": "followed"
+        "ua": "слідував",
+        "uk": "слідував",
+        "pl": "podążał"
       },
       {
         "en": "mark",
-        "uk": "mark",
-        "pl": "mark"
+        "ua": "знак",
+        "uk": "знак",
+        "pl": "ocena"
       },
       {
         "en": "missing",
-        "uk": "missing",
-        "pl": "missing"
+        "ua": "відсутній",
+        "uk": "відсутній",
+        "pl": "zaginiony"
       },
       {
         "en": "offer",
-        "uk": "offer",
-        "pl": "offer"
+        "ua": "пропозиція",
+        "uk": "пропозиція",
+        "pl": "oferta"
       },
       {
         "en": "pass",
-        "uk": "pass",
-        "pl": "pass"
+        "ua": "пропуск",
+        "uk": "пропуск",
+        "pl": "przechodzić"
       },
       {
         "en": "professional",
-        "uk": "professional",
-        "pl": "professional"
+        "ua": "професійний",
+        "uk": "професійний",
+        "pl": "profesjonalny"
       },
       {
         "en": "released",
-        "uk": "released",
-        "pl": "released"
+        "ua": "звільнений",
+        "uk": "звільнений",
+        "pl": "wydany"
       },
       {
         "en": "risk",
-        "uk": "risk",
-        "pl": "risk"
+        "ua": "ризик",
+        "uk": "ризик",
+        "pl": "ryzyko"
       },
       {
         "en": "schools",
-        "uk": "schools",
-        "pl": "schools"
+        "ua": "школи",
+        "uk": "школи",
+        "pl": "szkoły"
       },
       {
         "en": "sleep",
-        "uk": "sleep",
-        "pl": "sleep"
-      },
-      {
-        "en": "table",
-        "uk": "table",
-        "pl": "table"
+        "ua": "сон",
+        "uk": "сон",
+        "pl": "spać"
       },
       {
         "en": "truth",
-        "uk": "truth",
-        "pl": "truth"
+        "ua": "правда",
+        "uk": "правда",
+        "pl": "prawda"
       },
       {
         "en": "ball",
-        "uk": "ball",
-        "pl": "ball"
+        "ua": "м'яч",
+        "uk": "м'яч",
+        "pl": "piłka"
       },
       {
         "en": "build",
-        "uk": "build",
-        "pl": "build"
+        "ua": "будувати",
+        "uk": "будувати",
+        "pl": "zbudować"
       },
       {
         "en": "card",
-        "uk": "card",
-        "pl": "card"
+        "ua": "картку",
+        "uk": "картку",
+        "pl": "karta"
       },
       {
         "en": "cases",
-        "uk": "cases",
-        "pl": "cases"
+        "ua": "випадків",
+        "uk": "випадків",
+        "pl": "sprawy"
       },
       {
         "en": "dark",
-        "uk": "dark",
-        "pl": "dark"
+        "ua": "темний",
+        "uk": "темний",
+        "pl": "ciemny"
       },
       {
         "en": "district",
-        "uk": "district",
-        "pl": "district"
+        "ua": "район",
+        "uk": "район",
+        "pl": "dzielnica"
       },
       {
         "en": "europe",
-        "uk": "europe",
-        "pl": "europe"
+        "ua": "Європа",
+        "uk": "Європа",
+        "pl": "Europa"
       },
       {
         "en": "george",
-        "uk": "george",
-        "pl": "george"
+        "ua": "Джордж",
+        "uk": "Джордж",
+        "pl": "imię George"
       },
       {
         "en": "india",
-        "uk": "india",
-        "pl": "india"
+        "ua": "Індія",
+        "uk": "Індія",
+        "pl": "Indie"
       },
       {
         "en": "mine",
-        "uk": "mine",
-        "pl": "mine"
+        "ua": "моя",
+        "uk": "моя",
+        "pl": "kopalnia"
       },
       {
         "en": "minister",
-        "uk": "minister",
-        "pl": "minister"
+        "ua": "міністр",
+        "uk": "міністр",
+        "pl": "członek rządu"
       },
       {
         "en": "note",
-        "uk": "note",
-        "pl": "note"
+        "ua": "примітка",
+        "uk": "примітка",
+        "pl": "notatka"
       },
       {
         "en": "percent",
-        "uk": "percent",
-        "pl": "percent"
+        "ua": "відсотків",
+        "uk": "відсотків",
+        "pl": "procent"
       },
       {
         "en": "piece",
-        "uk": "piece",
-        "pl": "piece"
+        "ua": "шматок",
+        "uk": "шматок",
+        "pl": "sztuka"
       },
       {
         "en": "products",
-        "uk": "products",
-        "pl": "products"
+        "ua": "продуктів",
+        "uk": "продуктів",
+        "pl": "produkty"
       },
       {
         "en": "recent",
-        "uk": "recent",
-        "pl": "recent"
+        "ua": "останній",
+        "uk": "останній",
+        "pl": "ostatni"
       },
       {
         "en": "seeing",
-        "uk": "seeing",
-        "pl": "seeing"
+        "ua": "бачачи",
+        "uk": "бачачи",
+        "pl": "widzenie"
       },
       {
         "en": "straight",
-        "uk": "straight",
-        "pl": "straight"
+        "ua": "прямо",
+        "uk": "прямо",
+        "pl": "prosty"
       },
       {
         "en": "visit",
-        "uk": "visit",
-        "pl": "visit"
+        "ua": "відвідати",
+        "uk": "відвідати",
+        "pl": "odwiedzać"
       },
       {
         "en": "wall",
-        "uk": "wall",
-        "pl": "wall"
+        "ua": "стіна",
+        "uk": "стіна",
+        "pl": "ściana"
       },
       {
         "en": "wanna",
-        "uk": "wanna",
-        "pl": "wanna"
+        "ua": "хочу",
+        "uk": "хочу",
+        "pl": "chcieć"
       },
       {
         "en": "wrote",
-        "uk": "wrote",
-        "pl": "wrote"
+        "ua": "написав",
+        "uk": "написав",
+        "pl": "napisał"
       },
       {
         "en": "allowed",
-        "uk": "allowed",
-        "pl": "allowed"
+        "ua": "дозволено",
+        "uk": "дозволено",
+        "pl": "dozwolony"
       },
       {
         "en": "boys",
-        "uk": "boys",
-        "pl": "boys"
+        "ua": "хлопці",
+        "uk": "хлопці",
+        "pl": "chłopcy"
       },
       {
         "en": "culture",
-        "uk": "culture",
-        "pl": "culture"
+        "ua": "культури",
+        "uk": "культури",
+        "pl": "kultura"
       },
       {
         "en": "fans",
-        "uk": "fans",
-        "pl": "fans"
+        "ua": "вболівальники",
+        "uk": "вболівальники",
+        "pl": "fani"
       },
       {
         "en": "february",
-        "uk": "february",
-        "pl": "february"
+        "ua": "лютий",
+        "uk": "лютий",
+        "pl": "Luty"
       },
       {
         "en": "gives",
-        "uk": "gives",
-        "pl": "gives"
+        "ua": "дає",
+        "uk": "дає",
+        "pl": "daje"
       },
       {
         "en": "growth",
-        "uk": "growth",
-        "pl": "growth"
+        "ua": "зростання",
+        "uk": "зростання",
+        "pl": "wzrost"
       },
       {
         "en": "included",
-        "uk": "included",
-        "pl": "included"
+        "ua": "включені",
+        "uk": "включені",
+        "pl": "dołączony"
       }
     ]
   }
@@ -4841,6 +5669,17 @@
       });
       const levelDup = words.filter((w, i) => words.indexOf(w) !== i);
       if (levelDup.length) console.warn(`Duplicate vocabulary across ${level}:`, [...new Set(levelDup)]);
+
+      Object.entries(topics).forEach(([topic, entries]) => {
+        entries.forEach((entry) => {
+          const en = String(entry.en || "").trim().toLowerCase();
+          const ua = String(entry.ua || entry.uk || "").trim().toLowerCase();
+          const pl = String(entry.pl || "").trim().toLowerCase();
+          if (en && (en === ua || en === pl)) {
+            console.warn(`Vocabulary translation matches English in ${level}/${topic}:`, entry.en, entry);
+          }
+        });
+      });
     });
   }
 

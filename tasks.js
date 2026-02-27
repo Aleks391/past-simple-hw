@@ -131,6 +131,24 @@
         { en: "You can choose either of these two seats.", uk: "Ти можеш обрати будь-яке з цих двох місць.", pl: "Możesz wybrać któreś z tych dwóch miejsc." },
         { en: "Neither of my neighbors speaks Spanish.", uk: "Жоден із моїх сусідів не говорить іспанською.", pl: "Żaden z moich sąsiadów nie mówi po hiszpańsku." }
       ]
+    },
+    muchMany: {
+      label: "Much vs Many",
+      use: { uk: "Many вживаємо з злічуваними іменниками у множині (books, apples). Much вживаємо з незлічуваними іменниками (water, time). У стверджувальних реченнях частіше звучить a lot of / lots of.", pl: "Many używamy z rzeczownikami policzalnymi w liczbie mnogiej (books, apples). Much używamy z rzeczownikami niepoliczalnymi (water, time). W zdaniach twierdzących częściej brzmi a lot of / lots of." },
+      formula: { affirmative: "a lot of / lots of + countable plural or uncountable (common)", negative: "not many + countable plural / not much + uncountable", question: "How many + countable plural? / How much + uncountable?" },
+      markers: ["how many", "how much", "too many", "too much", "so many", "so much", "a lot of"],
+      examples: [
+        { en: "How many students are in your class?", uk: "Скільки студентів у твоєму класі?", pl: "Ilu uczniów jest w twojej klasie?" },
+        { en: "How much sugar do you need?", uk: "Скільки цукру тобі потрібно?", pl: "Ile cukru potrzebujesz?" },
+        { en: "There aren't many chairs in this room.", uk: "У цій кімнаті небагато стільців.", pl: "W tym pokoju nie ma wielu krzeseł." },
+        { en: "We don't have much time.", uk: "Ми не маємо багато часу.", pl: "Nie mamy dużo czasu." },
+        { en: "She has a lot of friends at school.", uk: "У неї багато друзів у школі.", pl: "Ona ma dużo przyjaciół w szkole." },
+        { en: "They drink a lot of water after training.", uk: "Вони п'ють багато води після тренування.", pl: "Oni piją dużo wody po treningu." },
+        { en: "There is too much noise here.", uk: "Тут занадто багато шуму.", pl: "Jest tu za dużo hałasu." },
+        { en: "There are too many cars on this street.", uk: "На цій вулиці занадто багато машин.", pl: "Na tej ulicy jest za dużo samochodów." },
+        { en: "I am so much happier now.", uk: "Зараз я набагато щасливіший.", pl: "Teraz jestem o wiele szczęśliwszy." },
+        { en: "Why are there so many messages today?", uk: "Чому сьогодні так багато повідомлень?", pl: "Dlaczego dziś jest tak wiele wiadomości?" }
+      ]
     }
   };
 
@@ -237,6 +255,49 @@
     { id: "eitherNeither-28", type: "fill", prompt: "28) Fill in: ____ of my phones is charged.", accept: ["neither"] },
     { id: "eitherNeither-29", type: "fill", prompt: "29) Complete: Either your teacher or your classmates ____ right.", accept: ["are"] },
     { id: "eitherNeither-30", type: "mcq", prompt: "30) Choose the correct sentence.", options: ["Neither of us have finished.", "Neither of us has finished.", "Either of us has finished."], correctIndex: 1 }
+  ];
+
+  taskSets.muchMany = [
+    { id: "muchMany-1", type: "mcq", prompt: "1) Choose: How ____ apples do we need for the pie?", options: ["much", "many", "a lot of"], correctIndex: 1, explanation: "Apples are countable plural -> use many." },
+    { id: "muchMany-2", type: "mcq", prompt: "2) Choose: How ____ milk is left in the fridge?", options: ["many", "much", "lots of"], correctIndex: 1, explanation: "Milk is uncountable -> use much." },
+    { id: "muchMany-3", type: "mcq", prompt: "3) Choose: We don't have ____ chairs for everyone.", options: ["many", "much", "too much"], correctIndex: 0, explanation: "Chairs are countable plural; in negatives use many." },
+    { id: "muchMany-4", type: "mcq", prompt: "4) Choose: There isn't ____ sugar in my tea.", options: ["many", "much", "so many"], correctIndex: 1, explanation: "Sugar is uncountable, so use much." },
+    { id: "muchMany-5", type: "mcq", prompt: "5) Choose: She has ____ homework tonight.", options: ["many", "much", "a lot of"], correctIndex: 2, explanation: "Affirmative sentence: a lot of is more natural than much." },
+    { id: "muchMany-6", type: "mcq", prompt: "6) Choose: They bought ____ books last weekend.", options: ["much", "a lot of", "too much"], correctIndex: 1, explanation: "Affirmative + countable plural: a lot of is best." },
+    { id: "muchMany-7", type: "mcq", prompt: "7) Choose: I didn't spend ____ money.", options: ["many", "much", "so many"], correctIndex: 1, explanation: "Money is uncountable -> much." },
+    { id: "muchMany-8", type: "mcq", prompt: "8) Choose: How ____ people came to the concert?", options: ["much", "many", "a lot"], correctIndex: 1, explanation: "People is countable plural -> many." },
+    { id: "muchMany-9", type: "mcq", prompt: "9) Choose: There are too ____ cars in the city center.", options: ["much", "many", "a lot"], correctIndex: 1, explanation: "Cars are countable plural -> too many." },
+    { id: "muchMany-10", type: "mcq", prompt: "10) Choose: There is too ____ traffic at 8 a.m.", options: ["many", "much", "a lot"], correctIndex: 1, explanation: "Traffic is uncountable -> too much." },
+    { id: "muchMany-11", type: "mcq", prompt: "11) Choose: How ____ time do we have before class?", options: ["many", "much", "a lot of"], correctIndex: 1, explanation: "Time is uncountable -> how much time." },
+    { id: "muchMany-12", type: "mcq", prompt: "12) Choose: How ____ emails did you send today?", options: ["many", "much", "too much"], correctIndex: 0, explanation: "Emails are countable plural -> how many." },
+    { id: "muchMany-13", type: "mcq", prompt: "13) Choose: We have ____ information already.", options: ["many", "much", "a lot of"], correctIndex: 2, explanation: "In affirmatives, a lot of information sounds more natural." },
+    { id: "muchMany-14", type: "mcq", prompt: "14) Choose: She doesn't drink ____ coffee.", options: ["many", "much", "lots"], correctIndex: 1, explanation: "Coffee is uncountable, and it's a negative sentence." },
+    { id: "muchMany-15", type: "mcq", prompt: "15) Choose: Are there ____ mistakes in my essay?", options: ["much", "many", "a lot"], correctIndex: 1, explanation: "Mistakes are countable plural -> many." },
+    { id: "muchMany-16", type: "mcq", prompt: "16) Choose: Is there ____ butter in the pan?", options: ["many", "much", "a lot"], correctIndex: 1, explanation: "Butter is uncountable -> much." },
+    { id: "muchMany-17", type: "mcq", prompt: "17) Choose: He has ____ friends at work.", options: ["many", "much", "lots of"], correctIndex: 2, explanation: "Affirmative sentence: lots of friends is most natural." },
+    { id: "muchMany-18", type: "mcq", prompt: "18) Choose: We need ____ bottles of water for the trip.", options: ["many", "much", "so much"], correctIndex: 0, explanation: "Bottles are countable plural -> many." },
+    { id: "muchMany-19", type: "mcq", prompt: "19) Choose: There isn't ____ rice left.", options: ["many", "much", "too many"], correctIndex: 1, explanation: "Rice is uncountable -> much." },
+    { id: "muchMany-20", type: "mcq", prompt: "20) Choose: We saw ____ stars last night.", options: ["much", "a lot of", "too much"], correctIndex: 1, explanation: "Affirmative + countable plural: a lot of stars." },
+    { id: "muchMany-21", type: "mcq", prompt: "21) Choose: I have so ____ work this week.", options: ["many", "much", "lots"], correctIndex: 1, explanation: "Work is uncountable -> so much work." },
+    { id: "muchMany-22", type: "mcq", prompt: "22) Choose: Why are there so ____ notifications on your phone?", options: ["many", "much", "a lot"], correctIndex: 0, explanation: "Notifications are countable plural -> so many." },
+    { id: "muchMany-23", type: "mcq", prompt: "23) Choose: ____ homework do you usually get on Friday?", options: ["How many", "How much", "A lot of"], correctIndex: 1, explanation: "Homework is uncountable -> How much." },
+    { id: "muchMany-24", type: "mcq", prompt: "24) Choose: ____ countries have you visited?", options: ["How much", "How many", "Too much"], correctIndex: 1, explanation: "Countries are countable plural -> How many." },
+    { id: "muchMany-25", type: "mcq", prompt: "25) Choose: We don't have ____ eggs for breakfast.", options: ["many", "much", "a lot"], correctIndex: 0, explanation: "Eggs are countable plural -> many." },
+    { id: "muchMany-26", type: "mcq", prompt: "26) Choose: There wasn't ____ rain in July.", options: ["many", "much", "so many"], correctIndex: 1, explanation: "Rain is uncountable -> much." },
+    { id: "muchMany-27", type: "mcq", prompt: "27) Choose: She read ____ articles for her project.", options: ["much", "many", "a lot of"], correctIndex: 2, explanation: "Affirmative sentence prefers a lot of articles." },
+    { id: "muchMany-28", type: "mcq", prompt: "28) Choose: He didn't ask ____ questions.", options: ["much", "many", "lots"], correctIndex: 1, explanation: "Questions are countable plural -> many." },
+    { id: "muchMany-29", type: "mcq", prompt: "29) Choose: I can't carry this bag. It's too ____.", options: ["many", "much", "a lot"], correctIndex: 1, explanation: "Too much can mean an excessive amount/intensity." },
+    { id: "muchMany-30", type: "mcq", prompt: "30) Choose: We invited too ____ people to a small room.", options: ["much", "many", "a lot"], correctIndex: 1, explanation: "People are countable plural -> too many." },
+    { id: "muchMany-31", type: "mcq", prompt: "31) Choose: Do you have ____ luggage?", options: ["many", "much", "many pieces"], correctIndex: 1, explanation: "Luggage is uncountable in English -> much." },
+    { id: "muchMany-32", type: "mcq", prompt: "32) Choose: ____ slices of pizza did he eat?", options: ["How much", "How many", "Too much"], correctIndex: 1, explanation: "Slices are countable plural -> How many." },
+    { id: "muchMany-33", type: "mcq", prompt: "33) Choose: There is ____ furniture in this apartment.", options: ["many", "much", "lots"], correctIndex: 1, explanation: "Furniture is uncountable -> much." },
+    { id: "muchMany-34", type: "mcq", prompt: "34) Choose: We bought ____ furniture for the new office.", options: ["many", "much", "a lot of"], correctIndex: 2, explanation: "Affirmative sentence: a lot of furniture is best." },
+    { id: "muchMany-35", type: "mcq", prompt: "35) Choose: He doesn't have ____ patience today.", options: ["many", "much", "too many"], correctIndex: 1, explanation: "Patience is uncountable -> much." },
+    { id: "muchMany-36", type: "mcq", prompt: "36) Choose: They don't have ____ clean cups left.", options: ["many", "much", "a lot"], correctIndex: 0, explanation: "Cups are countable plural -> many." },
+    { id: "muchMany-37", type: "mcq", prompt: "37) Choose: We have ____ free time on Sundays.", options: ["much", "many", "lots of"], correctIndex: 2, explanation: "Affirmative sentence usually takes lots of/a lot of free time." },
+    { id: "muchMany-38", type: "mcq", prompt: "38) Choose: ____ jam do you put on toast?", options: ["How many", "How much", "Too many"], correctIndex: 1, explanation: "Jam is uncountable -> How much." },
+    { id: "muchMany-39", type: "mcq", prompt: "39) Choose: ____ students are absent today?", options: ["How much", "How many", "So much"], correctIndex: 1, explanation: "Students are countable plural -> How many." },
+    { id: "muchMany-40", type: "mcq", prompt: "40) Choose: We have ____ bread, so let's make sandwiches.", options: ["many", "much", "a lot of"], correctIndex: 2, explanation: "Affirmative sentence: a lot of bread is most natural." }
   ];
 
   const testQuestions = [

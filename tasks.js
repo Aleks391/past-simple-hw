@@ -5709,6 +5709,154 @@
   }
 };
 
+
+
+  const pronunciation = [
+    {
+      combo: "th",
+      ipa: "/θ/, /ð/",
+      explanation: {
+        ua: "TH має два звуки: /θ/ — глухий (як у think), /ð/ — дзвінкий (як у this). Язик злегка між зубами.",
+        pl: "TH ma dwa dźwięki: /θ/ — bezdźwięczny (jak w think), /ð/ — dźwięczny (jak w this). Czubek języka lekko między zębami."
+      },
+      examples: ["think /θɪŋk/", "three /θriː/", "this /ðɪs/", "that /ðæt/"],
+      tip: {
+        ua: "Не замінюйте на /s/ або /z/: звук іде через вузьку щілину між зубами.",
+        pl: "Nie zamieniaj na /s/ ani /z/: powietrze przechodzi przez szczelinę między zębami."
+      }
+    },
+    {
+      combo: "ch",
+      ipa: "/tʃ/, інколи /k/",
+      explanation: {
+        ua: "Найчастіше CH звучить як /tʃ/ (church), але в частині слів грецького походження — /k/ (school).",
+        pl: "Najczęściej CH brzmi jak /tʃ/ (church), ale w części słów pochodzenia greckiego — /k/ (school)."
+      },
+      examples: ["chair /tʃeə(r)/", "chicken /ˈtʃɪkɪn/", "school /skuːl/", "chorus /ˈkɔːrəs/"],
+      tip: {
+        ua: "Перед голосним зазвичай /tʃ/, але перевіряйте винятки.",
+        pl: "Przed samogłoską zwykle /tʃ/, ale sprawdzaj wyjątki."
+      }
+    },
+    {
+      combo: "sh",
+      ipa: "/ʃ/",
+      explanation: {
+        ua: "SH передає м'який шиплячий звук /ʃ/.",
+        pl: "SH oznacza miękki szumiący dźwięk /ʃ/."
+      },
+      examples: ["ship /ʃɪp/", "she /ʃiː/", "wash /wɒʃ/", "fish /fɪʃ/"],
+      tip: {
+        ua: "Округліть губи трохи вперед для чистого /ʃ/.",
+        pl: "Lekko wysuń usta do przodu, aby uzyskać czyste /ʃ/."
+      }
+    },
+    {
+      combo: "gh",
+      ipa: "/f/, німа",
+      explanation: {
+        ua: "GH може звучати як /f/ (laugh) або не читатися (night).",
+        pl: "GH może brzmieć jak /f/ (laugh) albo być nieme (night)."
+      },
+      examples: ["laugh /lɑːf/", "enough /ɪˈnʌf/", "night /naɪt/", "light /laɪt/"],
+      tip: {
+        ua: "Це комбінація з багатьма винятками — запам'ятовуйте у словах.",
+        pl: "To połączenie ma wiele wyjątków — zapamiętuj je w całych słowach."
+      }
+    },
+    {
+      combo: "ph",
+      ipa: "/f/",
+      explanation: {
+        ua: "PH вимовляється як /f/, часто у словах грецького походження.",
+        pl: "PH wymawia się jak /f/, często w słowach pochodzenia greckiego."
+      },
+      examples: ["phone /fəʊn/", "photo /ˈfəʊtəʊ/", "phrase /freɪz/", "elephant /ˈelɪfənt/"],
+      tip: {
+        ua: "Часто можна подумки замінити PH на F.",
+        pl: "Często możesz w myślach zamienić PH na F."
+      }
+    },
+    {
+      combo: "ng",
+      ipa: "/ŋ/",
+      explanation: {
+        ua: "NG дає носовий звук /ŋ/ у кінці складу або слова.",
+        pl: "NG daje nosowy dźwięk /ŋ/ na końcu sylaby lub wyrazu."
+      },
+      examples: ["sing /sɪŋ/", "long /lɒŋ/", "morning /ˈmɔːnɪŋ/", "strong /strɒŋ/"],
+      tip: {
+        ua: "Після /ŋ/ у слові sing немає звуку /g/.",
+        pl: "Po /ŋ/ w słowie sing nie ma dźwięku /g/."
+      }
+    },
+    {
+      combo: "wh",
+      ipa: "/w/, інколи /h/",
+      explanation: {
+        ua: "WH зазвичай читається як /w/ (what), але у who, whole — як /h/.",
+        pl: "WH zwykle czyta się jako /w/ (what), ale w who, whole — jako /h/."
+      },
+      examples: ["what /wɒt/", "when /wen/", "white /waɪt/", "who /huː/"],
+      tip: {
+        ua: "Для /w/ губи округлені, звук короткий і плавний.",
+        pl: "Przy /w/ zaokrąglij usta; dźwięk jest krótki i płynny."
+      }
+    },
+    {
+      combo: "ck",
+      ipa: "/k/",
+      explanation: {
+        ua: "CK передає короткий твердий /k/ після короткого голосного.",
+        pl: "CK oznacza krótki twardy /k/ po krótkiej samogłosce."
+      },
+      examples: ["back /bæk/", "ticket /ˈtɪkɪt/", "black /blæk/", "sock /sɒk/"],
+      tip: {
+        ua: "CK майже завжди стоїть усередині або в кінці слова, не на початку.",
+        pl: "CK prawie zawsze stoi w środku lub na końcu wyrazu, nie na początku."
+      }
+    },
+    {
+      combo: "tion",
+      ipa: "/ʃən/",
+      explanation: {
+        ua: "TION у багатьох іменниках звучить як /ʃən/.",
+        pl: "TION w wielu rzeczownikach brzmi jako /ʃən/."
+      },
+      examples: ["station /ˈsteɪʃən/", "action /ˈækʃən/", "question /ˈkwestʃən/", "education /ˌedʒʊˈkeɪʃən/"],
+      tip: {
+        ua: "Наголос зазвичай падає на склад перед -tion.",
+        pl: "Akcent zwykle pada na sylabę przed -tion."
+      }
+    },
+    {
+      combo: "sion",
+      ipa: "/ʒən/ або /ʃən/",
+      explanation: {
+        ua: "SION може звучати як /ʒən/ (vision) або /ʃən/ (mission) залежно від слова.",
+        pl: "SION może brzmieć jako /ʒən/ (vision) albo /ʃən/ (mission), zależnie od słowa."
+      },
+      examples: ["vision /ˈvɪʒən/", "decision /dɪˈsɪʒən/", "mission /ˈmɪʃən/", "expression /ɪkˈspreʃən/"],
+      tip: {
+        ua: "Краще вчити вимову разом із конкретним словом.",
+        pl: "Najlepiej ucz się wymowy razem z konkretnym słowem."
+      }
+    },
+    {
+      combo: "tch",
+      ipa: "/tʃ/",
+      explanation: {
+        ua: "TCH зазвичай передає звук /tʃ/ після короткого голосного.",
+        pl: "TCH zwykle oznacza dźwięk /tʃ/ po krótkiej samogłosce."
+      },
+      examples: ["watch /wɒtʃ/", "match /mætʃ/", "kitchen /ˈkɪtʃɪn/", "catch /kætʃ/"],
+      tip: {
+        ua: "Вимовляйте як один злитий звук, не розділяйте на /t/ + /ʃ/.",
+        pl: "Wymawiaj jako jeden złączony dźwięk, nie dziel na /t/ + /ʃ/."
+      }
+    }
+  ];
+
   function warnDuplicates() {
     const testTexts = testQuestions.map((q) => q.question.toLowerCase().trim());
     const dupTests = testTexts.filter((q, i) => testTexts.indexOf(q) !== i);
@@ -5746,5 +5894,5 @@
 
   warnDuplicates();
 
-  window.HW = { title: "English Tenses Homework", subtitle: "Practice all 12 tenses on one mobile-friendly page.", version: "2026-02-24", tenses, taskSets, testQuestions, irregularVerbs, vocabulary };
+  window.HW = { title: "English Tenses Homework", subtitle: "Practice all 12 tenses on one mobile-friendly page.", version: "2026-02-24", tenses, taskSets, testQuestions, irregularVerbs, vocabulary, pronunciation };
 })();
